@@ -24,6 +24,7 @@ reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
   ```
 	- I am not sure I understand what `t` is. Is it a mutex with revision history that you update through transactions ?
 	  Looking at the source I see it just a way to push some blocks into the CAR and make the last one it's root. It is very similar to [CAR codec implementation](https://github.com/web3-storage/ucanto/blob/0606168313d17d66bcc1ad6091440765e1700a4f/packages/transport/src/car/codec.js) in [[ucanto]] library. Primary difference is ucanto is compatible with [[BlockCodec]] interface for following reasons:
-	  1. So that [CAR][] can be used as codec just like any other.
-	  1. Data that goes into CAR is held in memory anyhow so there is no real benefit to incrementally writable interface vs batched write interface. Which is why benefit of the above
+		- 1. So that [CAR][] can be used as codec just like any other.
+		  1. Data that goes into CAR is held in memory anyhow so there is no real benefit to incrementally writable interface vs batched write interface.
+		  1. Given the above two reasons it seems better to just use JS array for aggregating blocks than a custom writer API.
 -
