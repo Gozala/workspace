@@ -1,5 +1,5 @@
 title:: w3 accounts
 
-- As described in [w3-accounts](https://hackmd.io/@gozala/w3-accounts) documents our thinking about accounts had been
+- As outlined in [w3-accounts](https://hackmd.io/@gozala/w3-accounts) we've been thinking about in web2 terms.
 -
 -
