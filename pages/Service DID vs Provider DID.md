@@ -10,4 +10,5 @@
 	- Alternatively we could embed DID document itself, but then how do we verify that it's not a fake document.
 - Another alternative could be to have short lived [[Service DID]]s that could be resolved by agent on every sessions e.g. from domain name.
 	- 💔 This introduces hidden complexity from having to do IO to possible race conditions on rotation. Furthermore it creates various attacks possible that would not be possible if resolving [[did:key]]s were not needed.
+		- Not that if we had to sign key rotation updates
 -
