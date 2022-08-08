@@ -27,5 +27,5 @@ reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
 			- ucanto [[CAR]] codec implements [[BlockCodec]] interface so it can be used just like any other codec and all the layers above could just plug it right in.
 			- [[BlockCodec]] interface adds constraint that you have to provide a data and get bytes back. In other words interface is not incremental and all data must be in memory. While it may seem bad in practice CAR writer needs to hold all blocks in memory anyhow and there is no real benefit to incremental write interface over batched write interface if things are kept in memory.
 			- Use of JS array for aggregating blocks is more convenient than a custom writer API which is why ucanto implementation does not bother to have incremental API as well.
-		- It is worth pointing out however that if [[CAR]]s where streamed over the wire or to disk there will be a significant benefit to incremental writer interface. However I would argue that [CAR]
+		- It is worth pointing out however that if [[CAR]]s where streamed over the wire or to disk there will be a significant benefit to incremental writer interface. However I would argue that [[CAR]] format is fundamentally not streaming friendly due to metadata been in the header.
 -
