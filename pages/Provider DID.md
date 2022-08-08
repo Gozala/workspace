@@ -1,2 +1,2 @@
-- Provider DID is a short lived [[did:key]] identifier used as an address for a service actor. Unlike [[Service DID]]
+- Provider DID is a short lived [[did:key]] identifier used as an address for a service actor. You can think of service as a rotating pool of (service) providers.
 -
