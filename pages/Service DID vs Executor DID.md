@@ -1,1 +1,1 @@
-- In dag.house we would like to differentiate between [[Service DID]] - Long term
+- In dag.house we would like to differentiate between [[Service DID]] and
