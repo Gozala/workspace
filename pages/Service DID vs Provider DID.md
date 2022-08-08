@@ -1,3 +1,5 @@
 - In dag.house we would like to differentiate between [[Service DID]] and [[Provider DID]].
 - We would like to use hardware keys for [[Service DID]]s.
-- Ideally we would almost never rotate
+- We would like to never rotate [[Service DID]]s as that would require updating all the agents.
+- We would like [[Service DID]] to authorize [[Provider DID]] to execute tasks on it's behalf.
+- We would like to rotate [[Provider DID]]
