@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Publishes to main after commit!
+# Publishes to main after commit
 git push origin main
