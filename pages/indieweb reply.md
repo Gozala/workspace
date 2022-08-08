@@ -6,4 +6,4 @@
    <div class="p-name p-content">Good point! Now what is the next thing we should do?</div>
   </div>
   ```
-- While I do not think HTML is the way to capture
+- While I do not think HTML is the way to capture semantics, I do like the idea of linkable content with
