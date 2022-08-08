@@ -1,0 +1,1 @@
+- In JS implementation of [[multiformats]] we define `BlockCodec` interface which is just dual of `BlockEncoder` and `BlockDecoder`.
