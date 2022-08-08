@@ -6,4 +6,4 @@
 - We want agents to delegate [[UCAN invocation]]s to [[Service DID]] and not to [[Provider DID]] as later can be rotate by the time it is executed.
 - However UCANs do not support such indirection
 	- We did entertain idea of embedding some [[DID routing]] info into UCANS
-	- In theory we could use [[did:dns]] or [[did:web]] methods but they introduce
+	- In theory we could use [[did:dns]] or [[did:web]] methods but they introduce additional IO step space for concurrency issues. Furthermore validating things in the
