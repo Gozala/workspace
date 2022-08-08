@@ -1,3 +1,3 @@
 - Provider DID is a short lived [[did:key]] identifier used as an address for a service actor. You can think of service as a rotating pool of (service) providers which come and go as needed.
-- Idea is that agents issue UCAN invocations
+- Idea is for agents to delegate [[UCAN Invocation]]s to [[Service DID]]
 -
