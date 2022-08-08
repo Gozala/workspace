@@ -26,5 +26,6 @@ reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
 		- Looking at the source I see it just a way to push some blocks into the CAR and make the last one it's root. It is very similar to [CAR codec implementation](https://github.com/web3-storage/ucanto/blob/0606168313d17d66bcc1ad6091440765e1700a4f/packages/transport/src/car/codec.js) in [[ucanto]] library, but there are some differences:
 			- ucanto [[CAR]] codec implements [[BlockCodec]] interface so it can be used just like any other codec and all the layers above could just plug it right in.
 			- [[BlockCodec]] interface adds constraint that you have to provide a data and get bytes back. In other words interface is not incremental and all data must be in memory. While it may seem bad in practice CAR writer needs to hold all blocks in memory anyhow and there is no real benefit to incremental write interface over batched write interface if things are kept in memory.
-			- Use of JS array for aggregating blocks is more convenient than a custom writer API which is why []
+			- Use of JS array for aggregating blocks is more convenient than a custom writer API which is why ucanto implementation does not bother to have incremental API as well.
+		- It is worth pointing out however that if CARs where streamed over the wire
 -
