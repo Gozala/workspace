@@ -78,4 +78,8 @@
  :macros {}
  :editor/logical-outdenting? true
  :publishing/all-pages-public? true
- :favorites []}
+ :favorites []
+ ;; Enable all your properties to have corresponding pages
+ :property-pages/enabled? true
+
+ }
