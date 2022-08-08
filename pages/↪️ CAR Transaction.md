@@ -1,3 +1,25 @@
 reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
 
+- I am not sure I understand
+- ```js
+  import Transaction from 'car-transaction' 
+  
+  const run = async () => {
+    // start a basic transaction
+    const t = Transaction.create()
+  
+    const subCID = await t.write({ some: 'data' })
+    await t.write({ sub: subCID })
+    const buffer = await t.commit()
+  
+    // read a transaction
+    // the last write is always the root
+    const { root, get } = await Transaction.load(buffer)
+    // root is a cid
+    const { sub } = await get(root)
+    const { some } = await get(sub)
+    // get retrieves the block and decodes it
+    if (some !== 'data') throw new Error('data error')
+  }
+  ```
 -
