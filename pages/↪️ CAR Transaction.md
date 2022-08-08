@@ -22,4 +22,5 @@ reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
     if (some !== 'data') throw new Error('data error')
   }
   ```
-	- I am not sure I understand what `t` is
+	- I am not sure I understand what `t` is. Is it a mutex with revision history that you update through transactions ?
+-
