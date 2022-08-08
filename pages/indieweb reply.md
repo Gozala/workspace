@@ -1,2 +1,2 @@
 - [[indieweb]] reply (or **comment**) is a kind of a [post](https://indieweb.org/post) that is in response to some other post.
-- It is very simple yet
+- It is very simple and elegant solution and can be captured in the simple piece of HTML
