@@ -23,5 +23,5 @@ reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
   }
   ```
 	- I am not sure I understand what `t` is. Is it a mutex with revision history that you update through transactions ?
-	  Looking at the source I see it just a way to push some blocks into the CAR and make the last one it's root. It is very similar to [CAR codec]() implementation in []
+	  Looking at the source I see it just a way to push some blocks into the CAR and make the last one it's root. It is very similar to [CAR codec]() implementation in [[ucanto]] library. Primary difference is ucanto is compatible with [[BlockCodec]] interface.
 -
