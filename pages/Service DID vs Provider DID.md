@@ -1,2 +1,3 @@
 - In dag.house we would like to differentiate between [[Service DID]] and [[Provider DID]].
-- We would like to use hardware keys
+- We would like to use hardware keys for [[Service DID]]s.
+- Ideally we would almost never rotate
