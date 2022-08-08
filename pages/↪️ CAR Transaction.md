@@ -1,6 +1,6 @@
 reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
 
-- I am not sure I understand
+- Given the following code snippet I'm not sure I fully understand it
 - ```js
   import Transaction from 'car-transaction' 
   
@@ -22,4 +22,4 @@ reply-to:: https://github.com/mikeal/car-transaction/blob/main/README.md
     if (some !== 'data') throw new Error('data error')
   }
   ```
--
+	- I am not sure I understand what `t` is
