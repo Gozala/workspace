@@ -3,4 +3,4 @@
 - We would like to never rotate [[Service DID]]s as that would require updating all the agents.
 - We would like [[Service DID]] to authorize [[Provider DID]] to execute tasks on it's behalf.
 - We would like to rotate [[Provider DID]]s on regular bases and pretty frequently.
-- Wo don't want
+- We want agents to delegate [[UCAN invocation]]s to [[Service DID]] and not to [[Provider DID]] as later can be rotate by the time it is executed.
