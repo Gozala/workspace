@@ -1,0 +1,1 @@
+- Service provider DID is a [[did:key]] similar to [[Service DID]]
