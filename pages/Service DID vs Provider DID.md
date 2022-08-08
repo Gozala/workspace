@@ -2,4 +2,5 @@
 - We would like to use hardware keys for [[Service DID]]s.
 - We would like to never rotate [[Service DID]]s as that would require updating all the agents.
 - We would like [[Service DID]] to authorize [[Provider DID]] to execute tasks on it's behalf.
-- We would like to rotate [[Provider DID]]
+- We would like to rotate [[Provider DID]]s on regular bases and pretty frequently.
+- Wo don't want
