@@ -7,4 +7,4 @@
 - However UCANs do not support such indirection
 	- We did entertain idea of embedding some [[DID routing]] info into UCANS
 	- In theory we could use [[did:dns]] or [[did:web]] methods but they introduce additional IO step space for concurrency issues. Furthermore when validating old transactions it would be impossible to tell if [[did:key]] used to be associated with at the time of transaction or not.
-	- Alternatively we could
+	- Alternatively we could embed DID document itself, but then how do we verify that it's a correct document ???
