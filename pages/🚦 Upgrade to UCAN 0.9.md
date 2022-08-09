@@ -4,6 +4,6 @@ title:: 🚦 Upgrade to UCAN 0.9
 	- The way own capabilities are issued changes from signaling through `my` URI protocol scheme to signaling through designated `my` field. This affects
 		- [[self-issued UCANs]] which our clients use
 		- UCAN validator logic
-		- Bunch constructs in [[ucanto]] library due to shape changes.
-	- `as:did:key:zAlice` protocol schema changes to `owned://did:key:zAlice` which affects how validator.
-	- Above changes also affect [[dag-ucan]] library which will need to be changed accordingly.
+		- Bunch constructs in [[ucanto]] library due to structure changes.
+	- `as:did:key:zAlice` protocol schema changed to `owned://did:key:zAlice` which affects how validator, although this is probably straightforward change.
+	- Structure of [[dag-ucan]] is also affected and needs to be updated accordingly.
