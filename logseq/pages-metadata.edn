@@ -222,7 +222,10 @@
   :block/updated-at 1630368000000}
  {:block/name "aug 8th, 2022",
   :block/created-at 1659951893385,
-  :block/updated-at 1659964366860}
+  :block/updated-at 1659974240427}
+ {:block/name "aug 9th, 2022",
+  :block/created-at 1659998092480,
+  :block/updated-at 1660030543518}
  {:block/name "b",
   :block/created-at 1645032552457,
   :block/updated-at 1645032552457}
@@ -280,6 +283,12 @@
  {:block/name "dag-cbor",
   :block/created-at 1645032552445,
   :block/updated-at 1645032552445}
+ {:block/name "dag-ucan",
+  :block/created-at 1660031026752,
+  :block/updated-at 1660031042459}
+ {:block/name "dag.house",
+  :block/created-at 1660030659217,
+  :block/updated-at 1660030659217}
  {:block/name "decision graphs",
   :block/created-at 1659954137799,
   :block/updated-at 1659954137799}
@@ -292,6 +301,21 @@
  {:block/name "dht in js for effective content/service discovery",
   :block/created-at 1645032552465,
   :block/updated-at 1645032552465}
+ {:block/name "did routing",
+  :block/created-at 1659967953560,
+  :block/updated-at 1659967983641}
+ {:block/name "did-core",
+  :block/created-at 1659967050443,
+  :block/updated-at 1659967050443}
+ {:block/name "did:dns",
+  :block/created-at 1659968031509,
+  :block/updated-at 1659968041383}
+ {:block/name "did:key",
+  :block/created-at 1659966918954,
+  :block/updated-at 1659967050445}
+ {:block/name "did:web",
+  :block/created-at 1659968031508,
+  :block/updated-at 1659968062205}
  {:block/name "distributed signaling",
   :block/created-at 1645032552459,
   :block/updated-at 1645032552459}
@@ -313,6 +337,9 @@
  {:block/name "done",
   :block/created-at 1645032552459,
   :block/updated-at 1645032552459}
+ {:block/name "draft",
+  :block/created-at 1660030620027,
+  :block/updated-at 1660030620027}
  {:block/name "eip-721",
   :block/created-at 1645032552465,
   :block/updated-at 1645032552465}
@@ -709,6 +736,9 @@
  {:block/name "protocol registration on gateways",
   :block/created-at 1645032552463,
   :block/updated-at 1645032552463}
+ {:block/name "provider did",
+  :block/created-at 1659967139159,
+  :block/updated-at 1659967546082}
  {:block/name "rds proxy",
   :block/created-at 1645032552445,
   :block/updated-at 1645032552445}
@@ -733,6 +763,9 @@
  {:block/name "reply-to",
   :block/created-at 1659961418114,
   :block/updated-at 1659961418114}
+ {:block/name "repo",
+  :block/created-at 1660031042458,
+  :block/updated-at 1660031042458}
  {:block/name "rfc 7519",
   :block/created-at 1645032552465,
   :block/updated-at 1645032552465}
@@ -742,6 +775,9 @@
  {:block/name "rust",
   :block/created-at 1645032552454,
   :block/updated-at 1645032552454}
+ {:block/name "self-issued ucans",
+  :block/created-at 1660064190122,
+  :block/updated-at 1660064190122}
  {:block/name "sep 3rd, 2021",
   :block/created-at 1630627200000,
   :block/updated-at 1630627200000}
@@ -754,12 +790,21 @@
  {:block/name "sep 9th, 2021",
   :block/created-at 1631145600000,
   :block/updated-at 1631145600000}
+ {:block/name "service did",
+  :block/created-at 1659966877625,
+  :block/updated-at 1659967109791}
+ {:block/name "service did vs provider did",
+  :block/created-at 1659966770517,
+  :block/updated-at 1659969311271}
  {:block/name "software transactional memory (stm)",
   :block/created-at 1645032552451,
   :block/updated-at 1645032552451}
  {:block/name "source",
   :block/created-at 1659962655169,
   :block/updated-at 1659962655169}
+ {:block/name "spec",
+  :block/created-at 1659968041381,
+  :block/updated-at 1659968041381}
  {:block/name "storproc",
   :block/created-at 1645032552459,
   :block/updated-at 1645032552459}
@@ -796,6 +841,18 @@
  {:block/name "ucan",
   :block/created-at 1645032552466,
   :block/updated-at 1645032552466}
+ {:block/name "ucan 0.9",
+  :block/created-at 1660030587387,
+  :block/updated-at 1660030620027}
+ {:block/name "ucan invocation",
+  :block/created-at 1659967439462,
+  :block/updated-at 1659967439462}
+ {:block/name "ucan principal alignment",
+  :block/created-at 1659974096663,
+  :block/updated-at 1659974154560}
+ {:block/name "ucan wg",
+  :block/created-at 1659973795519,
+  :block/updated-at 1659973795519}
  {:block/name "ucanto",
   :block/created-at 1659963885580,
   :block/updated-at 1659963885580}
@@ -808,6 +865,9 @@
  {:block/name "virtualbox",
   :block/created-at 1645032552453,
   :block/updated-at 1645032552453}
+ {:block/name "w3 accounts",
+  :block/created-at 1659974240424,
+  :block/updated-at 1660063535836}
  {:block/name "wait",
   :block/created-at 1645032552445,
   :block/updated-at 1645032552445}
@@ -835,6 +895,18 @@
  {:block/name "↪️ car transaction",
   :block/created-at 1659961398122,
   :block/updated-at 1659963624850}
+ {:block/name "↪️ limitation with principal alignment",
+  :block/created-at 1659973858530,
+  :block/updated-at 1659974096666}
+ {:block/name "↪️ service did rotation",
+  :block/created-at 1659973743788,
+  :block/updated-at 1659973795524}
+ {:block/name "↪️ w3-accounts",
+  :block/created-at 1659974298502,
+  :block/updated-at 1659974311711}
  {:block/name "💔",
-  :block/created-at 1645032552452, 
-  :block/updated-at 1645032552452}]
+  :block/created-at 1645032552452,
+  :block/updated-at 1645032552452}
+ {:block/name "🚦 upgrade to ucan 0.9",
+  :block/created-at 1660030543516, 
+  :block/updated-at 1660060575149}]
