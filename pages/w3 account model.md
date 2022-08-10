@@ -12,4 +12,4 @@
 	- Accounts with autopay are charged the upper limit during setup transferring increasing account balance & capacity.
 	- On next billing card linked to autopay is charged to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used.
 	- Second actor could further increase upper limit by setting up another card into autopay. In such scenario second card only gets charged on next billing cycle if account went beyond previous upper limit or if first card failed to pay.
-	- If charging a credit card fails on billing cycle it's balance become negative
+	- If charging a credit card fails on billing cycle it's balance become negative and writing to that account will be denied until funds are going to become available again.
