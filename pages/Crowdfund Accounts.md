@@ -1,1 +1,1 @@
-- It makes no sense to prevent others from funding
+- It makes no sense to prevent anyone to fund an account.
