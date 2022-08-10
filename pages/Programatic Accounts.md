@@ -1,1 +1,2 @@
-- We can think of arbitrary [[did:key]] as an account in the network. If we have never heard of DID it is a new account with
+- We can think of arbitrary [[did:key]] as an account in the network. If we have never heard of DID it is a new account with `0` balance and we don't need to track it until it's balance had been increased by moving some funds into it.
+-
