@@ -8,5 +8,5 @@ reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336
 - Doing this turns IPFS gateway into [[user agent]] trying to protect user as opposed to be portrayed as accomplice of the attack. In fact gateways could lean further into [[user agent]] role and proactively flag **unverified content** and maybe even provide toggle to a user to set the comfort level
 	- How aggressive it should be in terms of flagging content
 	- Allow subscribing to user desired [[denylists]] (although doing that may prove a lot more challenging on server than on client end, but perhaps service workers can help with that)
-- Every time idea of enhancing IPFS gateway comes up it raises [[purity of content addressing dilemma]].
+- Every time idea of enhancing IPFS gateway comes up it raises [[purity of content addressing dilemma]]. Perhaps with [[better errors with HTTP redirects]] we could
 -
