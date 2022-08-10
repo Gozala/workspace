@@ -1,0 +1,1 @@
+- When things are content addressed
