@@ -198,7 +198,7 @@
   :block/updated-at 1645032552464}
  {:block/name "aug 10th, 2022",
   :block/created-at 1660083950540,
-  :block/updated-at 1660083950540}
+  :block/updated-at 1660122711103}
  {:block/name "aug 16th, 2021",
   :block/created-at 1629072000000,
   :block/updated-at 1629072000000}
@@ -235,6 +235,9 @@
  {:block/name "bamboo append-only log",
   :block/created-at 1659956176066,
   :block/updated-at 1659956385831}
+ {:block/name "better errors with http redirects",
+  :block/created-at 1660122711101,
+  :block/updated-at 1660122946859}
  {:block/name "blockcodec",
   :block/created-at 1659962572384,
   :block/updated-at 1659962655170}
@@ -445,6 +448,9 @@
  {:block/name "graphql schema",
   :block/created-at 1645032552464,
   :block/updated-at 1645032552464}
+ {:block/name "http redirects",
+  :block/created-at 1660122823480,
+  :block/updated-at 1660122846525}
  {:block/name "https_//thegraph.com/docs/graphql-api",
   :block/created-at 1651389928155,
   :block/updated-at 1651389928155}

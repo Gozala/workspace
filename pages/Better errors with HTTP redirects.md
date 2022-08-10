@@ -1,1 +1,1 @@
-- I think [[HTTP redirects]] are a great way to provide a better error experience. Just telling a user
+- I think [[HTTP redirects]] provide a better error experience. If you just tell the user that error has occurred there is no
