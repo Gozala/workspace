@@ -1,2 +1,3 @@
 - Account is identified via [[did:key]] identifier
--
+- Unknown [[did:key]] identifier is valid account (that system does not track) with `0` balance & `0` capacity.
+- User could
