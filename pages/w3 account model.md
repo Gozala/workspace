@@ -4,7 +4,7 @@
 - Account can be activated by anyone, by transferring enough funds and increasing capacity to `>0`.
 - Anyone with `account/activate` capability (delegated from [[account DID]]) can activate account by providing a valid email verification proof (that has not been associated with other account).
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
-	  > We would not actually charge c cards, yet system
+	  > We would not actually charge actual credit cards, but it would look and feel just the same
 - Accounts are charged for used capacity from available funds.
 - Accounts funds can be used to
 	- Pay for storage at the TBD rate.
