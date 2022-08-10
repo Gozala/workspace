@@ -11,4 +11,4 @@
 - Anyone could setup an autopay for an account via `account/autopay` with upper limit.
 	- Accounts with autopay are charged the upper limit during setup transferring increasing account balance & capacity.
 	- On next billing card linked to autopay is charged to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used.
-	- Second actor could further increase upper limit by setting up another card into autopay. In this case
+	- Second actor could further increase upper limit by setting up another card into autopay. In such scenario at the end of billing cycle all cards will be charged according to used capacity in propor
