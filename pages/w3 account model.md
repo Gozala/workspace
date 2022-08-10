@@ -10,4 +10,5 @@
 	- Pay for other features e.g. pinning service
 - Anyone could setup an autopay for an account via `account/autopay` with upper limit.
 	- Accounts with autopay are charged the upper limit during setup transferring increasing account balance & capacity.
-	- On next billing card linked to autopay is charged to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used
+	- On next billing card linked to autopay is charged to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used.
+	- If multiple actors singed up for autopay with different upper limits they
