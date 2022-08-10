@@ -6,7 +6,7 @@
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
 	  > We would not actually charge actual credit cards, but it would look and feel just the same
 - Excess account funds, that is amount not needed to pay for minimum 1TB or currently used storage (whatever's greatest) could be transferred to other accounts.
--
+  > This implies that you can't just create new accounts to overcome free 1TB limit. And new accounts
 - Accounts funds can be used to
 	- Pay for storage at the TBD rate.
 	- To transfer excess funds to other accounts
