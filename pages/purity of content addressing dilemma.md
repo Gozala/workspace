@@ -4,5 +4,5 @@
   curl -s https://ipfs.io/ipfs/bafybeicaokx57ayyfig6e6zo6mxqzkxxc5m4ffghi65tgsuk6ftadby7fu | ipfs add --cid-version=1
   added bafkreicujuudjn3oipx7in5lhzeujmxsbnlxasqgnnyagvzszh4ftolazm bafkreicujuudjn3oipx7in5lhzeujmxsbnlxasqgnnyagvzszh4ftolazm
   ```
-- If this is not too bad consider loading [ipfs://QmSgEEQaKStnsX7aEApfjTT76FWRbAUYUr5pFV8XpRS6Mi](https://ipfs.io/ipfs/QmSgEEQaKStnsX7aEApfjTT76FWRbAUYUr5pFV8XpRS6Mi) I do not get a binary blob corresponding [[UnixFS]] directory, instead I get an HTML page with a list of files in that
+- Now consider loading another directory [ipfs://bafybeibciltrcxuymp22e4x6fr4x2mbwp45r2sl7nrhpg4e4mcsomnfl3y](https://ipfs.io/ipfs/bafybeibciltrcxuymp22e4x6fr4x2mbwp45r2sl7nrhpg4e4mcsomnfl3y) here gateway a binary blob corresponding [[UnixFS]] directory, instead I get an HTML page with a list of files in that
 -
