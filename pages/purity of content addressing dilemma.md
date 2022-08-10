@@ -1,1 +1,2 @@
-- Dilemma of what should one see when they access [ipfs://QmSgEEQaKStnsX7aEApfjTT76FWRbAUYUr5pFV8XpRS6Mi](https://ipfs.io/ipfs/QmSgEEQaKStnsX7aEApfjTT76FWRbAUYUr5pFV8XpRS6Mi) often comes up especially in
+- What should one see when they access [ipfs://QmSgEEQaKStnsX7aEApfjTT76FWRbAUYUr5pFV8XpRS6Mi](https://ipfs.io/ipfs/QmSgEEQaKStnsX7aEApfjTT76FWRbAUYUr5pFV8XpRS6Mi) ?
+- Serving anything
