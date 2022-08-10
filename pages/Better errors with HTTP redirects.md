@@ -1,1 +1,1 @@
-- I think [[HTTP redirects]] are
+- I think [[HTTP redirects]] are a great way to provide a better error experience. Just telling a user
