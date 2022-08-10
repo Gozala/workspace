@@ -5,4 +5,4 @@ related:: https://hackmd.io/@gozala/w3-accounts
 - Furthermore it opens new interesting opportunities
 	- [[Crowdfund Accounts]]
 	- [[Programatic Accounts]]
-	-
+-
