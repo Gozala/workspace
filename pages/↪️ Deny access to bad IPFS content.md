@@ -7,4 +7,4 @@ reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336
 	- How do we came to that conclusion (E.g. google malware detection, GDPR take down request)
 - Doing this turns IPFS gateway into [[user agent]] trying to protect user as opposed to be portrayed as accomplice of the attack. In fact gateways could lean further into [[user agent]] role and proactively flag **unverified content** and maybe even provide toggle to a user to set the comfort level
 	- How aggressive it should be in terms of flagging content
-	- Allow
+	- Allow subscribing to user desired
