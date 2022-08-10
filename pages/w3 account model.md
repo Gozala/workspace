@@ -5,7 +5,7 @@
 - Anyone with `account/activate` capability (delegated from [[account DID]]) can activate account by providing a valid email verification proof (that has not been associated with other account).
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
 	  > We would not actually charge actual credit cards, but it would look and feel just the same
-- Excess account funds, that is
+- Excess account funds, that is amount not needed to pay for minimum 1TB or current used storage (whatev)
 - Accounts funds can be used to
 	- Pay for storage at the TBD rate.
 	- To transfer excess funds to other accounts
