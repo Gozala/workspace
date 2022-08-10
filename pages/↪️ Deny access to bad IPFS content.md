@@ -9,5 +9,5 @@ reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336
 	- How aggressive it should be in terms of flagging content
 	- Allow subscribing to user desired [[denylists]] (although doing that may prove a lot more challenging on server than on client end, but perhaps service workers can help with that)
 - Every time idea of enhancing IPFS gateway comes up it raises [[purity of content addressing dilemma]]. Perhaps with [[better errors with HTTP redirects]] we could have our cake and eat it too ? Address bar will always show a the right hash, if content navigated to is on denylist gateway will redirect to [[CID]] of a **block** for the original content.
-	-
+	- You can not see URL for embedded content (images, video, etc...) but that is ok
 -
