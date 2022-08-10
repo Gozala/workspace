@@ -4,5 +4,5 @@
   curl -s https://ipfs.io/ipfs/bafybeicaokx57ayyfig6e6zo6mxqzkxxc5m4ffghi65tgsuk6ftadby7fu | ipfs add --cid-version=1
   added bafkreicujuudjn3oipx7in5lhzeujmxsbnlxasqgnnyagvzszh4ftolazm bafkreicujuudjn3oipx7in5lhzeujmxsbnlxasqgnnyagvzszh4ftolazm
   ```
-- Now consider loading another directory [ipfs://bafybeibciltrcxuymp22e4x6fr4x2mbwp45r2sl7nrhpg4e4mcsomnfl3y](https://ipfs.io/ipfs/bafybeibciltrcxuymp22e4x6fr4x2mbwp45r2sl7nrhpg4e4mcsomnfl3y) here gateway will not even render dir
+- Now consider loading another directory [ipfs://bafybeibciltrcxuymp22e4x6fr4x2mbwp45r2sl7nrhpg4e4mcsomnfl3y](https://ipfs.io/ipfs/bafybeibciltrcxuymp22e4x6fr4x2mbwp45r2sl7nrhpg4e4mcsomnfl3y) here gateway will not even render directory with it's entries instead it loads
 -
