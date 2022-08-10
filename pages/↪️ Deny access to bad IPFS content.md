@@ -1,4 +1,4 @@
 reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336629
 
-- It looks like [IPFS is becoming new hotbed for phishing](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/ipfs-the-new-hotbed-of-phishing/), because
+- It looks like [IPFS is becoming new hotbed for phishing](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/ipfs-the-new-hotbed-of-phishing/), perhaps that is unsurprising because permissionless  IPFS censor resistant
 -
