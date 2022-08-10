@@ -1,1 +1,1 @@
-- HTTP errors provide poor user experience especially in content addressed systems.
+- I think [[HTTP redirects]] are
