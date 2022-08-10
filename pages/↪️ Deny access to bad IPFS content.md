@@ -4,5 +4,5 @@ reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336
 - There are effort to address this by creating standard [[denylist format for IPFS Gateways]]
 - Consensus seems to be around idea of **denylists** that various services could share among each other to recognize bad content and deny access to it. However interesting question is how do we communicate with a user that content they are trying to access was blocked because it is a [[phishing attack]] ? I would argue that we can have a [[better errors with HTTP redirects]] as we could render an explanation of
 	- Why access to content has been denied
-	- How do we came to that conclusion (E.g. google malware detection provided informed us)
-	-
+	- How do we came to that conclusion (E.g. google malware detection, GDPR take down request)
+- This provides
