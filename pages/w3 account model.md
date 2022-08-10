@@ -10,4 +10,4 @@
 	- Pay for other features e.g. pinning service
 - Anyone could setup an autopay for an account via `account/autopay` with upper limit.
 	- Accounts with autopay are charged the upper limit during setup transferring increasing account balance & capacity.
-	- On next billing cycle
+	- On next billing f
