@@ -11,4 +11,3 @@
     script endpoints. This helps guard against cross-site scripting attacks
     ([Cross-site_scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)).
 - IPFS Gateways could set `Content-Security-Policy` which would preventing accessing any external content (Any URLs outside of gateway domain), rendering phishing attacks ineffective, since it would be impossible to steal a victims data. In fact [violation reporter](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP#enabling_reporting) could be set up as well, which could feed some data into [[denylists]]
-	- ⚠️ I am not sure if CSPs could be used to prevent links to other domains as well.

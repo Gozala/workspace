@@ -12,4 +12,3 @@ reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336
 	- You can not see URL for embedded content (images, video, etc...) but that is ok if those are redirected to HTML page of the block they will fail to load.
 	- In case of iframes you will end up with a different page even though it's `src` attribute will have different hash. However if you're inspecting iframe `src` you should probably consider that it may not reflect actual page loaded as it often is with any dynamic content.
 - We should also consider preventing phishing by better [[IPFS Content-Security-Policy]]
-- #
