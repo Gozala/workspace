@@ -1,3 +1,4 @@
 reply-to:: https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1659406411336629
 
-- It looks like
+- It looks like [IPFS is becoming new hotbed for phishing](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/ipfs-the-new-hotbed-of-phishing/), because
+-
