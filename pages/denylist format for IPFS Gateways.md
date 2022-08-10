@@ -1,1 +1,1 @@
-- Proposal
+- [IPIP: format for denylists for IPFS Nodes and Gateways](https://github.com/ipfs/specs/pull/299) proposal
