@@ -1,3 +1,3 @@
 related:: https://www.notion.so/just-ship-something-that-takes-credit-cards-7ebae777b5fc43369213d9aed04bf9a0
 
-On blockchain you can transfer funds from your account to anyone else's. In hindsight it is obvious, our services should allow anyone to transfer funds from their credit card to any [[did:key]]. Our services don't need to care who
+On blockchain you can transfer funds from your account to anyone else's. In hindsight it is obvious, our services should allow anyone to transfer funds from their credit card to any [[did:key]]. This would enable some really interesting
