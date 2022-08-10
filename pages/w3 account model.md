@@ -1,4 +1,4 @@
 - Account is identified via [[did:key]] identifier
 - Unknown [[did:key]] identifier represents **inactive account**. System does not track such accounts and treats them as an account with `0` balance / capacity.
-- Anyone could activate account by transferring TBD amount of funds to it.
-- Activated account
+- Anyone could activate account by transferring TBD amount of funds to it increasing it's capacity to TBD default.
+-
