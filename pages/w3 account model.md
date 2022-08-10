@@ -11,5 +11,5 @@
 - Anyone could setup an autopay for an account via `account/autopay` to purchase specified capacity on each billing cycle.
 	- Accounts with autopay are charged the specified amount on setup.
 	- On next billing cycle autopay will charge amount necessary to fund specified capacity. If account has not used purchased capacity in last cycle funds from last cycle carry over, meaning autopay will only charge for used capacity.
-	- Second actor could also purchase more capacity by setting another autopay. In such scenario second card gets charged on next billing cycle if account goes beyond previous upper limit or if first card failed to pay.
+	- Second actor could also purchase more capacity by setting another autopay. In such scenario second card only gets charged if account goes beyond prior capacity.
 	- If charging a credit card fails on billing cycle it's balance become negative and writing to that account will be denied until funds are going to become available again.
