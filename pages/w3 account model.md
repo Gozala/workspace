@@ -7,4 +7,5 @@
 	- Pay for storage at the TBD rate.
 	- To transfer excess funds to other accounts
 	  > ⚠️ This implies user holding one account could open as many other accounts as desired, so we need to make sure the price we charge for 1TB is no greater than amount needed to activate new account otherwise users will be incentivized to open new accounts instead.
-	-
+	- Pay for other features e.g. pinning service
+- Accounts could be
