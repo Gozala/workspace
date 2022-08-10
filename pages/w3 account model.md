@@ -5,4 +5,5 @@
 	- When this happens our `did:key:zTreasury` account will transfer TBD amount of funds to account been activated increasing it's storage capacity to 1TB.
 - Accounts funds can be used to
 	- Pay for storage at the TBD rate.
-	- To transfer excess funds to other accounts (This implies user holding one account can open many other )
+	- To transfer excess funds to other accounts
+	  > This implies user holding one account could open as many other accounts as desired, so we need to make sure the price we charge for 1TB is
