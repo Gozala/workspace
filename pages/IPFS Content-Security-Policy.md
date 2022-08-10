@@ -10,4 +10,4 @@
     given page. With a few exceptions, policies mostly involve specifying server origins and
     script endpoints. This helps guard against cross-site scripting attacks
     ([Cross-site_scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)).
-- IPFS Gateways could set `Content-Security-Policy` which would preventing loading any external content rendering phishing attacks ineffective since it would be impossible to steal victims data
+- IPFS Gateways could set `Content-Security-Policy` which would preventing accessing any external content (Any URLs outside of gateway domain), rendering phishing attacks ineffective since it would be impossible to steal victims data
