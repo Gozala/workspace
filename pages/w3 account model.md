@@ -1,0 +1,2 @@
+- Account is identified via [[did:key]] identifier
+-
