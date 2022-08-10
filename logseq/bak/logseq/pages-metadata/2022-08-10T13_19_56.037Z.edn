@@ -198,7 +198,7 @@
   :block/updated-at 1645032552464}
  {:block/name "aug 10th, 2022",
   :block/created-at 1660083950540,
-  :block/updated-at 1660134574247}
+  :block/updated-at 1660122711103}
  {:block/name "aug 16th, 2021",
   :block/created-at 1629072000000,
   :block/updated-at 1629072000000}
@@ -291,7 +291,7 @@
   :block/updated-at 1645032552466}
  {:block/name "crowdfund accounts",
   :block/created-at 1660121995326,
-  :block/updated-at 1660135093760}
+  :block/updated-at 1660121995326}
  {:block/name "dag",
   :block/created-at 1645032552466,
   :block/updated-at 1645032552466}
@@ -493,9 +493,6 @@
  {:block/name "ipfs across environments",
   :block/created-at 1645032552453,
   :block/updated-at 1645032552453}
- {:block/name "ipfs content-security-policy",
-  :block/created-at 1660130589621,
-  :block/updated-at 1660130589621}
  {:block/name "ipfs desktop",
   :block/created-at 1645032552455,
   :block/updated-at 1645032552455}
@@ -909,7 +906,7 @@
   :block/updated-at 1645032552453}
  {:block/name "w3 accounts",
   :block/created-at 1659974240424,
-  :block/updated-at 1660134588255}
+  :block/updated-at 1660122041478}
  {:block/name "wait",
   :block/created-at 1645032552445,
   :block/updated-at 1645032552445}
