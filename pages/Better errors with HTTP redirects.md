@@ -1,1 +1,1 @@
--
+- HTTP errors provide poor user experience especially in content addressed systems.
