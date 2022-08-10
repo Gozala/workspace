@@ -4,4 +4,5 @@
 - Anyone with `account/activate` capability from the account DID could activate account by providing valid email verification proof.
 	- When this happens our `did:key:zTreasury` account will transfer TBD amount of funds to account been activated increasing it's storage capacity to 1TB.
 - Accounts funds can be used to
-	- Pay for storage
+	- Pay for storage at the TBD rate.
+	- To transfer funds to other accounts
