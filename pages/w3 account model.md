@@ -10,6 +10,6 @@
 - Account funds can also be allocated to pay for other features e.g. for pinning service.
 - Anyone could setup an autopay for an account via `account/autopay` to purchase specified capacity on each billing cycle.
 	- Accounts with autopay are charged the specified amount on setup.
-	- On next billing cycle autopay will charge amount necessary to fund specified capacity. If account has not used purchased capacity in last cycle  funds for remainder carries over meaning that card will be only charged for capacity actually used.
-	- Second actor could further increase upper limit by setting up another card into autopay. In such scenario second card only gets charged on next billing cycle if account went beyond previous upper limit or if first card failed to pay.
+	- On next billing cycle autopay will charge amount necessary to fund specified capacity. If account has not used purchased capacity in last cycle funds from last cycle carry over, meaning autopay will only charge for used capacity.
+	- Second actor could also purchase more capa increase upper limit by setting up another card into autopay. In such scenario second card only gets charged on next billing cycle if account went beyond previous upper limit or if first card failed to pay.
 	- If charging a credit card fails on billing cycle it's balance become negative and writing to that account will be denied until funds are going to become available again.
