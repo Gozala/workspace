@@ -1,1 +1,1 @@
-- I think [[HTTP redirects]] provide a better error experience. If you just tell the user that error has occurred there is no
+- I think [[HTTP redirects]] provide a better error experience. If you just tell the user that error has occurred there is not much they can do other than get frustrated with a brittle software. On the other hand when you redirect a user
