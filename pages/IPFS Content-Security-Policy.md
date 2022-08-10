@@ -5,4 +5,4 @@
     given page. With a few exceptions, policies mostly involve specifying server origins and
     script endpoints. This helps guard against cross-site scripting attacks
     ([Cross-site_scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)).
--
+- Phishing attacks
