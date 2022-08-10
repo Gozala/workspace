@@ -1,3 +1,3 @@
 - Account is identified via [[did:key]] identifier
-- Unknown [[did:key]] identifier is valid account (that system does not track) with `0` balance & `0` capacity.
+- Unknown [[did:key]] identifier represents **inactive account**. System does not track such accounts and treats them  with `0` balance & `0` capacity.
 - Anyone could activate account
