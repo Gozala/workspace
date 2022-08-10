@@ -4,6 +4,7 @@
 - Account can be activated by anyone, by transferring enough funds and increasing capacity to `>0`.
 - Anyone with `account/activate` capability (delegated from [[account DID]]) can activate account by providing a valid email verification proof (that has not been associated with other account).
 	- On activation `did:key:zTreasury` will transfer enough funds into account to increase it's capacity to 1TB.
+	- Accounts will not be allow
 - Accounts funds can be used to
 	- Pay for storage at the TBD rate.
 	- To transfer excess funds to other accounts
