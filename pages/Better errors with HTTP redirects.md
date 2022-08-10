@@ -1,1 +1,1 @@
-- I think [[HTTP redirects]] provide a better error experience. If you just tell the user that error has occurred there is not much they can do other than get frustrated with a brittle software. On the other hand when you redirect user to the page
+- I think [[HTTP redirects]] provide a better error experience. If you just tell the user that error has occurred there is not much they can do other than get frustrated with a brittle software. With redirect you not only can tell user about the problem that has occurred but also explain what
