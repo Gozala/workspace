@@ -3,4 +3,4 @@
 - Anyone could activate account by transferring TBD amount of funds and increasing it's storage capacity to 1TB.
 - Anyone with `account/activate` capability from the account DID could activate account by providing valid email verification proof.
 	- When this happens our `did:key:zTreasury` account will transfer TBD amount of funds to account been activated increasing it's storage capacity to 1TB.
-- Active accounts are not allowed to deplete their funds and go below TBD amount.
+- Accounts balance i
