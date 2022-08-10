@@ -1,0 +1,1 @@
+- We can think of arbitrary [[did:key]] as an account in the network. If we have never heard of DID it is a new account with
