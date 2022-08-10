@@ -8,8 +8,8 @@
 - Excess account funds, that is amount not needed to pay for minimum 1TB or currently used storage (whatever's greatest) could be transferred to other accounts.
   > This implies that you can't just create new accounts to overcome free 1TB limit. And this new accounts may have capacity smaller than 1TB.
 - Account funds can also be allocated to pay for other features e.g. for pinning service.
-- Anyone could setup an autopay for an account via `account/autopay` to purchase specified capacity.
-	- Accounts with autopay are charged the specified amount  during setup transferring increasing account balance & capacity.
-	- On next billing card linked to autopay is charged to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used.
+- Anyone could setup an autopay for an account via `account/autopay` to purchase specified capacity on each billing cycle.
+	- Accounts with autopay are charged the specified amount on setup.
+	- On next billing cycle autopay will charge to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used.
 	- Second actor could further increase upper limit by setting up another card into autopay. In such scenario second card only gets charged on next billing cycle if account went beyond previous upper limit or if first card failed to pay.
 	- If charging a credit card fails on billing cycle it's balance become negative and writing to that account will be denied until funds are going to become available again.
