@@ -6,12 +6,8 @@
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
 	  > We would not actually charge actual credit cards, but it would look and feel just the same
 - Excess account funds, that is amount not needed to pay for minimum 1TB or currently used storage (whatever's greatest) could be transferred to other accounts.
-  > This implies that you can't just create new accounts to overcome free 1TB limit. And new accounts
-- Accounts funds can be used to
-	- Pay for storage at the TBD rate.
-	- To transfer excess funds to other accounts
-	  > ⚠️ This implies user holding one account could open as many other accounts as desired, so we need to make sure the price we charge for 1TB is no greater than amount needed to activate new account otherwise users will be incentivized to open new accounts instead.
-	- Pay for other features e.g. pinning service
+  > This implies that you can't just create new accounts to overcome free 1TB limit. And this new accounts may have capacity smaller than 1TB.
+- Excess accounts
 - Anyone could setup an autopay for an account via `account/autopay` with upper limit.
 	- Accounts with autopay are charged the upper limit during setup transferring increasing account balance & capacity.
 	- On next billing card linked to autopay is charged to maintain it's capacity. If account did not used it's full capacity funds for remainder carries over meaning that card will be only charged for capacity actually used.
