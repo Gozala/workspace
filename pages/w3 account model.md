@@ -5,7 +5,7 @@
 - Anyone with `account/activate` capability (delegated from [[account DID]]) can activate account by providing a valid email verification proof (that has not been associated with other account).
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
 	  > We would not be moving actual money or charging credit cards in this process, but will create same transaction log as when regular account funds another.
-- Account funds are used to pay for
+- Account funds needed to pay for
 - Excess account funds (amount past what is needed for rent for minimum 1TB or currently used storage (whatever's greatest) could be transferred to other accounts.
   > This implies that you can't just create new accounts to overcome free 1TB limit. And this new accounts may have capacity smaller than 1TB.
 - Account funds can also be allocated to pay for other features e.g. for pinning service.
