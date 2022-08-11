@@ -6,7 +6,7 @@
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
 	  > We would not be moving actual money or charging credit cards in this process, but will create same transaction log as when regular account funds another.
 - Account funds needed to pay for minimum [[storage capacity]], that is used storage or 1TB whichever's greater) get locked at every billing cycle to pay for service.
-- When account
+- When new data is added to an account corresponding funds get
 - Excess account funds (amount past what is needed for rent for minimum 1TB or currently used storage (whatever's greatest) could be transferred to other accounts.
   > This implies that you can't just create new accounts to overcome free 1TB limit. And this new accounts may have capacity smaller than 1TB.
 - Account funds can also be allocated to pay for other features e.g. for pinning service.
