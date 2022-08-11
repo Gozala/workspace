@@ -4,7 +4,7 @@
 - Account can be activated by anyone, by transferring enough funds and increasing capacity to `>0`.
 - Anyone with `account/activate` capability (delegated from [[account DID]]) can activate account by providing a valid email verification proof (that has not been associated with other account).
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
-	  > We would not actually charge actual credit cards, but it would look and feel just the same
+	  > We would not be moving actual money or charging credit cards in this process, but it would look and feel just the same
 - Excess account funds, that is amount not needed to pay for minimum 1TB or currently used storage (whatever's greatest) could be transferred to other accounts.
   > This implies that you can't just create new accounts to overcome free 1TB limit. And this new accounts may have capacity smaller than 1TB.
 - Account funds can also be allocated to pay for other features e.g. for pinning service.
