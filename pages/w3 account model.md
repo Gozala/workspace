@@ -1,6 +1,6 @@
 - Account is identified via [[did:key]] identifier
 - Unknown [[did:key]] identifier represents [[inactive account]]. System does not track such accounts and treats them similar to accounts with `0` balance.
-- User can [[activate account]] via `account/register` capability (that MUST be delegated )
+- User can [[activate account]] via `account/register` capability, that can be derived from  (that MUST be delegated by [[account DID]]) which must provide `email/verify`
 - Account [[storage capacity]] is derived from [[account balance]] by a TBD formula.
 - Account can be activated by anyone, by transferring enough funds to result in non zero capacity.
 	- TODO Work out inconsistency with 1TB minimum capacity requirement for regular accounts. E.g. if we remove 1TB minimum it would
