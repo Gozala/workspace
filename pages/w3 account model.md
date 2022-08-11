@@ -1,7 +1,7 @@
 - Account is identified via [[did:key]] identifier
 - Unknown [[did:key]] identifier represents **inactive account**. System does not track such accounts and treats them similar to accounts with `0` balance.
 - Account [[storage capacity]] is derived from [[account balance]] by a TBD formula.
-- Account can be activated by anyone, by transferring enough funds and increasing capacity to `>0`.
+- Account can be activated by anyone, by transferring enough funds to increase capacity to `>0`.
 - Anyone with `account/activate` capability (delegated from [[account DID]]) can activate account by providing a valid email verification proof (that has not been associated with other account).
 	- On activation `did:key:zTreasury` will transfer enough funds into account to maintain 1TB capacity.
 	  > We would not be moving actual money or charging credit cards in this process, but will create same transaction log as when regular account funds another.
