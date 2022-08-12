@@ -68,4 +68,4 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 - Now that we have primitives to spawn tasks and invoke foreign functions our VM can do just about anything. Furthermore we could define additional capabilities like [[leveldown]] API and expose those through the VM natively or better yet via [[FFI]]
 - It is also worth pointing out that [[ucanto]] fits perfectly into all this! ucanto endpoint has associated [[Service DID]] which can be used as an [[Account DID]] for deployment. [[ucanto]] services also just takes CAR with [[UCAN Invocation]]s and acts on them.
 	- Only thing that does not fit perfectly yet is that response is [[CBOR]] as opposed to [[CAR]] but we could easily fix that.
-	- As a result you
+	- As a result we end up with a network of services that can delegate tasks to one another.
