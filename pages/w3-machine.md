@@ -41,6 +41,8 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- We can define `system/invoke` capability/instruction which would delegate invocation to a foreign functions over HTTP API.
 	- ```ts
 	  interface SystemInvoke {
-	    can
+	    can: "system/invoke",
+	    with: AccountDID,
+	    
 	  }
 	  ```
