@@ -5,7 +5,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- [[UCAN invocation]]s represent VM instructions - tasks that can be scheduled. This implies that all the existing operations like `store/add`, `store/remove` are VM instructions.
 	- Set of **concurrent** [[UCAN invocations]] conveniently can be represented via [[CAR]] files. This 
 	   important trait is called [[homoiconicity]] in [[land of lisp]] and refer to the *duality between code and data*, that allows computers to treat instructions in a [programming language](https://en.wikipedia.org/wiki/Programming_language) as data handled by a [running program](https://en.wikipedia.org/wiki/Execution_(computing)).
-	- To schedule some task(s) they first need to be encoded into  
+	- To schedule some task(s) agent needs to supply system a set of invocations in form of [[CAR]] file. We already have an protocol for this represented by [[store/add capability]]
 	  
 	  ```ts
 	  interface StoreAdd {
@@ -17,4 +17,4 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	  type CarCID = CID
 	  type AccountDID = `did:key:${string}`
 	  ```
--
+	- When service gets `store/add` invocation it
