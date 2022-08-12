@@ -22,19 +22,19 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- As we have established we have some nice [[homoiconicity]] going for us, meaning agent can
 		- Encode set of invocations/instructions in a [[CAR]] file.
 		- Make instruction set available to a VM using `store/add`.
-	- Schedule invocations using `system/enqueue` invocation
+	- Schedule invocations using `system/spawn` invocation
 	  
 	  > Let's get nerdy here! We've just introduces [meta-circular evaluator](https://en.wikipedia.org/wiki/Meta-circular_evaluator) 🤯. You know how in lisp you can quote arbitrary expressions so they can be transformed as lists and evaluated at will ? Well that is what we have going on here, our [s-expression](https://en.wikipedia.org/wiki/S-expression) is a [[CAR]], [[store/add]] capability corresponds to quoting, and [[system/enqueue]] corresponds to [[eval]]
-- So we could schedule task(s) for execution via [[system/enqueue capability]] that can be represented as follows
+- So we could schedule task(s) for execution via [[system/spawn capability]] that can be represented as follows
   
   ```ts
-  interface SystemEnqueue {
-    can: "system/enqueue"
+  interface SystemSpawn {
+    can: "system/spawn"
     with: AccountDID // account that is billed for execution
     task: CarCID
   }
   ```
-	- Idea is that VM will unpack the [[CAR]] and schedule each [[UCAN invocation]] for an execution.
+	- Idea is that VM will unpacks the [[CAR]] and schedule each [[UCAN invocation]] for an execution.
 - ## Control Flow
 	- For our VM to be of any use we need to support a lot more instructions. Some obvious ones would just correspond to [[leveldown]] APIs, still any real program would needs some control flow instructions
 		- While defining control flow instructions and creating a new programming language in the process is exciting, it is an overkill, instead our VM will have a Foreign Function Interface ([[FFI]])
