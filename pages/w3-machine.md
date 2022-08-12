@@ -24,5 +24,5 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 		- Make instruction set available to a VM using `store/add`.
 		- Schedule invocations using `system/enqueue` invocation
 		  
-		  > Let's get nerdy here! We've just introduces [meta-circular evaluator](https://en.wikipedia.org/wiki/Meta-circular_evaluator) 🤯. You know how in lisp you can quote arbitrary expressions so they can be transformed as lists and evaluated at will ? Well that is what we have going on here, our [s-expression](https://en.wikipedia.org/wiki/S-expression) is a [[CAR]]
+		  > Let's get nerdy here! We've just introduces [meta-circular evaluator](https://en.wikipedia.org/wiki/Meta-circular_evaluator) 🤯. You know how in lisp you can quote arbitrary expressions so they can be transformed as lists and evaluated at will ? Well that is what we have going on here, our [s-expression](https://en.wikipedia.org/wiki/S-expression) is a [[CAR]], [[store/add]] capability corresponds to quoting,
 		-
