@@ -47,4 +47,4 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	    data: CarCID  // DATA send to endpoint
 	  }
 	  ```
-	- When scheduler executes [[system/invoke capability]] it sends
+	- When scheduler executes [[system/invoke capability]] it sends `data` [[CAR]] file to the designated `url` via HTTP POST request.
