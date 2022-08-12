@@ -28,5 +28,9 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 - So we could schedule task(s) for execution via [[system/enqueue capability]] that can be represented as follows
   
   ```ts
-  
+  interface SystemEnqueue {
+    can: "system/enqueue"
+    with: AccountDID // account that is billed for execution
+    code: CarCID
+  }
   ```
