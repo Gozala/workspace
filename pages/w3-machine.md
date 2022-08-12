@@ -17,4 +17,5 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	  type CarCID = CID
 	  type AccountDID = `did:key:${string}`
 	  ```
-	- When service gets `store/add` invocation it issues [AWS presigned URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html) where that ex
+		- When service gets `store/add` invocation it issues [AWS presigned URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html) where [[CAR]] with that exact [[CID]] can be written.
+		- Conceptually this in
