@@ -50,7 +50,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	    code: { type: "rest", url: URL }
 	  }
 	  ```
-	- We can define [[system/invoke capability]], an instruction which would call a foreign functions over HTTP REST API.
+	- Deployed functions could be invoked using [[system/invoke capability]], an instruction which would call a foreign functions over HTTP REST API.
 	- ```ts
 	  interface SystemInvoke {
 	    can: "system/invoke"
