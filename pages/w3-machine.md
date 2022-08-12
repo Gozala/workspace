@@ -50,4 +50,4 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- When scheduler executes [[system/invoke capability]] it sends `data` [[CAR]] file to the designated `url` via HTTP POST request.
 	- Response from the endpoint MUST be a [[CAR]] file, representing a [[continuation]] that is scheduled to a **same account** via [[system/enqueue capability]].
 		- This allows foreign functions to write results into arbitrary accounts given a right capabilities.
-		  > ⚠️ [[FFI]] endpoint is expected to have a known [[did:key]] identifier so that necessary capabilities could be delegated to it and passed to it on invocation. This would allow it to perform rights
+		  > ⚠️ [[FFI]] endpoint is expected to have a known [[did:key]] identifier so that necessary capabilities could be delegated to it and passed to it on invocation. This would allow it to perform other operations that update accounts
