@@ -42,7 +42,14 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 		- In the future we could allow deploying [[WASM]] programs or [[JS]] functions that we could run.
 		- ⚠️ It is important to deploy function because it gives it a [[did:key]] that can be used to delegate capabilities to it.
 		  > General idea is that dev will create an account for the program expose it's private key to program so that when invoked it could authorize/sign followup actions and make use of capabilities delegated to it.
-	-
+	- We can define [[system/deploy capability]] as follows
+	  ```ts
+	  interface SystemDeploy {
+	    can: "system/deploy"
+	    with: AccountDID
+	    url: URL
+	  }
+	  ```
 	- We can define [[system/invoke capability]], an instruction which would call a foreign functions over HTTP REST API.
 	- ```ts
 	  interface SystemInvoke {
