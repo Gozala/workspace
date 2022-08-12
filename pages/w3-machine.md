@@ -39,7 +39,8 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- For our VM to be of any use we need to support a some more instructions, e.g we could map a [[leveldown]] APIs to corresponding capabilities. Still, any real program needs some control flow instructions
 		- While defining control flow instructions and creating a new programming language in the process is exciting, it would be an overkill, instead our VM will have a Foreign Function Interface ([[FFI]])
 	- Foreign functions can be deployed via [[system/deploy capability]] which associates HTTP REST endpoint with an [[Account DID]].
-	  > ⚠️ It is important to deploy functions because that gives it a [[did:key]] that can be used to delegate it other capabilities to 
+	  > ⚠️ It is important to deploy functions because that gives it a [[did:key]] that can be used to delegate it other capabilities it can utilize
+	  
 	  > General idea is that dev will create an account for the program expose it's private key to program so that when invoked it could authorize/sign followup actions and make use of capabilities delegated to it.
 	- We can define [[system/deploy capability]] as follows
 	  ```ts
@@ -49,6 +50,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	    code: { type: "rest", url: URL }
 	  }
 	  ```
+		- In the future we could allow deploying [[WASM]] programs or [[JS]] functions that we could run.
 	- Deployed [[FFI]] functions can be invoked using [[system/invoke capability]] defined as
 	- ```ts
 	  interface SystemInvoke {
