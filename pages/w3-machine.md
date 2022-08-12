@@ -54,9 +54,12 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- ```ts
 	  interface SystemInvoke {
 	    can: "system/invoke"
-	    with: FunctionDID // It is an Account DID function was deployed at
+	    with: ForeignFunctionDID
 	    data: CarCID  // DATA send to endpoint
 	  }
+	  
+	  // It is an Account DID function was deployed at
+	  type ForeignFunctionDID = AccountDID
 	  ```
 	- When scheduler executes [[system/invoke capability]] it sends `data` [[CAR]] file to the designated `url` via HTTP POST request.
 	- Response from the endpoint MUST be a [[CAR]] file, representing a [[continuation]] that is scheduled to a **same account** as original [[system/enqueue capability]] that initiated the task.
