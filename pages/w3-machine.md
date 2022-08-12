@@ -54,8 +54,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- ```ts
 	  interface SystemInvoke {
 	    can: "system/invoke"
-	    with: AccountDID // account billed for execution
-	    url: URL // REST endpoint
+	    with: FunctionDID // It is an Account DID function was deployed at
 	    data: CarCID  // DATA send to endpoint
 	  }
 	  ```
