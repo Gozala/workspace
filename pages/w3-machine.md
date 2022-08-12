@@ -24,4 +24,5 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 		- Make instruction set available to a VM using `store/add`.
 		- Schedule invocations using `system/enqueue` invocation
 		  
-		  > Let's get nerdy here!
+		  > Let's get nerdy here! We've just introduces [Meta-circular evaluator](https://en.wikipedia.org/wiki/Meta-circular_evaluator)
+		-
