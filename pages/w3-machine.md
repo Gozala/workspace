@@ -5,7 +5,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- [[UCAN invocation]]s represent VM instructions - tasks that can be scheduled. This implies that all the existing operations like `store/add`, `store/remove` are VM instructions.
 	- Set of **concurrent** [[UCAN invocations]] conveniently can be represented via [[CAR]] files. This 
 	   important trait is called [[homoiconicity]] in [[land of lisp]] and refers to the *duality between code and data*, that allows computers to treat instructions in a [programming language](https://en.wikipedia.org/wiki/Programming_language) as data handled by a [running program](https://en.wikipedia.org/wiki/Execution_(computing)).
-	- To schedule some task(s) agent needs to supply system a set of invocations in form of [[CAR]] file. We already have an protocol for this represented by [[store/add capability]]
+	- To schedule some task(s) agent needs to supply system a set of invocations in form of [[CAR]] file. We already have a protocol for this represented by [[store/add capability]]
 	  
 	  ```ts
 	  interface StoreAdd {
@@ -20,7 +20,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 		- When service gets `store/add` invocation it issues [AWS presigned URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html) where [[CAR]] with that exact [[CID]] can be written.
 		- Conceptually this in equivalent of allocating some memory where you can write some data.
 	- As we have established we have some nice [[homoiconicity]] going for us, meaning agent can
-		- Encode set of invocations/instructions in a [[CAR]]
+		- Encode set of invocations/instructions in a [[CAR]] file.
 		- Make instruction set available to a VM using `store/add`.
 	- Schedule invocations using `system/enqueue` invocation
 	  
