@@ -66,4 +66,6 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- Response from the endpoint MUST be a [[CAR]] file that represents a [[continuation]], which is associated with a task that initiated the invocation.
 		- This allows foreign functions to write results into arbitrary accounts as long as they have capabilities to do so. Furthermore data passed into invocation could include delegated capabilities allowing it to decide where to write what dynamically.
 - Now that we have primitives to spawn tasks and invoke foreign functions our VM can do just about anything. Furthermore we could define additional capabilities like [[leveldown]] API and expose those through the VM natively or better yet via [[FFI]]
-- It is also worth pointing out that [[ucanto]] fits perfectly into all this! ucanto endpoint has associated [[Service DID]] which can be used as an [[Account DID]] for deployment. [[ucanto]] services also just takes CAR with [[UCAN Invocation]]s and acts on them. Only
+- It is also worth pointing out that [[ucanto]] fits perfectly into all this! ucanto endpoint has associated [[Service DID]] which can be used as an [[Account DID]] for deployment. [[ucanto]] services also just takes CAR with [[UCAN Invocation]]s and acts on them.
+	- Only thing that does not fit perfectly yet is that response is [[CBOR]] as opposed to [[CAR]] but we could easily fix that.
+	- As a result you
