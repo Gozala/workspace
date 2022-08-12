@@ -1,1 +1,2 @@
--
+- https://en.wikipedia.org/wiki/Foreign_function_interface
+  > A **foreign function interface** (**FFI**) is a mechanism by which a program written in one [programming language](https://en.wikipedia.org/wiki/Programming_language) can call routines or make use of services written in another.
