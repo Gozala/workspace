@@ -65,4 +65,5 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- When scheduler executes [[system/invoke capability]] it sends `data` [[CAR]] file to the designated `url` via HTTP POST request.
 	- Response from the endpoint MUST be a [[CAR]] file that represents a [[continuation]], which is associated with a task that initiated the invocation.
 		- This allows foreign functions to write results into arbitrary accounts as long as they have capabilities to do so. Furthermore data passed into invocation could include delegated capabilities allowing it to decide where to write what dynamically.
-- Now that we have primitives to spawn tasks and invoke foreign functions our VM can do just about anything. Furthermore we could define additional native** capabilities like [[leveldown]] API and expose those through the VM or [[FFI]]
+- Now that we have primitives to spawn tasks and invoke foreign functions our VM can do just about anything. Furthermore we could define additional capabilities like [[leveldown]] API and expose those through the VM natively or better yet via [[FFI]]
+- It is also worth pointing out that
