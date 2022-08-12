@@ -38,7 +38,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 - ## Control Flow
 	- For our VM to be of any use we need to support a lot more instructions. Some obvious ones would just correspond to [[leveldown]] APIs, still any real program would needs some control flow instructions
 		- While defining control flow instructions and creating a new programming language in the process is exciting, it is overkill, instead our VM will have a Foreign function interface ([[FFI]])
-	- We can define `system/invoke` capability/instruction which would delegate invocation to a foreign functions over HTTP API.
+	- We can define [[system/invoke capability]] instruction which would delegate invocation to a foreign functions over HTTP API.
 	- ```ts
 	  interface SystemInvoke {
 	    can: "system/invoke"
@@ -47,4 +47,4 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	    data: CarCID  // DATA send to endpoint
 	  }
 	  ```
-	-
+	- When scheduler executes [[system/invoke capability]]
