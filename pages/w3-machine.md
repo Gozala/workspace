@@ -34,7 +34,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
     task: CarCID
   }
   ```
-	- Idea is that VM will unpacks the [[CAR]] and schedule each [[UCAN invocation]] for an execution.
+	- Idea is that VM will unpacks the [[CAR]] and schedules each [[UCAN invocation]] in a concurrent task.
 - ## Control Flow
 	- For our VM to be of any use we need to support a lot more instructions. Some obvious ones would just correspond to [[leveldown]] APIs, still any real program would needs some control flow instructions
 		- While defining control flow instructions and creating a new programming language in the process is exciting, it is an overkill, instead our VM will have a Foreign Function Interface ([[FFI]])
