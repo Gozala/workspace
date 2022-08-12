@@ -37,4 +37,5 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- Idea is that VM will unpack the [[CAR]] and schedule each [[UCAN invocation]] for an execution.
 - ## Control Flow
 	- For our VM to be of any use we need to support a lot more instructions. Some obvious ones would just correspond to [[leveldown]] APIs, still any real program would needs some control flow instructions
-		- While defining control flow instructions and creating a new programming language in the process is exciting, it is overkill, instead our VM will have web native FFI
+		- While defining control flow instructions and creating a new programming language in the process is exciting, it is overkill, instead our VM will have a Foreign function interface ([[FFI]])
+	- We can define
