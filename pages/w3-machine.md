@@ -35,4 +35,4 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
   }
   ```
 	- Idea is that VM will unpack the [[CAR]] and schedule each [[UCAN invocation]] for an execution.
-- Ok for this to be of any use we'll need to define some more instructions. Some obvious one would be to provide
+- Ok for this to be of any use we'll need to define some more instructions. Some obvious one would be to represent [[leveldown]] API in terms of [[UCAN Invocation]]s.
