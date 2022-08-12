@@ -31,8 +31,8 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
   interface SystemEnqueue {
     can: "system/enqueue"
     with: AccountDID // account that is billed for execution
-    code: CarCID
+    task: CarCID
   }
   ```
 	- Idea is that VM will unpack the [[CAR]] and schedule each [[UCAN invocation]] for an execution.
-- Ok for this to be of any use scheduled invocations should have a way of running some code
+- Ok for this to be of any use scheduled invocations should have a way of running some code,
