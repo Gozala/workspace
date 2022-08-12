@@ -40,7 +40,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 		- While defining control flow instructions and creating a new programming language in the process is exciting, it is overkill, instead our VM will have a Foreign function interface ([[FFI]])
 	- We can deploy foreign functions via [[system/deploy capability]] that will associates HTTP REST endpoint with an [[Account DID]].
 		- In the future we could allow deploying [[WASM]] programs or [[JS]] functions that we could run.
-		- ⚠️ It is important to deploy function because it gives
+		- ⚠️ It is important to deploy function because it gives it a [[did:key]] that will be used to delegate capabilities. Gene
 	- We can define [[system/invoke capability]], an instruction which would call a foreign functions over HTTP REST API.
 	- ```ts
 	  interface SystemInvoke {
