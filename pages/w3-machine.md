@@ -22,4 +22,6 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- As we have established we have some nice [[homoiconicity]] going for us, meaning agent can
 		- Encode set of invocations/instructions in a [[CAR]]
 		- Make instruction set available to a VM using `store/add`.
-		- Schedule invocations using `vm/enqueue`
+		- Schedule invocations using `system/enqueue` invocation
+		  
+		  > Let's get nerdy here!
