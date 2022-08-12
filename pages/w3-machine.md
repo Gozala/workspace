@@ -36,9 +36,9 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
   ```
 	- Idea is that VM will unpacks the [[CAR]] and schedules each [[UCAN invocation]] in a concurrent task.
 - ## Control Flow
-	- For our VM to be of any use we need to support a some more instructions, e.g we could map a [[leveldown]] APIs to corresponding capabilities. still any real program would needs some control flow instructions
-		- While defining control flow instructions and creating a new programming language in the process is exciting, it is an overkill, instead our VM will have a Foreign Function Interface ([[FFI]])
-	- We can deploy foreign functions via [[system/deploy capability]] that will associates HTTP REST endpoint with an [[Account DID]].
+	- For our VM to be of any use we need to support a some more instructions, e.g we could map a [[leveldown]] APIs to corresponding capabilities. Still, any real program needs some control flow instructions
+		- While defining control flow instructions and creating a new programming language in the process is exciting, it would be an overkill, instead our VM will have a Foreign Function Interface ([[FFI]])
+	- Foreign functions can be deployed via [[system/deploy capability]] that will associates HTTP REST endpoint with an [[Account DID]].
 		- In the future we could allow deploying [[WASM]] programs or [[JS]] functions that we could run.
 		- ⚠️ It is important to deploy function because it gives it a [[did:key]] that can be used to delegate capabilities to it.
 		  > General idea is that dev will create an account for the program expose it's private key to program so that when invoked it could authorize/sign followup actions and make use of capabilities delegated to it.
