@@ -52,8 +52,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	  ```
 		- In the future we could allow deploying [[WASM]] programs or [[JS]] functions that we could run.
 	- Deployed [[FFI]] functions can be invoked using [[system/invoke capability]] defined as
-	- ```ts
-	  interface SystemInvoke {
+	- interface SystemInvoke {
 	    can: "system/invoke"
 	    with: ForeignFunctionDID
 	    data: CarCID  // DATA send to endpoint
@@ -61,7 +60,6 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	  
 	  // It is just an Account DID where function is deployed
 	  type ForeignFunctionDID = AccountDID
-	  ```
 	- When scheduler executes [[system/invoke capability]] it sends `data` [[CAR]] file to the designated `url` via HTTP POST request.
 	- Response from the endpoint MUST be a [[CAR]] file that represents a [[continuation]], which is associated with a task that initiated the invocation.
 		- This allows foreign functions to write results into arbitrary accounts as long as they have capabilities to do so. Furthermore data passed into invocation could include delegated capabilities allowing it to decide where to write what dynamically.
