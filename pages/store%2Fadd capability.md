@@ -1,0 +1,3 @@
+title:: store/add capability
+
+-
