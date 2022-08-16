@@ -2,4 +2,5 @@ reply-to:: https://purrfect-tracker-45c.notion.site/ipfs-protocols-from-the-grou
 
 - [[@mikeal]] wrote wrote nice essay about use of sef-describing data in [[IPFS]] ecosystem. 
   > **self-description** is the principal that the *context necessary to interpret data should be included in the data itself*.
-- I have wondered why does self-describing principal has not been applied to [block](https://ipld.io/docs/intro/primer/#blocks-vs-nodes)s. Instead of including multiformat identifier for the ***codec***
+- I have wondered why does self-describing principal has not been applied to [block](https://ipld.io/docs/intro/primer/#blocks-vs-nodes)s. Instead of making blocks self-describing via
+- including [[multiformat]] identifier for the **codec**
