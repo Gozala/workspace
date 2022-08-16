@@ -1,3 +1,5 @@
 reply-to:: https://purrfect-tracker-45c.notion.site/ipfs-protocols-from-the-ground-f95cdf5d0fc14abda6df4ff16caaa4df
 
-- [[@mikeal]] wrote wrote nice essay about use of sef-describing data in [[IPFS]] ecosystem.
+- [[@mikeal]] wrote wrote nice essay about use of sef-describing data in [[IPFS]] ecosystem. 
+  > **self-description** is the principal that the *context necessary to interpret data should be included in the data itself*.
+- On many occasions I have
