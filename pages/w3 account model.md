@@ -24,6 +24,11 @@
      * for all it's donees.
      */
     donees: Set<Account>
+    
+    /**
+     * Set of CARs stored in this account
+     */
+    store: Map<CARLink, CAR>
   }
   
   interface AccountView extends Account {
