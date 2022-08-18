@@ -42,4 +42,4 @@
     return total
   }
   ```
--
+- Note that we could memoize Replica
