@@ -2,12 +2,12 @@
 - ```ts
   export interface Revision<Change> {
     of?: Link<Revision<Change>>
-    use: Change[]
+    : Change[]
   }
   ```
 - ```ts
   export interface Replica<Change> {
-    of: Chronicle<Change>
+    of: Link<Revision<Change>>
     code: 
   }
   ```
