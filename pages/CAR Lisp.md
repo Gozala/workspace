@@ -32,11 +32,14 @@
       | { syntax: "=", left: Term, right: Term }
       | { syntax: "not", left: Term }
   
+  type Reference =
+  	| 
+  
   
   type Term =
     | Switch
     | Invoke
-    | Link
+    | Reference
   
   
   
