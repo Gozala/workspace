@@ -8,6 +8,10 @@
 - ```ts
   export interface Replica<Change> {
     of: Link<Revision<Change>>
-    code: 
+    as: Link<Code>
   }
+  
+  export type Code =
+    | { type: "rest", url: `https:` }
   ```
+- Idea is that `Code` represents an `HTTP` endpoint which one could `POST`
