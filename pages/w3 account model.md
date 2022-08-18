@@ -37,7 +37,13 @@
     donors(): Set<Account>
     
     balance(): USD
+    
+    /**
+     * Account capacity is derived from it's balance.
+     */
+    capacity(): number
   }
   
   type USD = `${number}USD`
+  type DID = `did:key:${string}`
   ```
