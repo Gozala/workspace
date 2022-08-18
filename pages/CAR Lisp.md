@@ -12,9 +12,11 @@
   
   type Case = {
     syntax: "case"
-    condition: Expression
-    
+    match: Pattern
+    body: Term
   }
+  
+  
   
   type Invoke = {
     procedure: Expression
