@@ -1,4 +1,29 @@
 - What if we defined kind of Lisp in CAR format. We just need a minimal set of operations that would need to be supported
 - ```ts
+  type FFI =
+   { syntax: "FFI", type: "rest", url: `${string}:${string}` }
+  
+  
+  type Switch = {
+    syntax: "switch"
+    cases: Case[]
+    default: Expression
+  }
+  
+  type Case = {
+    syntax: "case"
+    condition: Expression
+    
+  }
+  
+  type Invoke = {
+    procedure: Expression
+    params: [Expression, ...Expression[]]
+  }
+  
+  type Expression =
+    | Switch
+    | Invoke
+  
   
   ```
