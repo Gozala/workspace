@@ -17,15 +17,16 @@
   }
   
   type Invoke = {
-    target: Term
+    syntax: "invoke"
+    target: Term | FFI
     params: Term[]
   }
   
-  type 
-  
-  type Expression =
+  type Term =
     | Switch
     | Invoke
+    | Link
+  
   
   
   ```
