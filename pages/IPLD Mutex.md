@@ -2,7 +2,7 @@
 - ```ts
   export interface Edition<Change> {
     on?: Link<Chronicle<Change>>
-    do: Change[]
+    use: Change[]
   }
   ```
 - ```ts
