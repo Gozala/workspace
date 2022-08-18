@@ -24,4 +24,10 @@
   export interface Endpoint<State, Change> {
     post(input: CAR<Input<State, Change>>): CAR<State>
   }
+  
+  interface CAR<Roots extends [...unknown[]]> extends Uint8Array {
+    [phantomData]?: { roots: Roots }              
+  }
+  
+  declare var phantomData:symbol
   ```
