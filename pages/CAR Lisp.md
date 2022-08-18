@@ -23,18 +23,16 @@
   }
   
   type BuiltIn =
-  	| { syntax: "<" }
-      | { syntax: ">" }
-      | { syntax: ">=" }
-  	| { syntax: "<=" }
-      | { syntax: "or" }
-      | { syntax: "and" }
-      | { syntax: "equal?" }
-      | { syntax: "not" }
+  	| { syntax: "<", left: Term, right: Term }
+      | { syntax: ">", left: Term, right: Term }
+      | { syntax: ">=", left: Term, right: Term }
+  	| { syntax: "<=", left: Term, right: Term }
+      | { syntax: "or", left: Term, right: Term }
+      | { syntax: "and", left: Term, right: Term }
+      | { syntax: "=", left: Term, right: Term }
+      | { syntax: "not", left: Term }
   
-  type Greater = {
-    term: Term
-  }
+  
   type Term =
     | Switch
     | Invoke
