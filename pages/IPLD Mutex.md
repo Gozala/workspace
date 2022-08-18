@@ -5,6 +5,6 @@
     do: Change[]
   }
   ```
-- ```
-  interface 
+- ```ts
+  export interface 
   ```
