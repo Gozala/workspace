@@ -1,1 +1,1 @@
-- Replica
+- [[Replica]] represents a state that can be derived by
