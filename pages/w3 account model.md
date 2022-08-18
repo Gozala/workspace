@@ -17,3 +17,8 @@
 	- On next billing cycle autopay will charge amount necessary to fund specified capacity. If account has not used purchased capacity in last cycle funds from last cycle carry over, meaning autopay will only charge for used capacity.
 	- Second actor could also purchase more capacity by setting another autopay. In such scenario second card only gets charged if account goes beyond prior capacity.
 	- If charging a credit card fails on billing cycle it's capacity is reduced accordingly. If account hold data over it's capacity storing more data into it will be denied.
+- ```ts
+  interface Account {
+    
+  }
+  ```
