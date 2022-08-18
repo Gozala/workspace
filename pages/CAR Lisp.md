@@ -10,6 +10,11 @@
     cases: Case[]
   }
   
+  type Do = {
+    syntax: "do"
+    body: Term[]
+  }
+  
   type Case = {
     syntax: "case"
     match: Pattern
@@ -32,8 +37,7 @@
       | { syntax: "=", left: Term, right: Term }
       | { syntax: "not", left: Term }
   
-  type Reference =
-  	| 
+  type Reference = Link
   
   
   type Term =
