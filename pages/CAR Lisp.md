@@ -16,12 +16,12 @@
     body: Term
   }
   
-  
-  
   type Invoke = {
     target: Term
-    params: [Expression, ...Expression[]]
+    params: Term[]
   }
+  
+  type 
   
   type Expression =
     | Switch
