@@ -20,22 +20,24 @@
 - ```ts
   interface Account {
     /**
-     * Accounts that are subsidized by this account. This account will be billed
-     * for all the donees.
+     * Accounts that are subsidized by this account. This account is billed
+     * for all it's donees.
      */
     donees: Set<Account>
-  
-    donee: Set<Account>
   }
   
   interface AccountView extends Account {
     /**
      * Virtual field 
      */
-    readonly did(): DID
+    did(): DID
     /**
      * Returns set of donor accounts that fund this account.
      */
-    readonly donors(): Set<Account>
+    donors(): Set<Account>
+    
+    balance(): USD
   }
+  
+  type USD = `${number}USD`
   ```
