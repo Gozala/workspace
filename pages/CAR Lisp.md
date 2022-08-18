@@ -6,8 +6,8 @@
   
   type Switch = {
     syntax: "switch"
+    term: Term
     cases: Case[]
-    default: Expression
   }
   
   type Case = {
