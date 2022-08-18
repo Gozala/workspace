@@ -1,1 +1,1 @@
-- What if we defined kind of Lisp in CAR format
+- What if we defined kind of Lisp in CAR format. We do not need that many opera
