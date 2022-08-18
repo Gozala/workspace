@@ -42,4 +42,4 @@
     return total
   }
   ```
-- Note that we could memoize `Replica` by it's CID and never have to recompute it again. In fact replica is simply `f(x)
+- Note that we could memoize `Replica` by it's CID and never have to recompute it again. In fact replica is simply a `f(x)` where both `f` and `x` are content addressed by their [[CID]].
