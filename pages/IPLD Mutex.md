@@ -1,1 +1,1 @@
-- [[Replica]] represents a state that can be derived by
+- [[Replica]] represents a state that can be computed by interpreting instructions
