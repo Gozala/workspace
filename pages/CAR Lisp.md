@@ -18,10 +18,23 @@
   
   type Invoke = {
     syntax: "invoke"
-    target: Term | FFI
+    target: Term | FFI | BuiltIn
     params: Term[]
   }
   
+  type BuiltIn =
+  	| { syntax: "<" }
+      | { syntax: ">" }
+      | { syntax: ">=" }
+  	| { syntax: "<=" }
+      | { syntax: "or" }
+      | { syntax: "and" }
+      | { syntax: "equal?" }
+      | { syntax: "not" }
+  
+  type Greater = {
+    term: Term
+  }
   type Term =
     | Switch
     | Invoke
