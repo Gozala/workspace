@@ -18,7 +18,7 @@
   ```ts
   export interface Input<State, Change> {
     state: State
-    change: Change[]
+    delta: Change[]
   }
   
   export interface Endpoint<State, Change> {
