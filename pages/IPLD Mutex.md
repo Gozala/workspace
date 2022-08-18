@@ -6,5 +6,8 @@
   }
   ```
 - ```ts
-  export interface 
+  export interface Replica<Change> {
+    of: Chronicle<Change>
+    code: 
+  }
   ```
