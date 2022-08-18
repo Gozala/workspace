@@ -34,8 +34,12 @@
 - For example we could implement `Total` replica as follows
   ```ts
   export const post = (input:CAR<[Input<number, number>]>): number => {
-    const [{state, change}] = decodeCAR(input)
+    const [{state, delta}] = decodeCAR(input)
+    let total = state
+    for (const n of delta) {
+      total += n
+    }
+    return total
   }
-  
-  
   ```
+-
