@@ -1,8 +1,8 @@
 - [[Replica]] represents a state that can be computed by interpreting related instructions in their causal order.
 - ```ts
   export interface Revision<Change> {
-    of?: Link<Revision<Change>>
-    : Change[]
+    from?: Link<Revision<Change>>
+    delta: Change[]
   }
   ```
 - ```ts
