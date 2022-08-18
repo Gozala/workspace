@@ -33,5 +33,9 @@
   ```
 - For example we could implement `Total` replica as follows
   ```ts
-  export const post = (input:CAR<[Input<>]>)
+  export const post = (input:CAR<[Input<number, number>]>): number => {
+    const [{state, change}] = decodeCAR(input)
+  }
+  
+  
   ```
