@@ -22,7 +22,7 @@
   }
   
   export interface Endpoint<State, Change> {
-    post(input: CAR<Input<State, Change>>): CAR<State>
+    post(input: CAR<[Input<State, Change>]>): CAR<[State]>
   }
   
   interface CAR<Roots extends [...unknown[]]> extends Uint8Array {
@@ -30,4 +30,7 @@
   }
   
   declare var phantomData:symbol
+  ```
+- For example we could implement `Total` replica as follows
+  ```ts
   ```
