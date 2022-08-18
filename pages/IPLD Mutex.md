@@ -14,10 +14,14 @@
   export type Code =
     | { type: "rest", url: `https:` }
   ```
-- Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] file with a root block corresponding to:
+- Idea is that `Code` represents an `HTTP` endpoint which one could `POST` an input  [[CAR]] file with a root block corresponding to `Input` :
   ```ts
-  interface Root {
+  interface Input<State, Change> {
     state: State
     change: Change[]
+  }
+  
+  export interface Endpoint<State, Change> {
+    (input: Input<State, Change>): State
   }
   ```
