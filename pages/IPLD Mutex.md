@@ -14,12 +14,9 @@
   export type Code =
     | { type: "rest", url: `https:` }
   ```
-- Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] encoded `Input` (Input MUST be an only root) as defined below:
+- Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] encoded `Payload` as defined below:
   ```ts
-  export interface Input<State, Change> {
-    state: State
-    delta: Change[]
-  }
+  export type Payload<State, Change> = [State, ...Change[]]
   
   export interface Endpoint<State, Change> {
     post(input: CAR<[Input<State, Change>]>): CAR<[State]>
