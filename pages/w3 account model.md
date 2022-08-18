@@ -20,10 +20,13 @@
 - ```ts
   interface Account {
     /**
-     * Accounts that are subsidized 
+     * Accounts that are subsidized by this account. This account will be billed
+     * for all the donees.
      */
-    donees: Account[]
-    
+    donees: Map<DID, Account>
+    /**
+     *
+     */
     readonly donors: ReadonlyArray<Account>
   }
   ```
