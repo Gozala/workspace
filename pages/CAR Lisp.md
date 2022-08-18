@@ -35,7 +35,7 @@
       | { syntax: "or", left: Term, right: Term }
       | { syntax: "and", left: Term, right: Term }
       | { syntax: "=", left: Term, right: Term }
-      | { syntax: "not", left: Term }
+      | { syntax: "not", body: Term }
   
   type Reference = Link
   
@@ -44,7 +44,4 @@
     | Switch
     | Invoke
     | Reference
-  
-  
-  
   ```
