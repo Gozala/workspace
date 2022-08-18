@@ -14,4 +14,5 @@
   export type Code =
     | { type: "rest", url: `https:` }
   ```
-- Idea is that `Code` represents an `HTTP` endpoint which one could `POST`
+- Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] file with a root block corresponding to:
+-
