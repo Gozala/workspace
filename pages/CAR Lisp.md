@@ -19,7 +19,7 @@
   
   
   type Invoke = {
-    procedure: Expression
+    target: Term
     params: [Expression, ...Expression[]]
   }
   
