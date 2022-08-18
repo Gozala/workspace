@@ -22,6 +22,6 @@
   }
   
   export interface Endpoint<State, Change> {
-    (input: Input<State, Change>): State
+    post(input: CAR<Input<State, Change>>): CAR<State>
   }
   ```
