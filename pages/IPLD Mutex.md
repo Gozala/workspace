@@ -16,7 +16,7 @@
   ```
 - Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] encoded `Input` (Input MUST be an only root) as defined below:
   ```ts
-  interface Input<State, Change> {
+  export interface Input<State, Change> {
     state: State
     change: Change[]
   }
@@ -33,4 +33,5 @@
   ```
 - For example we could implement `Total` replica as follows
   ```ts
+  export const post = (input:CAR<[Input<>]>)
   ```
