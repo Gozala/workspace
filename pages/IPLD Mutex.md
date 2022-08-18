@@ -43,10 +43,3 @@
   }
   ```
 - Note that we could memoize `Replica` by it's CID and never have to recompute it again.
-- Maybe we could also have general notion of application
-  ```ts
-  export interface Application<Args extends [...unknown[]]> {
-    fn: Link<Code>
-    args: Args
-  }
-  ```
