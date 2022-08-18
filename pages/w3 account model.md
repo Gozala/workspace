@@ -19,6 +19,10 @@
 	- If charging a credit card fails on billing cycle it's capacity is reduced accordingly. If account hold data over it's capacity storing more data into it will be denied.
 - ```ts
   interface Account {
-    
+    donors: Account[]
+    /**
+     * Accounts to which this 
+     */
+    donees: Account[]
   }
   ```
