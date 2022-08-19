@@ -52,5 +52,12 @@
 -
 - We could also represent arbitrary DAG state through `Append` & `Join` operations
 - ```ts
+  interface DAGRevision extend Revision<Append|Join> {}
   
+  interface Append {
+    type: "append"
+    shards: CARLink[]
+  }
+  
+  interface 
   ```
