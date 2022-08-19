@@ -1,6 +1,6 @@
 - Our [[replication protocol]] is defined in terms of atomic, immutable, content addressed “operations” 
   which are wrapped in a container structure that adds casual ordering through hash-links. *(We define this container structure using generic [[Revision]] interface.
-- Revision is defined in terms of atomic changes
+- Revision is defined in terms of one or more atomic **changes** to a
 - ```ts
   export interface Revision<Change> {
     // Another revision this 
