@@ -50,4 +50,7 @@
   ```
 - Note that we could memoize `Replica` by it's CID and never have to recompute it again.
 -
-- We could also represent arbitrary DAG state
+- We could also represent arbitrary DAG state through `Append` & `Join` operations
+- ```ts
+  
+  ```
