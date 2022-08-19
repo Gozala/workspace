@@ -2,13 +2,15 @@
   which are wrapped in a container structure that adds casual ordering through hash-links. *(We define this container structure using generic [[Revision]] interface.
 - Revision is defined in terms of set of **changes** applied to some prior revision. It can also be viewed as a log of **operations**.
 - ```ts
-  export interface Revision<Change> {
+  export interface Revision<Operation> {
     // Prior revision to which changes are applied. If omitted
     // revision represents a first change.
-    of?: Link<Revision<Change>>
-    do: Change[]
+    of?: Link<Revision<Operation>>
+    // Set of operations to be applied
+    do: Operation[]
   }
   ```
+- Revision interface intentionally does not prescribe concrete semantics as
 - ```ts
   export interface Replica<Change> {
     of: Link<Revision<Change>>
