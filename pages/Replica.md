@@ -20,7 +20,7 @@
   export type Code =
     | { type: "rest", url: `https:` }
   ```
-- `Code` here represents a [referentially transparent](https://en.wikipedia.org/wiki/Referential_transparency) function
+- `Code` here represents a [referentially transparent](https://en.wikipedia.org/wiki/Referential_transparency) function. In this case we only support rest
 - Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] encoded `Input` (Input MUST be an only root) as defined below:
   ```ts
   export interface Input<State, Change> {
