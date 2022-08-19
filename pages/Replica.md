@@ -59,5 +59,9 @@
     shards: CARLink[]
   }
   
-  interface 
+  interface Join {
+    type: "join"
+    forks: DAGRevision[]
+  }
   ```
+-
