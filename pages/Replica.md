@@ -20,8 +20,7 @@
   export type Code =
     | { type: "rest", url: `https:` }
   ```
-- `Code` is meant to represents a [referentially transparent](https://en.wikipedia.org/wiki/Referential_transparency) function, however currently we only define an `HTTP` endpoint variant,
-- Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] encoded `Input` (Input MUST be an only root) as defined below:
+- `Code` is meant to represents a [referentially transparent](https://en.wikipedia.org/wiki/Referential_transparency) function, however currently we only define an `HTTP` endpoint variant, where one could `POST` a [[CAR]] encoded `Input` (Input MUST be an only root) as defined below:
   ```ts
   export interface Input<State, Change> {
     state: State
@@ -38,7 +37,7 @@
   
   declare var phantomData:symbol
   ```
-- For example we could implement `Total` replica as follows
+- Through this definition one could for example represent  `Total` replica as follows
   ```ts
   export const post = (input:CAR<[Input<number, number>]>): number => {
     const [{state, delta}] = decodeCAR(input)
