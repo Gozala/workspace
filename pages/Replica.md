@@ -1,4 +1,8 @@
-- [[Replica]] represents a state that can be computed by interpreting set of instructions in their causal order. We represent such set of instructions using generic [[Revision]] interface that is IPLD linked
+- Our [[replication protocol]] is defined in terms of atomic, immutable, content addressed “operations” 
+  which are wrapped in a container structure that adds casual ordering 
+  through hash-links. *(We define this container structure in the *Replica* section below)*
+-
+- [[Revision]] represents a state that can be computed by interpreting set of instructions in their causal order. We represent such set of instructions using generic [[Revision]] interface that is IPLD linked
 - ```ts
   export interface Revision<Change> {
     of?: Link<Revision<Change>>
