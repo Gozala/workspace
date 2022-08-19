@@ -10,7 +10,7 @@
     do: Operation[]
   }
   ```
-- Revision interface intentionally does not prescribe semantics making it possible to apply different ones at will. Better yet, same revision could be assigned different interpretation that would result in a different state.
+- Revision interface intentionally does not prescribe semantics making it possible to apply different ones at will. Better yet, same revision could be assigned different interpretation that would result in a different state. [[Replica]] interface provides a way to represent a revision with a specified semantics
 - ```ts
   export interface Replica<Change> {
     of: Link<Revision<Change>>
@@ -20,6 +20,7 @@
   export type Code =
     | { type: "rest", url: `https:` }
   ```
+- `Code` here represents a
 - Idea is that `Code` represents an `HTTP` endpoint which one could `POST` a [[CAR]] encoded `Input` (Input MUST be an only root) as defined below:
   ```ts
   export interface Input<State, Change> {
