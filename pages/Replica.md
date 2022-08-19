@@ -10,7 +10,7 @@
     do: Operation[]
   }
   ```
-- Revision interface intentionally does not prescribe semantics making it possible to apply different ones at will. Better yet same revision could be
+- Revision interface intentionally does not prescribe semantics making it possible to apply different ones at will. Better yet, same revision could be assigned different interpretation
 - ```ts
   export interface Replica<Change> {
     of: Link<Revision<Change>>
