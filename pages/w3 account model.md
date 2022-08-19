@@ -51,7 +51,7 @@
   
   interface AccountCapabilities {
     fund(account:Account): Link
-    transfer(balance: number, )
+    transfer(balance: USD, to:Account): Link
   }
   
   type USD = `${number}USD`
