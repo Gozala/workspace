@@ -37,7 +37,7 @@
   
   declare var phantomData:symbol
   ```
-- Through this definition one could for example represent  `Total` replica as follows
+- Through this definition one could for example represent account balance by exposing following logic over HTTP API:
   ```ts
   export const post = (input:CAR<[Input<number, number>]>): number => {
     const [{state, delta}] = decodeCAR(input)
