@@ -1,4 +1,4 @@
-- [[Replica]] represents a state that can be computed by interpreting set of instructions in their causal order. We represent such set of instructions using `Revision` interface
+- [[Replica]] represents a state that can be computed by interpreting set of instructions in their causal order. We represent such set of instructions using generic [[Revision]] interface that is IPLD linked
 - ```ts
   export interface Revision<Change> {
     of?: Link<Revision<Change>>
