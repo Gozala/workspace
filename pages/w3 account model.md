@@ -49,6 +49,11 @@
     capacity(): number
   }
   
+  interface AccountCapabilities {
+    fund(account:Account): Link
+    transfer(balance: number, )
+  }
+  
   type USD = `${number}USD`
   type DID = `did:key:${string}`
   ```
