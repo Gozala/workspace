@@ -28,8 +28,8 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 - So we could schedule task(s) for execution via [[system/spawn capability]] that can be represented as follows
   
   ```ts
-  interface SystemSpawn {
-    can: "system/spawn"
+  interface SystemExecute {
+    can: "system/execute"
     with: AccountDID // account that is billed for execution
     task: CarCID
   }
