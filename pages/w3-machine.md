@@ -22,7 +22,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	- As we have established we have some nice [[homoiconicity]] going for us, meaning agent can
 		- Encode set of invocations/instructions in a [[CAR]] file.
 		- Make instruction set available to a VM using `store/add`.
-	- Schedule invocations using `system/spawn` invocation
+	- Execute transaction using `system/execute` invocation
 	  
 	  > Let's get nerdy here! We've just introduces [meta-circular evaluator](https://en.wikipedia.org/wiki/Meta-circular_evaluator) 🤯. You know how in lisp you can quote arbitrary expressions so they can be transformed as lists and evaluated at will ? Well that is what we have going on here, our [s-expression](https://en.wikipedia.org/wiki/S-expression) is a [[CAR]], [[store/add]] capability corresponds to quoting, and [[system/enqueue]] corresponds to [[eval]]
 - So we could schedule task(s) for execution via [[system/execute capability]] that can be represented as follows
