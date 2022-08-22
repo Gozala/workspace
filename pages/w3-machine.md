@@ -34,7 +34,7 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
     task: CarCID
   }
   ```
-	- Idea is that VM will unpacks the [[CAR]] and perform each [[UCAN invocation]] in order and atomically.
+	- Idea is that VM will unpacks the [[CAR]] and perform each [[UCAN invocation]] in order and atomically. If any of the invocations fail, effects of all invocations in the CAR will be negated.
 - ## Control Flow
 	- For our VM to be of any use we need to support a some more instructions, e.g we could map a [[leveldown]] APIs to corresponding capabilities. Still, any real program needs some control flow instructions
 		- While defining control flow instructions and creating a new programming language in the process is exciting, it would be an overkill, instead our VM will have a Foreign Function Interface ([[FFI]])
@@ -52,7 +52,8 @@ reply-to:: https://www.notion.so/bucket-vm-73c610906fe44ded8117fd81913c7773
 	  ```
 		- In the future we could allow deploying [[WASM]] programs or [[JS]] functions that we could run.
 	- Deployed [[FFI]] functions can be invoked using [[system/invoke capability]] defined as
-	- interface SystemInvoke {
+	- ```ts
+	  interface SystemInvoke {
 	    can: "system/invoke"
 	    with: ForeignFunctionDID
 	    data: CarCID  // DATA send to endpoint
