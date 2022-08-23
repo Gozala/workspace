@@ -92,7 +92,7 @@
         }))
       // 3. Add all CARs to the upload session
       ...cars.map(car => invoke({
-      	issuer: session,
+      	issuer: agent,
           audience: service,
           capability: {
             can: "session/append",
@@ -107,4 +107,4 @@
     // ...
   }
   ```
-- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. However more importantly switched from referring to a session
+- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. However more importantly switched from referring to a session from [[did:key]] to CID, which in turn introduced the problem with
