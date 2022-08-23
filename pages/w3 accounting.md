@@ -113,4 +113,4 @@
 		- ⚠️ Note that previously we could simply check if issuer was a `session` or an agent to whom session delegated capability. But now we have to do some out of bound checks to see who created an agent.
 - There is another important differentiator between two approaches, that is while any `account` is able to subsidize a `session` it does not necessarily have capability to append to it! This may not seem that useful in simple upload use case, but on the other hand it can be used to build powerful features like "workspaces" where users can invite each other and link relevant data.
 - > You could potentially build something like that by introducing hierarchical addressing e.g. `did:key:zAlice:/bafy...session`, but then again hierarchies come with complexity and no clear advantage in this context
-- There is yet another approach in form
+- There is yet another approach in form of [[replication protocol]]
