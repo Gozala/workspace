@@ -10,6 +10,17 @@
 - This means we can represent arbitrary DAG as follows
   ```ts
   interface Append {
-    can: DID
+    type: "append"
+    shards: CARLink[]
+    origin: Link<DAGRevision>
   }
+  
+  interface Join {
+    type: "join"
+    forks: Link<DAGRevision>[]
+    origin: Link<DAGRevision>
+  }
+  
+  interface DAGRevision extends Revision<Append|Join> {}
   ```
+-
