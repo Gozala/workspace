@@ -1,1 +1,1 @@
-- We can define [[replication protocol]] in terms of
+- We can define [[replication protocol]] of atomic, immutable, content addressed "operations" - [[UCAN]] invocations
