@@ -59,5 +59,54 @@
 	- Introduce `session/append` capability that can be used to associate specific CARs with that session.
 - In practice code will look very similar
   ```ts
+  import { SigningAuthority } from "@ucanto/athority"
+  import { invoke, delegate } from "@ucanto/client"
   
+  async upload = (cars, {connection, agent, account, service, proofs}) => {
+    // generate session account
+    const session = await delegate({
+      issuer: agent,
+      audience: service,
+      capability: {
+        session 
+      }
+    })
+    
+    // Create a transaction that will
+    const transaction = [
+      // 1. Subsidize a session with user account
+      invoke({
+        issuer: agent,
+        audience: service,
+        capability: {
+          can: "account/subsidize",
+          with: account,
+          account: session
+        }
+      }),
+      // 2. Adds all the CARs to the user account
+      ...cars.map(car => invoke({
+          issuer: agent,
+          audience: service,
+          capability: {
+            can: "account/add",
+            with: account,
+            link: car.cid
+          }
+        }))
+      // 3. Links all CARs with an upload session
+      ...cars.map(car => invoke({
+      	issuer: session,
+          audience: service,
+          capability: {
+            can: "account/link",
+            with: session,
+            link: car.cid
+          }
+      }))
+    ]
+    
+    const results = await connection.execute(...transaction)
+    // ...
+  }
   ```
