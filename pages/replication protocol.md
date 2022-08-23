@@ -1,4 +1,4 @@
-- Our replication protocol is defined in terms of atomic, immutable, content addressed “operations” 
+- Our replication protocol is defined in terms of atomic, immutable, content addressed “transactions”  
   which are wrapped in a container structure that adds casual ordering through hash-links. *(We define this container structure using generic [[Revision]] interface.
 - Revision is defined in terms of set of **changes** applied to some prior revision. It can also be viewed as a log of **operations**.
 - ```ts
