@@ -4,4 +4,6 @@
 	- Addressing by [[did:key]] implies corresponding **private key** holder or their delegate can mutate the state.
 	- There is no hierarchy just unions!
 		- This simplifies things a lot. For example consider hierarchical alternative with concurrent writes that change `did:key:zAlice:/home/pictures` and `did:key:zAlice/home/pictures/cat.png`.
-			-
+			- You end up with a conflict that needs to be resolved
+			- You'll likely have to throw away one of the writes
+		- None of this applies if accounts are just
