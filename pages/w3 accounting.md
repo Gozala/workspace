@@ -18,14 +18,37 @@
     // subsidize session storage
     const subsidize = invoke({
       issuer: agent,
-      audience: w3,
-      capability: [{
+      audience: service,
+      capability: {
         can: "account/subsidize",
         with: account,
-  
-      }]
+  	  account: session
+      }
     })
-  for await (const car of encode(input)) {
     
+    const transaction = [subsidize]
+    for (const car of car) {
+  	transaction.push(
+        invoke({
+          issuer: agent,
+          audience: service,
+          capability: {
+            can: "account/add",
+            with: account,
+            link: car.cid
+          }
+        }),
+        invoke({
+          issuer: agent,
+          audience: service,
+          capability: {
+            can: "account/link",
+            with: session,
+            link: car.cid
+          }
+        })
+      )
+      
+    }
   }
   ```
