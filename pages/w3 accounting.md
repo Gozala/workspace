@@ -110,4 +110,4 @@
 	- What is the effect of `session/create` invocation ?
 	- What happens if we did not submit `session/create` or do it after `session/append` ?
 	- How do we know `agent` is allowed to `session/append` to a requested session ?
-		- Note
+		- ⚠️ Note previously we could just check if issuer was a `session` or an agent to whom session delegated capability.
