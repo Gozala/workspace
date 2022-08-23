@@ -4,6 +4,6 @@
   }
   
   interface Operation extends Capability {
-    origin?: Link
+    origin?: Link<Revision<this>>
   }
   ```
