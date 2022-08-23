@@ -10,18 +10,22 @@
 - This means we can represent arbitrary DAG as follows
   ```ts
   interface Append {
-    type: "append"
+    can: "dag/append"
+    with: DID
     shards: CARLink[]
     origin: Link<DAGRevision>
   }
   
   interface Join {
-    type: "join"
+    can: "dag/join"
+    with: DID
     forks: Link<DAGRevision>[]
     origin: Link<DAGRevision>
   }
   
   interface DAGRevision extends Revision<Append|Join> {}
   ```
-- You can publish interpretation of the `Revision` using `Publish`
+- You can publish interpretation of the `Revision` using `Publish` protocol
+- ```ts
+  ```
 -
