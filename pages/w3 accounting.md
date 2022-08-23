@@ -143,7 +143,7 @@
       issuer: agent,
       audience: service,
       capability: {
-        can: "account/flush"
+        can: "account/flush",
         with: account,
         origin
       }
