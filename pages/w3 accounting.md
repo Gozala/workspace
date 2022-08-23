@@ -1,1 +1,1 @@
-- I have been advocating for a controversial idea of doing all "accounting"
+- I have been advocating for a controversial idea of doing all of our "accounting" using
