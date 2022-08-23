@@ -116,4 +116,53 @@
 - There is yet another more general approach to representing state in form of [[replication protocol]], which is very similar to [[git]] in that it establishes causal order of operations using hash links and allows us to think of a state in terms of operations that would have produced it. Unlike above two alternatives it's deliberately permissionless, meaning you can create a new revision of the state without a permission from the author of the previous revision. This [[forkability]] is often accompanied with companion permissioned publishing capability. In other words why one can freely fork any revision they can only publish new revision under their own replica.
 - With this approach we could represent multipart upload as follows:
   ```ts
+  import { SigningAuthority } from "@ucanto/athority"
+  import { invoke, delegate } from "@ucanto/client"
+  
+  async upload = (cars, {connection, agent, account, service, proofs}) => {
+     let origin = 
+     for (const car of cars) {
+     }
+    // generate session account
+    const session = await SigningAuthority.generate()
+    
+    // Create a transaction that will
+    const transaction = [
+      // 1. Subsidize a session with user account
+      invoke({
+        issuer: agent,
+        audience: service,
+        capability: {
+          can: "account/subsidize",
+          with: account,
+          account: session
+        },
+        proofs
+      }),
+      // 2. Adds all the CARs to the user account
+      ...cars.map(car => invoke({
+          issuer: agent,
+          audience: service,
+          capability: {
+            can: "account/add",
+            with: account,
+            link: car.cid
+          },
+        	proofs
+        }))
+      // 3. Links all CARs with an upload session
+      ...cars.map(car => invoke({
+      	issuer: session,
+          audience: service,
+          capability: {
+            can: "account/link",
+            with: session,
+            link: car.cid
+          }
+      }))
+    ]
+    
+    const results = await connection.execute(...transaction)
+    // ...
+  }
   ```
