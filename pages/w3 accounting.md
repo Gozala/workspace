@@ -153,4 +153,4 @@
     // ...
   }
   ```
-- What's cool about this approach is that instead of assigning "session" semantics and interpretation rul
+- What's cool about this approach is that instead of assigning "session" semantics and operation interpretation rules at genesis you do that l
