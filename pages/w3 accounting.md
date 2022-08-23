@@ -111,4 +111,4 @@
 	- What happens if we did not submit `session/create` or do it after `session/append` ?
 	- How do we know `agent` is allowed to `session/append` to a requested session ?
 		- ⚠️ Note that previously we could simply check if issuer was a `session` or an agent to whom session delegated capability. But now we have to do some out of bound checks to see who created an agent.
-- There is another important differentiator between two approaches, that is while any `account` is able to subsidize a `session` it does not necessarily have capability to append to it! This may not seem that useful in simple upload use case, but on the other hand it can be used to build powerful features like shared
+- There is another important differentiator between two approaches, that is while any `account` is able to subsidize a `session` it does not necessarily have capability to append to it! This may not seem that useful in simple upload use case, but on the other hand it can be used to build powerful features like collaboration "workspaces" where multiple agents can add things
