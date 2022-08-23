@@ -107,4 +107,4 @@
     // ...
   }
   ```
-- At glance it may seem that only thing that has changed is verbs ``account/subsidize
+- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. Unfortunately
