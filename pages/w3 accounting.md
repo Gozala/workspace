@@ -118,51 +118,39 @@
   ```ts
   import { SigningAuthority } from "@ucanto/athority"
   import { invoke, delegate } from "@ucanto/client"
+  import { CID } from "multiformats"
   
   async upload = (cars, {connection, agent, account, service, proofs}) => {
-     let origin = 
+     // link to nothing
+     let origin = CID.parse('bafkqaaa')
+     const ops = []
      for (const car of cars) {
+       const op = await delegate({
+         issuer: agent,
+         audience: service,
+         capability: {
+           can: "account/append",
+           with: account,
+           origin
+         },
+         proofs
+       })
+       ops.push(op)
+       origin = op.cid
      }
-    // generate session account
-    const session = await SigningAuthority.generate()
-    
-    // Create a transaction that will
-    const transaction = [
-      // 1. Subsidize a session with user account
-      invoke({
-        issuer: agent,
-        audience: service,
-        capability: {
-          can: "account/subsidize",
-          with: account,
-          account: session
-        },
-        proofs
-      }),
-      // 2. Adds all the CARs to the user account
-      ...cars.map(car => invoke({
-          issuer: agent,
-          audience: service,
-          capability: {
-            can: "account/add",
-            with: account,
-            link: car.cid
-          },
-        	proofs
-        }))
-      // 3. Links all CARs with an upload session
-      ...cars.map(car => invoke({
-      	issuer: session,
-          audience: service,
-          capability: {
-            can: "account/link",
-            with: session,
-            link: car.cid
-          }
-      }))
-    ]
+  
+     ops.push(invoke({
+      issuer: agent,
+      audience: service,
+      capability: {
+        can: "account/flush"
+        with: account,
+        origin
+      }
+    }))
     
     const results = await connection.execute(...transaction)
     // ...
   }
   ```
+-
