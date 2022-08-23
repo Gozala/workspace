@@ -156,4 +156,4 @@
 - What's cool about this approach is that instead of assigning "session" semantics and operation interpretation rules at genesis you do that on publishing. This implies means:
 	- You could publish same op set with different semantics
 	- You could interpret same op set as a different state
-	- This in turn implies you could
+	- This in turn implies you could evolve protocol
