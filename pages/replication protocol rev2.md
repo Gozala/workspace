@@ -1,1 +1,1 @@
-- We can define [[replication protocol]] of atomic, immutable, content addressed "operations" - [[UCAN]] invocations
+- We can define [[replication protocol]] of atomic, immutable, content addressed "operations" - [[UCAN]] invocations that are casual ordering through hash links. Arbitrary state can be expressed through
