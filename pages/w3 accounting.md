@@ -96,7 +96,7 @@
           audience: service,
           capability: {
             can: "session/append",
-            with: `ipfs://${session.cid}`,
+            with: 'ipfs://' + session.cid,
             link: car.cid
           }
       }))
@@ -106,16 +106,5 @@
     // ...
   }
   ```
-- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. However more importantly switched from referring to a session from [[did:key]] to CID, which in turn introduced the problem in `session/append`:
-  ```ts
-  {
-    issuer: agent,
-    audience: service,
-    capability: {
-      can: "session/append",
-      with: account,
-      session: session.cid,
-      link: car.cid
-    }
-  }
-  ```
+- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. However more importantly it introduced additional questions ?
+-
