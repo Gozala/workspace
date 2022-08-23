@@ -96,8 +96,7 @@
           audience: service,
           capability: {
             can: "session/append",
-            with: account,
-            session: session.cid,
+            with: `ipfs://${session.cid}`,
             link: car.cid
           }
       }))
@@ -112,11 +111,11 @@
   {
     issuer: agent,
     audience: service,
-      capability: {
-        can: "session/append",
-          with: account,
-            session: session.cid,
-              link: car.cid
-      }
+    capability: {
+      can: "session/append",
+      with: account,
+      session: session.cid,
+      link: car.cid
+    }
   }
   ```
