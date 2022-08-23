@@ -9,9 +9,13 @@
 		- None of this applies if accounts are just sets, things simply converge
 - One of the ideas I have put forward is to use [[w3-account]]s to represent **upload state** a.k.a session. Which could simply look as following sketch
   ```ts
-  import { SigningAuthority } from "@ucanto/"
+  import { SigningAuthority } from "@ucanto/athority"
+  import { }
+  
   async upload = (cars, {agent, account, service}) => {
-    
+    // generate session
+    const session = await SigningAuthority.generate()
+    // subsidize session storage
     client.invoke({
       issuer: agent,
       audience: w3,
