@@ -58,3 +58,6 @@
 	- Introduce `session/create` capability that can be used to create a "session" object of sorts identified by invocation `CID`.
 	- Introduce `session/append` capability that can be used to associate specific CARs with that session.
 - In practice code will look very similar
+  ```ts
+  
+  ```
