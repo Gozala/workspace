@@ -12,7 +12,7 @@
   import { SigningAuthority } from "@ucanto/athority"
   import { invoke, delegate } from "@ucanto/client"
   
-  async upload = (client, cars, {agent, account, service}) => {
+  async upload = (cars, {connection, agent, account, service}) => {
     // generate session account
     const session = await SigningAuthority.generate()
   
@@ -53,6 +53,6 @@
       }))
     ]
     
-    client.invoke()
+    const [] = connection.execute(...transaction)
   }
   ```
