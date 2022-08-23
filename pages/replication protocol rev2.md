@@ -27,5 +27,17 @@
   ```
 - You can publish interpretation of the `Revision` using `Publish` protocol
 - ```ts
+  export type Code =
+    | { type: "rest", url: `https:` }
+  
+  interface Replica<T extends Operation> extends UCAN.Invocation<Publish<T>> {
+    
+  }
+  
+  interface Publish<T extends Operation> {
+    can: "replica/publish"
+    with: DID
+    revision: Link<Revision<T>>
+  }
   ```
 -
