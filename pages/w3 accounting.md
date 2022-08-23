@@ -107,4 +107,4 @@
     // ...
   }
   ```
-- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. Unfortunately
+- At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. However more important change is that we switch from [[did:key]] identifier to CID based idenf
