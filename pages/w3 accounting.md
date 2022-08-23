@@ -12,7 +12,7 @@
   import { SigningAuthority } from "@ucanto/athority"
   import { invoke, delegate } from "@ucanto/client"
   
-  async upload = (cars, {connection, agent, account, service}) => {
+  async upload = (cars, {connection, agent, account, service, proofs}) => {
     // generate session account
     const session = await SigningAuthority.generate()
     
@@ -26,7 +26,8 @@
           can: "account/subsidize",
           with: account,
           account: session
-        }
+        },
+        proofs
       }),
       // 2. Adds all the CARs to the user account
       ...cars.map(car => invoke({
@@ -36,7 +37,8 @@
             can: "account/add",
             with: account,
             link: car.cid
-          }
+          },
+        	proofs
         }))
       // 3. Links all CARs with an upload session
       ...cars.map(car => invoke({
