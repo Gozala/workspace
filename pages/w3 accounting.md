@@ -3,4 +3,5 @@
 - To put it differently I think all of the **mutable state** in the system should be addressed using [[did:key]] identifiers that correspond to an account. Doing this has following benefits:
 	- Addressing by [[did:key]] implies corresponding **private key** holder or their delegate can mutate the state.
 	- There is no hierarchy just unions!
-		- This simplifies things a lot. For example consider hierarchical alternative with concurrent writes to `did:key:zAlice:/home/pictures` and `did:key:zAlice/home/pictures/public` what happens when one writer writes `did:key:zAlice/home/pictures/public/cat.png` and the other writers `did:key:zAlice/home/pictures/public`
+		- This simplifies things a lot. For example consider hierarchical alternative with concurrent writes that change `did:key:zAlice:/home/pictures` and `did:key:zAlice/home/pictures/cat.png`.
+			-
