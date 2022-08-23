@@ -15,9 +15,6 @@
   async upload = (cars, {connection, agent, account, service}) => {
     // generate session account
     const session = await SigningAuthority.generate()
-  
-    // subsidize session account
-    const subsidize = 
     
     // Create a transaction that will
     const transaction = [
@@ -53,6 +50,8 @@
       }))
     ]
     
-    const [] = connection.execute(...transaction)
+    const results = await connection.execute(...transaction)
+    // ...
   }
   ```
+- An Alternative proposal
