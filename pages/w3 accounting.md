@@ -107,4 +107,6 @@
   }
   ```
 - At glance it may seem that only thing that has changed is verbs `account/subsidize → session/create` and `account/link → session/append`. However more importantly it introduced additional questions ?
-	- What is the effect of `session/create` invocation and do we even
+	- What is the effect of `session/create` invocation ?
+	- What happens if we did not submit `session/create` or do it after `session/append` ?
+	- ⚠️ How do we know
