@@ -23,5 +23,5 @@
   
   interface DAGRevision extends Revision<Append|Join> {}
   ```
-- You can publish interpretation of the `Revision` using ``
+- You can publish interpretation of the `Revision` using `Publish`
 -
