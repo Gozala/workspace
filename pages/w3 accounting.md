@@ -10,26 +10,29 @@
 - One of the ideas I have put forward is to use [[w3-account]]s to represent **upload state** a.k.a session. Which could simply look as following sketch
   ```ts
   import { SigningAuthority } from "@ucanto/athority"
-  import { invoke } from "@ucanto/client"
+  import { invoke, delegate } from "@ucanto/client"
   
   async upload = (client, cars, {agent, account, service}) => {
-    // generate session
+    // generate session account
     const session = await SigningAuthority.generate()
-    // subsidize session storage
-    const subsidize = invoke({
-      issuer: agent,
-      audience: service,
-      capability: {
-        can: "account/subsidize",
-        with: account,
-  	  account: session
-      }
-    })
+  
+    // subsidize session account
+    const subsidize = 
     
-    const transaction = [subsidize]
-    for (const car of car) {
-  	transaction.push(
-        invoke({
+    // Create a transaction that will
+    const transaction = [
+      // 1. Subsidize a session with user account
+      invoke({
+        issuer: agent,
+        audience: service,
+        capability: {
+          can: "account/subsidize",
+          with: account,
+          account: session
+        }
+      }),
+      // 2. Adds all the CARs to the user account
+      ...cars.map(car => invoke({
           issuer: agent,
           audience: service,
           capability: {
@@ -37,18 +40,19 @@
             with: account,
             link: car.cid
           }
-        }),
-        invoke({
-          issuer: agent,
+        }))
+      // 3. Links all CARs with an upload session
+      ...cars.map(car => invoke({
+      	issuer: session,
           audience: service,
           capability: {
             can: "account/link",
             with: session,
             link: car.cid
           }
-        })
-      )
-      
-    }
+      }))
+    ]
+    
+    client.invoke()
   }
   ```
