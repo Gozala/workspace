@@ -54,4 +54,4 @@
     // ...
   }
   ```
-- An Alternative proposal
+- An [alternative proposal]()
