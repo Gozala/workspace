@@ -7,3 +7,9 @@
     origin?: Link<Revision<this>>
   }
   ```
+- This means we can represent arbitrary DAG as follows
+  ```ts
+  interface Append {
+    can: DID
+  }
+  ```
