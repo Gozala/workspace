@@ -65,27 +65,21 @@
   import { invoke, delegate } from "@ucanto/client"
   
   async upload = (cars, {connection, agent, account, service, proofs}) => {
-    // generate session account
+    // generate session linked to the account
     const session = await delegate({
       issuer: agent,
       audience: service,
-      capability: {
-        session 
-      }
+      capabilities: [{
+        can: "session/create",
+        with: account
+      }],
+      proofs
     })
     
     // Create a transaction that will
     const transaction = [
       // 1. Subsidize a session with user account
-      invoke({
-        issuer: agent,
-        audience: service,
-        capability: {
-          can: "account/subsidize",
-          with: account,
-          account: session
-        }
-      }),
+      session,
       // 2. Adds all the CARs to the user account
       ...cars.map(car => invoke({
           issuer: agent,
@@ -96,13 +90,14 @@
             link: car.cid
           }
         }))
-      // 3. Links all CARs with an upload session
+      // 3. Add all CARs to the upload session
       ...cars.map(car => invoke({
       	issuer: session,
           audience: service,
           capability: {
-            can: "account/link",
-            with: session,
+            can: "session/append",
+            with: account,
+            session: session.cid,
             link: car.cid
           }
       }))
