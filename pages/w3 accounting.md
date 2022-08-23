@@ -9,5 +9,15 @@
 		- None of this applies if accounts are just sets, things simply converge
 - One of the ideas I have put forward is to use [[w3-account]]s to represent **upload state** a.k.a session. Which could simply look as following sketch
   ```ts
-  
+  client.invoke({
+    issuer: agent,
+    audience: w3,
+    capability: [{
+      can: "account/sponsor",
+      
+    }]
+  })
+  for await (const car of encode(input)) {
+    
+  }
   ```
