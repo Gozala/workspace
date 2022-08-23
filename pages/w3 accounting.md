@@ -55,4 +55,6 @@
   }
   ```
 - An [alternative proposal](https://filecoinproject.slack.com/archives/C02BZPRS9HP/p1661188442189249?thread_ts=1660942938.783889&cid=C02BZPRS9HP) had been put forward:
-	- Introduce `session/create` capability that can be used to create a "session" object of sorts identified by
+	- Introduce `session/create` capability that can be used to create a "session" object of sorts identified by invocation `CID`.
+	- Introduce `session/append` capability that can be used to associate specific CARs with that session.
+- In practice code will look very similar
