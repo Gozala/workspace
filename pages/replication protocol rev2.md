@@ -4,7 +4,7 @@
   }
   
   interface Operation extends Capability {
-    origin?: Link<Revision<this>>
+    origin: Link<Revision<this>> | null
   }
   ```
 - This means we can represent arbitrary DAG as follows
