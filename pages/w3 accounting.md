@@ -7,4 +7,4 @@
 			- You end up with a conflict that needs to be resolved
 			- You'll likely have to throw away one of the writes
 		- None of this applies if accounts are just sets, things simply converge
--
+- One of the ideas I have put forward is to use [[w3-account]]s to represent _upload state_
