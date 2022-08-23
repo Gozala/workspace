@@ -38,6 +38,7 @@
     can: "replica/publish"
     with: DID
     revision: Link<Revision<T>>
+    semantics: Link<Code>
   }
   ```
 -
