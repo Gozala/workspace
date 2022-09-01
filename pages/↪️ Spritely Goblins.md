@@ -9,5 +9,5 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 		    update(message:Message, state:Model): [Model, Effect<Message>]
 		  }
 		  ```
-		-
+		- It is not a perfect analogy because
 	-
