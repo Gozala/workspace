@@ -10,5 +10,5 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 		    update(message:In, state:Model): [Model, Out]
 		  }
 		  ```
-		-
+		- I actually like Elm variant better because `state` is always explicit and
 	-
