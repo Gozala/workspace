@@ -11,4 +11,4 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 	  }
 	  ```
 	- I actually like Elm variant better because `state` is always explicit, in other words instead of switching behavior you just have a field in `state` that tells you it's current behavior.
--
+- [[Promise pipelining]] is really cool feature that allows you
