@@ -10,5 +10,5 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 		    update(message:In, state:Model): [Model, Out]
 		  }
 		  ```
-		- I actually like Elm variant better because `state` is always explicit and
+		- I actually like Elm variant better because `state` is always explicit, in other words instead of switching behavior you just have a field in `state` that tells you it's current behavior.
 	-
