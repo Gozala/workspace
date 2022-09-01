@@ -15,4 +15,4 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 	- How do you know if return type is going to be an "object" or some data ?
 	- What if return type is an "object" but has a different interface than you'd expect ?
 	- What if object interface has changed (as in new version got deployed in the meantime) ?
-	- I suspect in all of those cases you get an exception, but living with languages that
+	- I suspect in all of those cases you get an exception, but living with languages without runtime exceptions this seems like a hard pill to swallow.
