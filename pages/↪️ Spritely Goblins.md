@@ -5,6 +5,9 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 		- This allows defining object behaviors in a pure fashion.
 		- This does reminds me of [Elm Architecture](https://guide.elm-lang.org/effects/) and specifically an `update` function:
 		  ```ts
-		  interface 
+		  interface Actor<Model, Message> {
+		    update(message:Message, state:Model): [Model, Effect<Message>]
+		  }
 		  ```
+		-
 	-
