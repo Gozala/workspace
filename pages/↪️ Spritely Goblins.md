@@ -12,3 +12,6 @@ reply-to:: https://spritely.institute/static/papers/spritely-core.pdf
 	  ```
 	- I actually like Elm variant better because `state` is always explicit, in other words instead of switching behavior you just have a field in `state` that tells you it's current behavior.
 - [[Promise pipelining]] is really cool feature that allows you to batch up several operations, but it seems really tricky to do in typed language settings. More specifically
+	- How do you know if return type is going to be an "object" or some data ?
+	- What if return type is an "object" but has a different interface than you'd expect ?
+	-
