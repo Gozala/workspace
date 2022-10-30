@@ -4,6 +4,7 @@
   type DomainKeysIdentifiedMail {
     version DKIMVersion (rename "v" implicit "1")
     publicKey PublicKey (rename "k")
+    hashingAlgorithm Algorithm (rename "h")
   }
   
   -- Public key with a multiformat code tag
