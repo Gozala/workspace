@@ -9,7 +9,7 @@
     domain string (rename "d") -- email domain (part after "@")
     user string (rename "u") -- email username (part before "@" sign)
     selector string (rename "s") - DKIM selector
-    signature VarSig (rename "s") -- signature
+    signature VarSig (rename "o") -- signature
   }
   
   -- Public key with a multiformat code tag
