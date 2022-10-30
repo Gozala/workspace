@@ -1,1 +1,2 @@
-- DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by an Agent  to delegate
+- Principal can
+- DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
