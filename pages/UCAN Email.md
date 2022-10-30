@@ -6,9 +6,9 @@
     publicKey PublicKey (rename "k")
     hashingAlgorithm Algorithm (rename "a" implicit "0x12")
     
-    domain string (rename "d")
-    from string 
-    signature VarSig (rename "s")
+    domain string (rename "d") -- email domain (part after "@")
+    user string (rename "u") -- email username (part before "@" sign)
+    signature VarSig (rename "s") -- signature
   }
   
   -- Public key with a multiformat code tag
