@@ -11,7 +11,8 @@
     selector string (rename "s") - DKIM selector
     signature VarSig (rename "o") -- signature
     payload Payload (rename "h") -- payload that was signed
-    canonicalization (rename "c" implicit "") -- Message canonicalization
+    -- Message canonicalization
+    canonicalization (rename "c" implicit Simple) Canonicalization
   }
   
   type Payload {String: String}
@@ -30,5 +31,10 @@
   type DKIMVersion {
     | One ("1")
   } representation string
+  
+  type Canonicalization {
+    | Simple
+    | Relaxed
+  }
   ```
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
