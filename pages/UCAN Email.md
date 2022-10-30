@@ -2,7 +2,7 @@
 - `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema
 - ```ipldsch
   type DomainKeysIdentifiedMail {
-    version Version (rename "v") 
+    version Version (rename "v" implicit "1")
     publicKey PublicKey (rename "k")
   }
   
