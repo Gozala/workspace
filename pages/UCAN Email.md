@@ -1,2 +1,2 @@
-- Principal (the delegator) could delegate capability to another
+- Principal (the delegator) could delegate capability to another principal (the delegate) identified by a [[did:email]]
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
