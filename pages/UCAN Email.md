@@ -9,6 +9,11 @@
   
   -- Public key with a multiformat code tag
   type PublicKey bytes
+  -- Multiformat code corresponding to hashing Algorithm used before signing 
+  type Algorithm {
+    | 0x12
+  }
+  
   -- DKIM Version
   type DKIMVersion {
     | One ("1")
