@@ -1,2 +1,2 @@
-- Principal can
+- Principal could delegate some or all capabilities to another
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
