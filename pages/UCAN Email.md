@@ -2,13 +2,15 @@
 - `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema
 - ```ipldsch
   type DomainKeysIdentifiedMail {
-    version Version (rename "v" implicit "1")
+    version DKIMVersion (rename "v" implicit "1")
     publicKey PublicKey (rename "k")
   }
   
   -- Public key with a multiformat code tag
   type PublicKey bytes
   -- DKIM Version
-  type Version string
+  type DKIMVersion {
+    | One ("1")
+  }
   ```
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
