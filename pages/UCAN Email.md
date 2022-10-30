@@ -14,7 +14,7 @@
     | sha1 (0x11)
     | sha2_256 (0x12)
     | sha2_512 (0x13)
-  }
+  } representation int
   
   -- DKIM Version
   type DKIMVersion {
