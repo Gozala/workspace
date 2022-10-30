@@ -11,7 +11,9 @@
   type PublicKey bytes
   -- Multiformat code corresponding to hashing Algorithm used before signing 
   type Algorithm {
-    | 0x12
+    | sha1 (0x11)
+    | sha2_256 (0x12)
+    | sha2_512 (0x13)
   }
   
   -- DKIM Version
