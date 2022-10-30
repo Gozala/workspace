@@ -10,7 +10,7 @@
     user string (rename "u") -- email username (part before "@" sign)
     selector string (rename "s") - DKIM selector
     signature VarSig (rename "o") -- signature
-    payload Payload (rename "h")
+    payload Payload (rename "h") -- payload that was signed
   }
   
   type Payload {String: String}
