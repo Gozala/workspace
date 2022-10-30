@@ -1,1 +1,1 @@
-- [[DomainKeys Identified Mail (DKIM)]]
+- DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol
