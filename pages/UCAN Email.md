@@ -11,6 +11,7 @@
     selector string (rename "s") - DKIM selector
     signature VarSig (rename "o") -- signature
     payload Payload (rename "h") -- payload that was signed
+    canonicalization (rename "c" implicit "") -- Message canonicalization
   }
   
   type Payload {String: String}
