@@ -6,6 +6,8 @@
     k: PublicKey
   }
   
-  type PublicKey = bytes
+  -- Public key with a multiformat code tag
+  type PublicKey bytes
+  -- Version 
   ```
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
