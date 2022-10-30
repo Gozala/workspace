@@ -10,6 +10,11 @@
     user string (rename "u") -- email username (part before "@" sign)
     selector string (rename "s") - DKIM selector
     signature VarSig (rename "o") -- signature
+    payload Payload
+  }
+  
+  type Payload {
+  
   }
   
   -- Public key with a multiformat code tag
