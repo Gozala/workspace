@@ -14,7 +14,6 @@
     -- headers that were signed
     headers Headers (rename "h")
     
-    hash bytes (rename "bh") -- The hash of the canonicalized body
     signature VarSig (rename "b") -- signature
     
   }
