@@ -4,4 +4,6 @@
   followed by a valid email address as per [rfc6854](https://datatracker.ietf.org/doc/html/rfc6854) specification
   
   The ABNF for the key format is described below:
--
+- ```
+  did-mailto-format := did:key:<user>@<domain>
+  ```
