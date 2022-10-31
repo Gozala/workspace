@@ -27,4 +27,5 @@
 - 1. Registering an email address via traditional means with a service supporting DomainKeys Identified Mail (**DKIM**) email authentication method.
 ####                 Resolve
 - The following steps MUST be executed to resolve a DID to a DID document using the `did:mailto` method.
--
+- Send email to an email address in that follows `did:mealito:` prefix with TBT message format
+- Receive a response with
