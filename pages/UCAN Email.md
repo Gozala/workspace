@@ -40,6 +40,6 @@
   ```
 	- [Header Canonicalization](https://www.rfc-editor.org/rfc/rfc6376.html#section-3.4.2) MUST be applied to the data represented by the model.
 	- When message contains multiple `DKIM-Signature` headers it is up to the implementer to decide which one to encode as a data model, however it is RECOMMENDED to optimize for size and there for choose one containing less headers.
-	-
+	- Email `subject` MUST contain `did:key` corresponding to `userKey`
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
 -
