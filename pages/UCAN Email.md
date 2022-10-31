@@ -18,7 +18,7 @@
     
   }
   
-  type Payload {String: String}
+  type Headers []
   
   -- Public key with a multiformat code tag
   type PublicKey bytes
