@@ -5,11 +5,14 @@
     version DKIMVersion (rename "v" implicit "1")
     publicKey PublicKey (rename "k")
     hashingAlgorithm Algorithm (rename "a" implicit "0x12")
-    
-    domain string (rename "d") -- email domain (part after "@")
-    user string (rename "u") -- email username (part before "@" sign)
-    selector string (rename "s") - DKIM selector
-    headers Headers (rename "h") -- headers that were signed
+    -- email domain (part after "@")
+    domain string (rename "d")
+    -- email username (part before "@" sign)
+    user string (rename "u")
+    - DKIM selector
+    selector string (rename "s")
+    -- headers that were signed
+    headers Headers (rename "h")
     -- Message canonicalization
     canonicalization (rename "c" implicit Simple) Canonicalization
     
