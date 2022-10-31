@@ -21,5 +21,12 @@
   The following section outlines the DID operations for the `did:mailto`
   method. Implementers might note that this DID Method is derives document from the email message send from the given email address with DKIM-Signature.
 -
--
+- ###   Create
+  
+  Creating a did:mailto value consists of creating a cryptographic key pair
+  and encoding the public key using the format provided in  Section [§ 2. The did:key Format](https://w3c-ccg.github.io/did-method-key/#format). The creation of a DID Document is also performed by taking
+  the public key value and expanding it into DID Document. An example is given
+  below that expands the ed25519 did:key
+   `did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK`  into its
+  associated DID Document:
 -
