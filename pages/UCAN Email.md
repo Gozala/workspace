@@ -1,5 +1,5 @@
 - DID holding agent (the delegator) MAY delegate capability to a [[did:email]] identified agent (the delegate), in which case it MUST provide verifiable [[did:email]] document in the `fct.dkim` field.
-- `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema
+- `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema which is a d
 - ```ipldsch
   type DomainKeysIdentifiedMail {
     version DKIMVersion (rename "v" implicit "1")
@@ -9,10 +9,13 @@
     domain string (rename "d") -- email domain (part after "@")
     user string (rename "u") -- email username (part before "@" sign)
     selector string (rename "s") - DKIM selector
-    signature VarSig (rename "o") -- signature
     payload Payload (rename "h") -- payload that was signed
     -- Message canonicalization
     canonicalization (rename "c" implicit Simple) Canonicalization
+    
+    hash bytes (rename "bh") -- The hash of the canonicalized body
+    signature VarSig (rename "b") -- signature
+    
   }
   
   type Payload {String: String}
