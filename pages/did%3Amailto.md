@@ -30,4 +30,4 @@
 - Send email to an email address that follows `did:mailto:` prefix with TBD message format
 - Receive a response from the email address that follows `did:mailto:` prefix with TBD subject line containing `did:key` and valid DKIM-Signature header.
 - Verify that message was signed by private key corresponding to the email server.
-- Derive
+- Derive DID document from the received `did:key` as per [[did:key]] method
