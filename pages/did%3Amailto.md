@@ -29,4 +29,5 @@
 - The following steps MUST be executed to resolve a DID to a DID document using the `did:mailto` method.
 - Send email to an email address that follows `did:mailto:` prefix with TBD message format
 - Receive a response from the email address that follows `did:mailto:` prefix with TBD subject line containing `did:key` and valid DKIM-Signature header.
-- Verify that
+- Verify that message was signed by private key corresponding to the email server.
+- Derive
