@@ -1,5 +1,5 @@
 - DID holding agent (the delegator) MAY delegate capability to a [[did:email]] identified agent (the delegate), in which case it MUST provide verifiable [[did:email]] document in the `fct.dkim` field.
-- `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema which is an IPLD representation of DKIM-Signature header and the header of the as per [rfc6376](https://www.rfc-editor.org/rfc/rfc6376.html)
+- `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema which is an IPLD representation of ``DKIM-Signature header and the header of the as per [rfc6376](https://www.rfc-editor.org/rfc/rfc6376.html)
 - ```ipldsch
   type DomainKeysIdentifiedMail {
     version DKIMVersion (rename "v" implicit "1")
@@ -39,6 +39,6 @@
   
   ```
 	- [Header Canonicalization](https://www.rfc-editor.org/rfc/rfc6376.html#section-3.4.2) MUST be applied to the data represented by the model.
-	-
+	- If email from which `DomainKeysIdentifiedMail` is derived has multiple
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
 -
