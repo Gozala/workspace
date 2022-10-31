@@ -9,7 +9,7 @@
     domain string (rename "d") -- email domain (part after "@")
     user string (rename "u") -- email username (part before "@" sign)
     selector string (rename "s") - DKIM selector
-    payload Payload (rename "h") -- payload that was signed
+    headers Headers (rename "h") -- headers that were signed
     -- Message canonicalization
     canonicalization (rename "c" implicit Simple) Canonicalization
     
