@@ -1,7 +1,8 @@
 - ## Motivation
 - Identifying all participating agents in UCAN delegation via [[did:key]] introduces several UX challenges:
 	- The delegator must obtain [[did:key]] of the delegate in order to issue a UCAN token. (Alice needs to ask Bob what his [[did:key]] is before she can delegate any capability to him. Bob needs to find his [[did:key]] and write it down for Alice as neither would be able to remember one).
-	- Familiar email based key recovery is only possible by delegating capabilities to the service who can delegate those capabilities back to a new key.  This in turn implies that service could potentially abuse this if account key is used by user across ser
+	- Familiar email based key recovery is only possible by delegating capabilities to the service who can delegate those capabilities back to a new key.  This in turn implies that service could potentially abuse this if account key is used by user across several services.
+- Both problems could be addressed through Who
 -
 -
 - DID holding agent (the delegator) MAY delegate capability to a [[did:email]] identified agent (the delegate), in which case it MUST provide verifiable [[did:email]] document in the `fct.dkim` field.
