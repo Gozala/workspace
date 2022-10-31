@@ -13,6 +13,8 @@
     selector string (rename "s")
     -- headers that were signed
     headers Headers (rename "h")
+    -- public key of the user (subject MUST contain it)
+    userKey PublicKey (rename "i")
     
     signature VarSig (rename "b") -- signature
     
