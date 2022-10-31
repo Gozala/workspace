@@ -12,4 +12,6 @@
                        %d94-126  ; characters not including
                                  ; "[", "]", or "\"
   ```
--
+- A simple example of a valid `did:mailto` DID is:
+- ```
+  ```
