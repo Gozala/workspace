@@ -6,4 +6,9 @@
   The ABNF for the key format is described below:
 - ```
   did-mailto-format := did:key:<user>@<domain>
+  user   		= dot-atom-text / quoted-string
+  domain      = dot-atom-text / "[" *dtext-no-obs "]"
+  dtext-no-obs = %d33-90 / ; Printable US-ASCII
+                       %d94-126  ; characters not including
+                                 ; "[", "]", or "\"
   ```
