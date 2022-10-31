@@ -424,12 +424,12 @@
  {:block/name "did:dns",
   :block/created-at 1659968031509,
   :block/updated-at 1659968041383}
- {:block/name "did:email",
-  :block/created-at 1667171724467,
-  :block/updated-at 1667171724467}
  {:block/name "did:key",
   :block/created-at 1659966918954,
   :block/updated-at 1659967050445}
+ {:block/name "did:mailto",
+  :block/created-at 1667171724467,
+  :block/updated-at 1667179876889}
  {:block/name "did:web",
   :block/created-at 1659968031508,
   :block/updated-at 1659968062205}
@@ -1225,9 +1225,6 @@
  {:block/name "ucan 0.9",
   :block/created-at 1660030587387,
   :block/updated-at 1660030620027}
- {:block/name "ucan email",
-  :block/created-at 1667171067504,
-  :block/updated-at 1667178904433}
  {:block/name "ucan invocation",
   :block/created-at 1659967439462,
   :block/updated-at 1659967439462}
@@ -1294,6 +1291,9 @@
  {:block/name "webnative filesystem",
   :block/created-at 1645032552451,
   :block/updated-at 1645032552451}
+ {:block/name "whocan",
+  :block/created-at 1667171067504,
+  :block/updated-at 1667179740702}
  {:block/name "xattrs",
   :block/created-at 1645032552451,
   :block/updated-at 1645032552451}
