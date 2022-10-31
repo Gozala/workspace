@@ -37,6 +37,6 @@
   } representation string
   
   ```
-- Header Canonicalization https://www.rfc-editor.org/rfc/rfc6376.html#section-3.4.2
+- [Header Canonicalization](https://www.rfc-editor.org/rfc/rfc6376.html#section-3.4.2) MUST be applied to the data
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
 -
