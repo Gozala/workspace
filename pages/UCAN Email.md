@@ -1,6 +1,6 @@
 - ## Motivation
 - Identifying all participating agents in UCAN delegation via [[did:key]] introduces several UX challenges:
-	- Alice needs to ask Bob what his [[did:key]] is before she can delegate any capability to him.
+	- The delegator must obtain [[did:key]] of the delegates [[did:key]] Alice needs to ask Bob what his [[did:key]] is before she can delegate any capability to him.
 -
 -
 - DID holding agent (the delegator) MAY delegate capability to a [[did:email]] identified agent (the delegate), in which case it MUST provide verifiable [[did:email]] document in the `fct.dkim` field.
