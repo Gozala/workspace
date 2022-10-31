@@ -19,4 +19,7 @@
 - ## Operations
   
   The following section outlines the DID operations for the `did:mailto`
-  method. Implementers might note that this DID Method is derives document from the DKIM email message send from that email address which
+  method. Implementers might note that this DID Method is derives document from the email message send from the given email address with DKIM-Signature.
+-
+-
+-
