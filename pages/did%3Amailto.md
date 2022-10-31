@@ -24,5 +24,5 @@
 - #### Create
             
   Creating a DID is done by:
-- 1. Registering
+- 1. Registering an email address via traditional means (using arbitrary email provider )
 -
