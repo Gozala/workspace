@@ -14,4 +14,11 @@
   ```
 - A simple example of a valid `did:mailto` DID is:
 - ```
+  did:mailto:alice@web.mail
   ```
+- ## Operations
+  
+  The following section outlines the DID operations for the `did:mailto`
+  method. Implementers might note that this DID Method is derived generative,
+  requiring no look ups in a registry. Since did:key values are not
+  stored in any registry, they cannot be updated or deactivated.
