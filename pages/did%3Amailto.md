@@ -19,6 +19,4 @@
 - ## Operations
   
   The following section outlines the DID operations for the `did:mailto`
-  method. Implementers might note that this DID Method is derived generative,
-  requiring no look ups in a registry. Since did:key values are not
-  stored in any registry, they cannot be updated or deactivated.
+  method. Implementers might note that this DID Method is derives document from the valid email message send from the
