@@ -429,7 +429,7 @@
   :block/updated-at 1659967050445}
  {:block/name "did:mailto",
   :block/created-at 1667171724467,
-  :block/updated-at 1667179876889}
+  :block/updated-at 1667180698934}
  {:block/name "did:web",
   :block/created-at 1659968031508,
   :block/updated-at 1659968062205}
