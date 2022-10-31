@@ -13,8 +13,6 @@
     selector string (rename "s")
     -- headers that were signed
     headers Headers (rename "h")
-    -- Message canonicalization
-    canonicalization (rename "c" implicit Simple) Canonicalization
     
     hash bytes (rename "bh") -- The hash of the canonicalized body
     signature VarSig (rename "b") -- signature
@@ -38,9 +36,7 @@
     | One ("1")
   } representation string
   
-  type Canonicalization {
-    | Simple
-    | Relaxed
-  }
   ```
+- Header Canonicalization https://www.rfc-editor.org/rfc/rfc6376.html#section-3.4.2
 - DomainKeys Identified Mail ([[DKIM]]) protocol is widely used protocol that can be utilized by a principal  delegate
+-
