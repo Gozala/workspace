@@ -24,5 +24,5 @@
 - #### Create
             
   Creating a DID is done by:
-- 1. Registering an email address via traditional means (using arbitrary email provider )
+- 1. Registering an email address via traditional means with a service supporting **DomainKeys Identified Mail** (**DKIM**) email authentification method.
 -
