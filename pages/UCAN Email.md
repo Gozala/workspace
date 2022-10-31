@@ -18,7 +18,7 @@
     
   }
   
-  type Headers []
+  type Headers {String: String} representation listpairs
   
   -- Public key with a multiformat code tag
   type PublicKey bytes
