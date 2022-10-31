@@ -2,3 +2,6 @@
 - The format for the `did:mailto` method conforms to the [[DID-CORE](https://w3c-ccg.github.io/did-method-key/#bib-did-core)]
   specification and is simple. It consists of the  `did:mailto`  prefix,
   followed by a valid email address as per [rfc6854](https://datatracker.ietf.org/doc/html/rfc6854) specification
+  
+  The ABNF for the key format is described below:
+-
