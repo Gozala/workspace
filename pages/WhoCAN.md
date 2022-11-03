@@ -7,8 +7,7 @@
 -
 - DID holding agent (the delegator) MAY delegate capability to a [[did:mailto]] identified agent (the delegate), in which case it MUST provide verifiable [[did:mailto]] document in the `fct.dkim` field.
 - `fct.dkim` field MUST be a CID to a DAG-CBOR block conforming to a following IPLD schema which is an IPLD representation of `DKIM-Signature` header and the header of the as per [rfc6376](https://www.rfc-editor.org/rfc/rfc6376.html)
-- ```ipldsch
-  type DomainKeysIdentifiedMail {
+- type DomainKeysIdentifiedMail {
     version DKIMVersion (rename "v" implicit "1")
     publicKey PublicKey (rename "k")
     hashingAlgorithm Algorithm (rename "a" implicit "0x12")
@@ -43,8 +42,6 @@
   type DKIMVersion {
     | One ("1")
   } representation string
-  
-  ```
 	- [Header Canonicalization](https://www.rfc-editor.org/rfc/rfc6376.html#section-3.4.2) MUST be applied to the data represented by the model.
 	- When message contains multiple `DKIM-Signature` headers it is up to the implementer to decide which one to encode as a data model, however it is RECOMMENDED to optimize for size and there for choose one containing less headers.
 	- Email `subject` MUST contain `did:key` corresponding to `userKey`
