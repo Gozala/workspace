@@ -1,2 +1,3 @@
 - Talking to people all through [[LabWeek22]] about [[w3 accounts]] I have noticed following use cases
-	- I
+	- I like that user can bring their own storage so I can just store
+	- I would like to pay
