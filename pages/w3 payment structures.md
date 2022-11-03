@@ -2,4 +2,5 @@
 	- I like that user can bring their own storage so my product can just store the data and not worry about account creation etc...
 	- I already have users and would prefer to avoid going through another registration flow, I would prefer to just pay for their usage.
 	- I want to let our partners store public goods and have various companies take care of the storage costs.
-- All of these cases seem to have one thing in common, actor storing the data is different from the actor paying for the data. In some cases there is coordinating actor between ones that store and
+- All of these cases seem to have one thing in common, actor storing the data is different from the actor paying for the data. In some cases there is coordinating actor between ones that store and pay, specifically it manages which actors will be given store access.
+- w3.storage
