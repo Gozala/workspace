@@ -10,4 +10,5 @@
 - On the other hand [[webrecorder]] could instead share store capabilities to their account instead. That way there is no need to create "webrecorder-tier" product or install it, but on flipside it harms user experience because data is suddenly scattered across various accounts and something needs to maintain accesses to all of them.
 - It seems like we need to figure out the way to unify two approaches such that bring the benefits but loose the problems.
 - We are already thinking of renaming accounts to spaces, perhaps we need notion of a portals which would be view from one space into other. More concretely webrecorder could create portal, a view into their own account and hand it a user. User could then install given portal into their own space giving them ability to store and list things in webrecorder subspace as long as portal is open. At the same time webrecorder could also list all the things that were stored and through which portals. If their user misuses portal they could always close it on their side. When portal is closed user could either choose to pay to keep it running or close it and loose access to all the data in it.
-	- This means
+	- This means third party services can create their own "products" and give users access to them as they see fit.
+	- Third party services will be billed
