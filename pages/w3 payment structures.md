@@ -1,3 +1,4 @@
 - Talking to people all through [[LabWeek22]] about [[w3 accounts]] I have noticed following use cases
 	- I like that user can bring their own storage so my product can just store the data and not worry about account creation etc...
-	- I already have users and would prefer to avoid going through another registration flow, I would prefer to just
+	- I already have users and would prefer to avoid going through another registration flow, I would prefer to just pay for their usage.
+	-
