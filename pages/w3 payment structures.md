@@ -15,4 +15,4 @@
 	- User spaces are no longer fragmented across various accounts who's access tokens they need to maintain locally.
 - Another framing of the same idea could be through the notion of a "license". Third parties could create and issue a license. Users could store obtained license in their accounts and store content under specific "license". At the end of the billing cycle we'll bill license issuer per all the data that was stored under that license.
 - It is worth highlighting that ideally we will have inverse payment schemas working as well, where application asks user to install some license which instead of covering costs for data stored under that license instead bills users extra license fee. This could enable w3 apps that focus only on building software and let web3.storage deal with storage and payments.
-	- In this case however we would want to
+	- In this case however we would want to allow user to
