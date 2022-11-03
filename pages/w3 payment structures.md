@@ -1,1 +1,2 @@
-- Talking to people all through [[LabWeek22]] about [[w3 accounts]]
+- Talking to people all through [[LabWeek22]] about [[w3 accounts]] I have noticed following use cases
+	- I
