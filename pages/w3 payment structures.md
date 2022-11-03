@@ -9,4 +9,4 @@
 - Only missing piece of the puzzle seems to be a way of tagging data stored, so that [[webrecorder]] is not billed for unrelated data that user stores. Perhaps this could be as simple as tagging `store/add` requests with a "webrecorder-tier" tag.
 - On the other hand [[webrecorder]] could instead share store capabilities to their account instead. That way there is no need to create "webrecorder-tier" product or install it, but on flipside it harms user experience because data is suddenly scattered across various accounts and something needs to maintain accesses to all of them.
 - It seems like we need to figure out the way to unify two approaches such that bring the benefits but loose the problems.
-- We are already thinking of renaming accounts to spaces
+- We are already thinking of renaming accounts to spaces, perhaps we need notion of a portals which would
