@@ -3,4 +3,4 @@
 	- I already have users and would prefer to avoid going through another registration flow, I would prefer to just pay for their usage.
 	- I want to let our partners store public goods and have various companies take care of the storage costs.
 - All of these cases seem to have one thing in common, actor storing the data is different from the actor paying for the data. In some cases there is coordinating actor between ones that store and pay, specifically it manages which actors will be given store access.
-- w3.storage already decouples account where data is stored from billing. General idea is that agent can purchase (or claim) a "product" and "install
+- w3.storage already decouples account where data is stored from billing. General idea is that agent can purchase (or claim) a "product" and add it to an account increasing it's capacity. In fact that is how
