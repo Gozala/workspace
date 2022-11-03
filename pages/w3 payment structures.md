@@ -13,4 +13,4 @@
 	- This means third party services can create their own "products" and give users access to them as they see fit.
 	- Third party services will be billed for data that users can store in their account, but under specific portal.
 	- User spaces are no longer fragmented across various accounts who's access tokens they need to maintain locally.
-- Another framing of the same idea could be through the notion of a "license". Third parties could create and issue a license. Users could store obtained license in their accounts and store content under specific "license". At the end of the billing cycle we'll bill third-party based on the license fee
+- Another framing of the same idea could be through the notion of a "license". Third parties could create and issue a license. Users could store obtained license in their accounts and store content under specific "license". At the end of the billing cycle we'll bill license issuer per all the data that was stored under that license.
