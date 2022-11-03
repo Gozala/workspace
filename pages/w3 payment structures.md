@@ -4,4 +4,4 @@
 	- I want to let our partners store public goods and have various companies take care of the storage costs.
 - All of these cases seem to have one thing in common, actor storing the data is different from the actor paying for the data. In some cases there is coordinating actor between ones that store and pay, specifically it manages which actors will be given store access.
 - w3.storage already decouples account where data is stored from billing. General idea is that agent can purchase (or claim) a "product" and add it to an account increasing it's capacity. In fact that is how new users can get a free space, they claim a "voucher" in exchange for the "email" address and get back UCAN delegation from w3.storage allowing them to add "free-tier" product to account of their choosing. Once "free-tier" is added account capacity is increased allowing account owner to store data in it.
-- Our "free-tier" product is basically
+- Our "free-tier" product is another example of actor storing been different from actor paying for storage. Our users that register are actors storing and w
