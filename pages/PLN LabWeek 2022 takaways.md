@@ -30,4 +30,4 @@
 - CIDv2 / fat pointers / application effort
 	- Lot of interesting discussions occured around this idea that has many different names.
 	- [[@vmx]] started an [effort to reconcile those](https://hackmd.io/@vmx/HkoYAr64o)
-	- Major breakthrough seems to be reframing a problem from something very abstract or very concrete into something that seems to capture general idea without prescribing
+	- Major breakthrough seems to be reframing a problem from something very abstract or very concrete into something that seems to capture general idea without prescribing semantics. We do not have consensus on name, however I like calling it an "application" that is
