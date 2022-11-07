@@ -55,4 +55,6 @@
 	- Fission really wants us to support [[WNFS]] on our gateways
 	- Doing it through [[autocodec]] seems to be desired approach
 	- Currently we can not dynamically load WASM in cloudflare workers, however we could prebundle [[WNFS]] codec in order to support it.
-- [[Autocodec]]
+- [[Autocodec]] is gaining momentum and [[Fission]] is working towards MVP.
+	- It solves many problems, but loading WASM in CF workers is a roadblock
+	- Someone (can't remember who)[[@thibmeu]]
