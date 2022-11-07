@@ -1,1 +1,1 @@
-- There is
+- There is a clear interest in  having a better IPFS remote store API
