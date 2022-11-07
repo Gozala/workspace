@@ -1,4 +1,4 @@
 - There is a clear interest in the network to have better way to replicate data on remote nodes than current [IPFS pinning service API](https://ipfs.github.io/pinning-services-api-spec/)
 	- [[Iroh]] is calling it a cashing API
-	-
+	- Stewards seem to recognize the value of allowing delegations and UCANs  based tokens
 - having a better IPFS remote store API
