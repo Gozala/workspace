@@ -70,4 +70,5 @@
 - Increased interest in [[UCAN]]s and lack of authorization story in [[IPFS]] seems to create opportunity for ucanto.
 	- Just like reframe it has pluggable transports and codecs.
 	- Unlike reframe it's built around [[UCAN]]s and consequently has a good story around authorization.
-	- Seems like we should talk more about ucanto so we don't miss opportunity with getting broader adopt
+	- Seems like we should talk more about ucanto so we don't miss opportunity with getting broader adoption.
+	- Better yet if ucanto is a way people build services, they all become directly pluggable into our
