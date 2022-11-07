@@ -38,4 +38,5 @@
 		- Have IPLD node representation with a new codec.
 		- Representation should be a multiformat that essentially packs two CIDs.
 		- There should be an unambiguous way to refer to both "application" itself and a "result of the application"
-		- [[@mikeal]]'s idea of using identity hash as a means of encoding this was not popular and trouble with such approach in []
+		- [[@mikeal]]'s idea of using identity hash as a means of encoding this was not popular and trouble with such approach in [[IPVM]] had been brought up.
+		- I personally thought we need separate construct for representing "application" in IPLD schema that is not `Link` but is rather `Application`, yet
