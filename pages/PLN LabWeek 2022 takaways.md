@@ -9,4 +9,5 @@
 	- I have discussed idea of proposing new [[IPNS]] spec that is [[UCAN]] based with [[@lidel]], [[Iroh]] team and Fission & everyone seems to be onboard.
 	- I think we should take a lead and author [[IPIP]] proposal that would define IPNS protocol with [[UCAN]] based authorization.
 - UCANs delegating to email address using DKIM proofs seems to address a lot of usability problems and brief discussion of how we could approach that within UCANs seemed to resonate with ucan-wg members that were present there.
-	- I have already started writing up [[ucan-mailto]] spec, and
+	- I have already started writing up [[ucan-mailto]] spec, and I think we should get it across the finish line as fast as we can.
+- IPNS with email as keys is a synthesis of the [[ucan-mailto]] and [[ucan-ipns]] ideas that could allow
