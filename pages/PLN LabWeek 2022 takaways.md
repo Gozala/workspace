@@ -5,4 +5,5 @@
 	- Lot of people seem hesitant to choose web3.storage API over the api with a specification, compatibility tests and list of vendors implementing it.
 	- Idea of having writable gateways that could route to storage provider seems to appeal to everyone I talked to.
 	- I think there is an opportunity to [propose a specification](https://github.com/ipfs/specs/) so that [[Iroh]], [[Fission]] and perhaps others could implement. After which we could claim that we have a better standard API for storing/replicating DAGs in remote nodes.
-- UCANs
+- It seemed like everyone was excited about UCANs. Ability to delegate [[IPNS]] publish seems to have
+-
