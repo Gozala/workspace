@@ -54,5 +54,5 @@
 - [[Web Native FileSystem]] support in web3.storage
 	- Fission really wants us to support [[WNFS]] on our gateways
 	- Doing it through [[autocodec]] seems to be desired approach
-	- CUrrent
--
+	- Currently we can not dynamically load WASM in cloudflare workers, however we could prebundle [[WNFS]] codec in order to support it.
+- [[Autocodec]]
