@@ -45,4 +45,5 @@
 		- There was a call to form a working group around this as well. I believe [[@vmx]] volunteered to  lead this effort.
 - Move the bytes WG
 	- [[@b5]]  from [[Iroh]] team started a community effort to form a move the bytes WG, with a goal of  better transport protocol than bitswap.
-	- Approach is to collect user stories & create test infrastructure and finally identify
+	- Approach is to collect user stories & create test infrastructure and finally identify specific implementation efforts that would improve the current status quo.
+	- dag.house team participated in ideation process.
