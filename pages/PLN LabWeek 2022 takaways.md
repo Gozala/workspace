@@ -51,4 +51,5 @@
 	- We have identified opportunity in making put bytes here & take bytes from there part of the protocol.
 		- It allows us to reduce operational costs.
 		- It also seems to fit well with IPFS in my pocket scenarios as attested by [[@carsonfarmer]] (of Textile fame), because you may not have requested bytes locally but often have them somewhere in the cloud.
+- [[Web Native FileSystem]]
 -
