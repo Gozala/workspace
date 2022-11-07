@@ -72,4 +72,5 @@
 	- Unlike reframe it's built around [[UCAN]]s and consequently has a good story around authorization.
 	- Seems like we should talk more about ucanto so we don't miss opportunity with getting broader adoption.
 	- Better yet if ucanto is a way people build services, they all become directly pluggable into our [[w3-vm]] vision.
-- Despite so much time with
+- Despite all the time with [[Fission]] I have failed to sync on invocations / receipts with the [[@expede]] and rest of the team.
+	- We need to make sure our receipts are aligned with the [[IPVM]]
