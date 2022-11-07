@@ -66,4 +66,4 @@
 - Vision of [[Iroh]] seems to align with dag.house vision
 	- Had an interesting chat with [[@dignifiedquire]] regarding [[Iroh]] mobile. Visions seems to be that [[Iroh]] will not have many libp2p connections with remote peers but rather 1 or possibly handful with peers that can act on it's behalf.
 		- It may also open bunch of connections but with local peers so local-first use cases would work better and would not require moving bytes across global internet infrastructure.
-	- I think we with our
+	- I think we with our ucanto agents are moving into a similar direction from the different end. It might be a good idea to collaborate with [[Iroh]] team
