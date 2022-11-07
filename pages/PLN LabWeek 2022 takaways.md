@@ -37,4 +37,5 @@
 	- There was discussion with Fission, IPVM, [[@vmx]] and myself in an attempt to reconcile differences. I think we succeeded to some degree and settled on idea that "application" should:
 		- Have IPLD node representation with a new codec.
 		- Representation should be a multiformat that essentially packs two CIDs.
-		- There should be a way to refer to both "application" itself and a result of the "application"
+		- There should be an unambiguous way to refer to both "application" itself and a "result of the application"
+		- [[@mikeal]]'s idea of using identity hash to
