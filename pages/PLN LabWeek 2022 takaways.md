@@ -48,4 +48,6 @@
 	- Approach is to collect user stories & create test infrastructure and finally identify specific implementation efforts that would improve the current status quo.
 	- dag.house team participated in ideation process.
 	- We've committed to participate in the WG.
-	- We have identified opportunity to make put bytes here & take bytes from there part of the
+	- We have identified opportunity in making put bytes here & take bytes from there part of the protocol.
+		- It allows us to reduce operational costs.
+		- It also seems to fit well with IP
