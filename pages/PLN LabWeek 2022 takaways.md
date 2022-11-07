@@ -69,4 +69,5 @@
 	- I think we with our ucanto agents are moving into a similar direction from the different end. It might be a good idea to collaborate with [[Iroh]] team so we can complement each other in this.
 - Increased interest in [[UCAN]]s and lack of authorization story in [[IPFS]] seems to create opportunity for ucanto.
 	- Just like reframe it has pluggable transports and codecs.
-	- Unlike reframe it's built around [[UCAN]]s and has a
+	- Unlike reframe it's built around [[UCAN]]s and consequently has a good story around authorization.
+	- Seems like we should talk more about ucanto so we don't miss opportunity with getting broader adopt
