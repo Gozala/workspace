@@ -64,4 +64,4 @@
 		- Broadly speaking service worker could load WASM and do all the processing
 		- There are some unknown however in regards to first load experience, because some page would need to install service worker first.
 - Vision of [[Iroh]] seems to align with dag.house vision
-	- Had an interesting chat with [[@dignifiedquire]] regarding [[Iroh]] mobile.
+	- Had an interesting chat with [[@dignifiedquire]] regarding [[Iroh]] mobile. Visions seems to be that [[Iroh]] will not have many libp2p connections with remote peers but rather 1 or possibly handful with
