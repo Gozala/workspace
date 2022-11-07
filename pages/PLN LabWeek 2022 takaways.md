@@ -2,5 +2,6 @@
 	- [[Iroh]] is calling it a cashing API
 	- Stewards seem to recognize the value of allowing delegations and UCANs based tokens that do not need to be kept secret.
 	- Fission never liked pinning but they do would love a way to replicate data in highly available nodes.
-	- Lot of people seem hesitant to choose web3.storage API over api
+	- Lot of people seem hesitant to choose web3.storage API over the api with a specification, compatibility tests and list of vendors implementing it.
+	- Idea of having writable gateways that could route
 - having a better IPFS remote store API
