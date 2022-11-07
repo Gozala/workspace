@@ -42,4 +42,6 @@
 		- I personally thought we need separate construct for representing "application" in IPLD schema that is not `Link` but is rather `Application`, but that did not prove popular either.
 			- Arguments were made that application should just be a block and it's up to interpreter to decide what to do with it ()I'm probably butchering it)
 		- There seemed to be consensus that application should be limited to a single CID as opposed to multiple. If you want it over multiple CIDs just pack them in tuple.
-		- There was a call to form a working group around this as well. I believe [[@vmx]]
+		- There was a call to form a working group around this as well. I believe [[@vmx]] volunteered to  lead this effort.
+- Move the bytes WG
+	- [[@b5]]  from [[Iroh]] team started a community effort to form a
