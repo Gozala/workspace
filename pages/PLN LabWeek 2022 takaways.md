@@ -14,4 +14,4 @@
 	- I got positive feedback from [[Iroh]] team, who would be interested in implementing support for this.
 	- Fission is obviously interested in this as well.
 	- If we propose spec and three different orgs committed to supporting it we'll be the majority of IPFS implementations supporting it.
-	-
+	- Thibault Cloudflare also expressed some interest, but
