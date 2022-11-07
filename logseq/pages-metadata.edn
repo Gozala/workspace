@@ -886,96 +886,18 @@
  {:block/name "notion",
   :block/created-at 1659953792070,
   :block/updated-at 1659953792070}
- {:block/name "nov 1st, 2022",
-  :block/created-at 1667261663562,
-  :block/updated-at 1667261663562}
- {:block/name "nov 2nd, 2022",
-  :block/created-at 1667347229583,
-  :block/updated-at 1667347229583}
- {:block/name "nov 3rd, 2022",
-  :block/created-at 1667458804260,
-  :block/updated-at 1667458804260}
  {:block/name "nov 4th, 2022",
   :block/created-at 1667546470248,
-  :block/updated-at 1667852726868}
+  :block/updated-at 1667852764136}
  {:block/name "nov 7th, 2022",
   :block/created-at 1667845634102,
-  :block/updated-at 1667845634102}
+  :block/updated-at 1667852751643}
  {:block/name "now",
   :block/created-at 1645032552466,
   :block/updated-at 1645032552466}
  {:block/name "nyc",
   :block/created-at 1645032552463,
   :block/updated-at 1645032552463}
- {:block/name "oct 10th, 2022",
-  :block/created-at 1665385263017,
-  :block/updated-at 1665385263017}
- {:block/name "oct 11th, 2022",
-  :block/created-at 1665471615640,
-  :block/updated-at 1665471615640}
- {:block/name "oct 12th, 2022",
-  :block/created-at 1665558306543,
-  :block/updated-at 1665558306543}
- {:block/name "oct 13th, 2022",
-  :block/created-at 1665644458910,
-  :block/updated-at 1665644458910}
- {:block/name "oct 14th, 2022",
-  :block/created-at 1665730850758,
-  :block/updated-at 1665730850758}
- {:block/name "oct 15th, 2022",
-  :block/created-at 1665819071532,
-  :block/updated-at 1665819071532}
- {:block/name "oct 16th, 2022",
-  :block/created-at 1665903847877,
-  :block/updated-at 1665903847877}
- {:block/name "oct 17th, 2022",
-  :block/created-at 1665990015215,
-  :block/updated-at 1665990015215}
- {:block/name "oct 18th, 2022",
-  :block/created-at 1666077028443,
-  :block/updated-at 1666077028443}
- {:block/name "oct 19th, 2022",
-  :block/created-at 1666162802530,
-  :block/updated-at 1666162802530}
- {:block/name "oct 1st, 2022",
-  :block/created-at 1664607916269,
-  :block/updated-at 1664607916269}
- {:block/name "oct 20th, 2022",
-  :block/created-at 1666249416945,
-  :block/updated-at 1666249416945}
- {:block/name "oct 21st, 2022",
-  :block/created-at 1666335918961,
-  :block/updated-at 1666335918961}
- {:block/name "oct 2nd, 2022",
-  :block/created-at 1664694058634,
-  :block/updated-at 1664694058634}
- {:block/name "oct 30th, 2022",
-  :block/created-at 1667171053147,
-  :block/updated-at 1667171053147}
- {:block/name "oct 31st, 2022",
-  :block/created-at 1667174400691,
-  :block/updated-at 1667174400691}
- {:block/name "oct 3rd, 2022",
-  :block/created-at 1664780436938,
-  :block/updated-at 1664780436938}
- {:block/name "oct 4th, 2022",
-  :block/created-at 1664866849460,
-  :block/updated-at 1664866849460}
- {:block/name "oct 5th, 2022",
-  :block/created-at 1664953216110,
-  :block/updated-at 1664953216110}
- {:block/name "oct 6th, 2022",
-  :block/created-at 1665039658876,
-  :block/updated-at 1665039658876}
- {:block/name "oct 7th, 2022",
-  :block/created-at 1665130810155,
-  :block/updated-at 1665130810155}
- {:block/name "oct 8th, 2022",
-  :block/created-at 1665215533118,
-  :block/updated-at 1665215533118}
- {:block/name "oct 9th, 2022",
-  :block/created-at 1665300200021,
-  :block/updated-at 1665300200021}
  {:block/name "orch",
   :block/created-at 1645032552465,
   :block/updated-at 1645032552465}
@@ -1138,21 +1060,9 @@
  {:block/name "sep 26th, 2022",
   :block/created-at 1664203221716,
   :block/updated-at 1664203221716}
- {:block/name "sep 27th, 2022",
-  :block/created-at 1664262039108,
-  :block/updated-at 1664262039108}
- {:block/name "sep 28th, 2022",
-  :block/created-at 1664348428673,
-  :block/updated-at 1664348428673}
- {:block/name "sep 29th, 2022",
-  :block/created-at 1664435982184,
-  :block/updated-at 1664435982184}
  {:block/name "sep 2nd, 2022",
   :block/created-at 1662102055906,
   :block/updated-at 1662102055906}
- {:block/name "sep 30th, 2022",
-  :block/created-at 1664521245383,
-  :block/updated-at 1664521245383}
  {:block/name "sep 3rd, 2021",
   :block/created-at 1630627200000,
   :block/updated-at 1630627200000}
