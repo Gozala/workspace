@@ -44,4 +44,5 @@
 		- There seemed to be consensus that application should be limited to a single CID as opposed to multiple. If you want it over multiple CIDs just pack them in tuple.
 		- There was a call to form a working group around this as well. I believe [[@vmx]] volunteered to  lead this effort.
 - Move the bytes WG
-	- [[@b5]]  from [[Iroh]] team started a community effort to form a
+	- [[@b5]]  from [[Iroh]] team started a community effort to form a move the bytes WG, with a goal of  better transport protocol than bitswap.
+	- Approach is to collect user stories & create test infrastructure and finally identify
