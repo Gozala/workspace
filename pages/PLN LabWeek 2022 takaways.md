@@ -77,4 +77,5 @@
 	- We also should sync in regards to invocations, where programs are addressed by a mutable reference as opposed to CID.
 	- Finally it seems that there is a need to express invocation without calling out "audience". E.g. it is not clear who the `aud` should be in [[ucan-ipns]].
 		- Argument could be made that it should be the node that will be republishing the update on DHT / pubsub.
-		- On the other hand
+		- On the other hand it does not exactly fit multicast vision.
+		- We could probably work around this by
