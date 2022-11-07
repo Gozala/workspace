@@ -61,4 +61,5 @@
 		- Apparently Fastly supports [dynamic WASM loading](https://docs.fastly.com/products/compute-at-edge) which in turn pressures CF to fix this limination.
 	- We should raise the subject with CF to see how visible dynamic loading would be and on what timeline.
 	- I also have discussed with [[@expede]] idea of doing WASM on the client side instead.
-		- Broadly speaking it would
+		- Broadly speaking service worker could load WASM and do all the processing
+		- There are some unknown however in gerd
