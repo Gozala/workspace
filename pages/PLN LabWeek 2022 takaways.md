@@ -27,4 +27,6 @@
 - In the IPLD planning session I have raised idea of forming a working group which seems to work very well in case of [[UCAN-WG]]
 	- [[@rangermauve]] is leading an effort to form WG and asked us participate / represent dag.house
 		- https://github.com/ipld/ipld/issues/249
--
+- CIDv2 / fat pointers / application effort
+	- Lot of interesting discussions occured around this idea that has many different names.
+	- [[@vmx] ]
