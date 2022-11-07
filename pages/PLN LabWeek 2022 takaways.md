@@ -8,4 +8,4 @@
 - It seemed like everyone was excited about UCANs. Ability to delegate [[IPNS]] publish seems to resonate both with stewards and anyone using IPNS today.
 	- I have discussed idea of proposing new [[IPNS]] spec that is [[UCAN]] based with [[@lidel]], [[Iroh]] team and Fission & everyone seems to be onboard.
 	- I think we should take a lead and author [[IPIP]] proposal that would define IPNS protocol with [[UCAN]] based authorization.
-- UCANs delegating to email address using DKIM proofs seems to address a lot of usability problems with
+- UCANs delegating to email address using DKIM proofs seems to address a lot of usability problems and brief discussion of how we could approach that within UCANs seemed to resonate with ucan-wg members and
