@@ -68,4 +68,5 @@
 		- It may also open bunch of connections but with local peers so local-first use cases would work better and would not require moving bytes across global internet infrastructure.
 	- I think we with our ucanto agents are moving into a similar direction from the different end. It might be a good idea to collaborate with [[Iroh]] team so we can complement each other in this.
 - Increased interest in [[UCAN]]s and lack of authorization story in [[IPFS]] seems to create opportunity for ucanto.
-	-
+	- Just like reframe it has pluggable transports and codecs.
+	- Unlike reframe it's built around [[UCAN]]s and has a
