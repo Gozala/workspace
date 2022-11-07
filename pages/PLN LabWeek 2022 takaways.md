@@ -14,8 +14,9 @@
 	- I got positive feedback from [[Iroh]] team, who would be interested in implementing support for this.
 	- Fission is obviously interested in this as well.
 	- If we propose spec and three different orgs committed to supporting it we'll be the majority of IPFS implementations supporting it.
-	- Thibault from Cloudflare also expressed some interest in the idea, but with some caveats
+	- [[@thibmeu]] from Cloudflare also expressed some interest in the idea, but with some caveats
 - [[@thibmeu]] from Cloudflare seemed to think that IPNS is simply reinventing DNS and there is a value to just adopting DNS protocol instead.
 	- I don't know enough about DNS to assess what he was describing, but I encouraged him to start [[IPIP]] proposal.
 	- After some discussion I was able to confirm that [[ipns-mailto]] could be complimentary with IPNS over DNS and not competing appoach.
-	- I think it would be a good idea to collaborate with [[@Thibault]]
+	- I think it would be a good idea to collaborate with [[@thibmeu]] on this so we can have something where DHT would not be a bottleneck.
+-
