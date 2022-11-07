@@ -15,4 +15,5 @@
 	- Fission is obviously interested in this as well.
 	- If we propose spec and three different orgs committed to supporting it we'll be the majority of IPFS implementations supporting it.
 	- Thibault from Cloudflare also expressed some interest in the idea, but with some caveats
-- Thibault from Cloudflare seemed to think that IPNS is simply reinventing DNS and
+- Thibault from Cloudflare seemed to think that IPNS is simply reinventing DNS and there is a value to just adopting DNS protocol instead.
+	- I don't know enough about DNS to assess what
