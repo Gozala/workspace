@@ -63,4 +63,4 @@
 	- I also have discussed with [[@expede]] idea of doing WASM on the client side instead.
 		- Broadly speaking service worker could load WASM and do all the processing
 		- There are some unknown however in regards to first load experience, because some page would need to install service worker first.
--
+- Vision of [[Iroh]] seems to align with
