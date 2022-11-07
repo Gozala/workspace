@@ -862,6 +862,9 @@
  {:block/name "nov 4th, 2022",
   :block/created-at 1667546470248,
   :block/updated-at 1667546470248}
+ {:block/name "nov 7th, 2022",
+  :block/created-at 1667845634102,
+  :block/updated-at 1667845634102}
  {:block/name "now",
   :block/created-at 1645032552466,
   :block/updated-at 1645032552466}
@@ -1284,7 +1287,7 @@
   :block/updated-at 1660134588255}
  {:block/name "w3 payment structures",
   :block/created-at 1667498112154,
-  :block/updated-at 1667502432838}
+  :block/updated-at 1667846097728}
  {:block/name "w3-account",
   :block/created-at 1661261534950,
   :block/updated-at 1661261534950}
