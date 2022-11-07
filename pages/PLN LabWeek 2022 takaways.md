@@ -60,4 +60,5 @@
 	- Someone (can't remember who) overheard [[@thibmeu]] saying that lack of dynamic WASM loading in workers is not intentional constraint, but rather something that had not been done yet due to some V8 complexities.
 		- Apparently Fastly supports [dynamic WASM loading](https://docs.fastly.com/products/compute-at-edge) which in turn pressures CF to fix this limination.
 	- We should raise the subject with CF to see how visible dynamic loading would be and on what timeline.
-	- I also have discussed with [[@expede]] idea of doing
+	- I also have discussed with [[@expede]] idea of doing WASM on the client side instead.
+		- Broadly speaking it would
