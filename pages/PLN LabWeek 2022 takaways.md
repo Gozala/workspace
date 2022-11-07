@@ -65,4 +65,5 @@
 		- There are some unknown however in regards to first load experience, because some page would need to install service worker first.
 - Vision of [[Iroh]] seems to align with dag.house vision
 	- Had an interesting chat with [[@dignifiedquire]] regarding [[Iroh]] mobile. Visions seems to be that [[Iroh]] will not have many libp2p connections with remote peers but rather 1 or possibly handful with peers that can act on it's behalf.
-		- It may also open bunch of connections but with local peers which can save
+		- It may also open bunch of connections but with local peers so local-first use cases would work better and would not require moving bytes across global internet infrastructure.
+	- I think we with our
