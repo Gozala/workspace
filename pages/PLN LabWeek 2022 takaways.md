@@ -21,4 +21,6 @@
 	- I think it would be a good idea to collaborate with [[@thibmeu]] on this so we can have something where DHT would not be a bottleneck.
 - [[@achingbrain]] fixed bunch of [[DHT]] related problems in js-ipfs and we may be able to use leverage it soon.
 	- It does look like however that [[DHT]] and serverless architecture are fundamentally incompatible, so we'd still need long running process around.
-- I had a chance to catchup with [[eod]] regarding UCAN x CACAO
+- I had a chance to catchup with [[eod]] in regards to reconciling UCAN x CACAO differences.
+	- We both agreed that there is enough overlap today that it would be silly not to share an IPLD data model.
+	-
