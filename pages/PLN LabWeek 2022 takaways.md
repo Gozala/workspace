@@ -58,4 +58,5 @@
 - [[Autocodec]] is gaining momentum and [[Fission]] is working towards MVP.
 	- It solves many problems, but loading WASM in CF workers is a roadblock
 	- Someone (can't remember who) overheard [[@thibmeu]] saying that lack of dynamic WASM loading in workers is not intentional constraint, but rather something that had not been done yet due to some V8 complexities.
-		- Apparently Fastly
+		- Apparently Fastly supports [dynamic WASM loading](https://docs.fastly.com/products/compute-at-edge) which in turn pressures CF to fix this limination.
+	- We should raise the subject with CF to see how
