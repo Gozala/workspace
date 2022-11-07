@@ -31,4 +31,6 @@
 	- Lot of interesting discussions occured around this idea that has many different names.
 	- [[@vmx]] started an [effort to reconcile those](https://hackmd.io/@vmx/HkoYAr64o)
 	- Major breakthrough seems to be reframing a problem from something very abstract or very concrete into something that seems to capture general idea without prescribing semantics. We do not have consensus on name, however I like calling it an "application" that is application of specific semantics (identified by CID) onto some data (also identified by the CID).
-		- In some cases that is invocation of WASM code
+		- In some cases that is invocation of WASM code with some IPLD data.
+		- In other cases it's hashing with specific parameters.
+		- In other cases it could be a schema / type in
