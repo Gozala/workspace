@@ -62,4 +62,5 @@
 	- We should raise the subject with CF to see how visible dynamic loading would be and on what timeline.
 	- I also have discussed with [[@expede]] idea of doing WASM on the client side instead.
 		- Broadly speaking service worker could load WASM and do all the processing
-		- There are some unknown however in gerd
+		- There are some unknown however in regards to first load experience, because some page would need to install service worker first.
+-
