@@ -1,1 +1,2 @@
-- There is a clear interest in  having a better IPFS remote store API
+- There is a clear interest in the network to have better way to replicate data on remote nodes than current [pinning service API]()https://ipfs.github.io/pinning-services-api-spec/
+- having a better IPFS remote store API
