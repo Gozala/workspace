@@ -6,5 +6,5 @@
 	- Idea of having writable gateways that could route to storage provider seems to appeal to everyone I talked to.
 	- I think there is an opportunity to [propose a specification](https://github.com/ipfs/specs/) so that [[Iroh]], [[Fission]] and perhaps others could implement. After which we could claim that we have a better standard API for storing/replicating DAGs in remote nodes.
 - It seemed like everyone was excited about UCANs. Ability to delegate [[IPNS]] publish seems to resonate both with stewards and anyone using IPNS today.
-	- I have discussed idea of proposing new [[IPNS]] spec that would
+	- I have discussed idea of proposing new [[IPNS]] spec that is [[UCAN]] based with [[@lidel]], [[Iroh]] team and Fission.
 -
