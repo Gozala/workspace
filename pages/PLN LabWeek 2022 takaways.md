@@ -24,4 +24,5 @@
 - I had a chance to catchup with [[eod]] in regards to reconciling UCAN x CACAO differences.
 	- We both agreed that there is enough overlap today that it would be silly not to share an IPLD data model.
 	- He captured some feedback on the latest [[UCAN-IPLD]] and what we still need to address to implement compatibility https://gist.github.com/oed/cbb76aa60f919bddfafe5ff879f3dfe8
-- In the IPLD planning
+- In the IPLD planning session I have raised idea of forming a working group which seems to work very well in the
+	-
