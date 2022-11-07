@@ -39,4 +39,6 @@
 		- Representation should be a multiformat that essentially packs two CIDs.
 		- There should be an unambiguous way to refer to both "application" itself and a "result of the application"
 		- [[@mikeal]]'s idea of using identity hash as a means of encoding this was not popular and trouble with such approach in [[IPVM]] had been brought up.
-		- I personally thought we need separate construct for representing "application" in IPLD schema that is not `Link` but is rather `Application`, yet
+		- I personally thought we need separate construct for representing "application" in IPLD schema that is not `Link` but is rather `Application`, but that did not prove popular either.
+			- Arguments were made that application should just be a block and it's up to interpreter to decide what to do with it ()I'm probably butchering it)
+			-
