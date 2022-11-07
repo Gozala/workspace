@@ -34,4 +34,6 @@
 		- In some cases that is invocation of WASM code with some IPLD data.
 		- In other cases it's hashing with specific parameters.
 		- In other cases it could be a schema / type invariant on some IPLD data.
-	- There was discussion with Fission, IPVM, [[@vmx]] and myself in an attempt to reconcile differences. I think we succed
+	- There was discussion with Fission, IPVM, [[@vmx]] and myself in an attempt to reconcile differences. I think we succeeded to some degree and settled on idea that "application" should:
+		- Have IPLD node representation with a new codec.
+		- Representation should be a multiformat that
