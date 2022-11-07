@@ -4,5 +4,5 @@
 	- Fission never liked pinning but they do would love a way to replicate data in highly available nodes.
 	- Lot of people seem hesitant to choose web3.storage API over the api with a specification, compatibility tests and list of vendors implementing it.
 	- Idea of having writable gateways that could route to storage provider seems to appeal to everyone I talked to.
-	- I think there is an opportunity to
+	- I think there is an opportunity to [propose a specification](https://github.com/ipfs/specs/) so that [[Iroh]], [[Fission]] and perhaps others could implement.
 - having a better IPFS remote store API
