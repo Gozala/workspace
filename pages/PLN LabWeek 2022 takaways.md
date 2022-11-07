@@ -19,4 +19,5 @@
 	- I don't know enough about DNS to assess what he was describing, but I encouraged him to start [[IPIP]] proposal.
 	- After some discussion I was able to confirm that [[ipns-mailto]] could be complimentary with IPNS over DNS and not competing appoach.
 	- I think it would be a good idea to collaborate with [[@thibmeu]] on this so we can have something where DHT would not be a bottleneck.
--
+- [[@achingbrain]] fixed bunch of [[DHT]] related problems in js-ipfs and we may be able to use leverage it soon.
+	-
