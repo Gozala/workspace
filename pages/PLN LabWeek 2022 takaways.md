@@ -71,4 +71,4 @@
 	- Just like reframe it has pluggable transports and codecs.
 	- Unlike reframe it's built around [[UCAN]]s and consequently has a good story around authorization.
 	- Seems like we should talk more about ucanto so we don't miss opportunity with getting broader adoption.
-	- Better yet if ucanto is a way people build services, they all become directly pluggable into our
+	- Better yet if ucanto is a way people build services, they all become directly pluggable into our [[w3-vm]] vision.
