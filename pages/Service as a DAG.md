@@ -83,7 +83,9 @@
   
   type union StoreState {
      | Stored Stored
-     | AwatingUpload Stored
-  
+     | Pending AwatingPut
+     | Timeout StoreTimeout
   }
+  
+  type S
   ```
