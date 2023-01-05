@@ -55,4 +55,4 @@
   ```
 - Raising various issues for IPLD schemas, working on [UCAN invocation receipts](https://github.com/web3-storage/ucanto/issues/151) and the fact that invocations start tasks with observable [event streams](https://github.com/web3-storage/w3infra/issues/117) got me thinking that perhaps instead of designing service as a UCAN RPC we should instead be designing it as an IPLD DAG 💡.
 - If we design it that way we'll have "writable" part of the DAG and readable part of the DAG. Users could send "requests", or rather write "commands" into "writable" part of the DAG and read / observe results from the readable "receipts" part of the DAG.
-- I think this might more natural model the fact that our invocations either schedule some async task that our system processes
+- I think this might more natural model the fact that our invocations either schedule some async task that our system processes and consequently updates it's state, which can be read or observer
