@@ -59,15 +59,20 @@
 - Now representing whole system as an actual IPLD DAG is going to be prohibitively impractical, however we could still model a system as a DAG without materializing one.
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - ```ipldsch
-  type union Patch {
+  # All UCANS will be structed as
+  # with: DID
+  # can: IPLD Path
+  # nb: Command
+  
+  type union Command {
     # Whatever the value is
-    Any "add"
-    Remove "remove"
+    Any "put"
     Get "get"
+    Delete "delete"
     List "list"
   } representation keyed
   
-  type Remove unit representation emptymap
+  type Delete unit representation emptymap
   type Get unit representation emptymap
   type List struct {
     cursor optional T
