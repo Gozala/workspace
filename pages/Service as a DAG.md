@@ -72,7 +72,11 @@
      # Every task will have receipt keyed to a task CID allowing a user to query task status
      receipts: { &Task: Receipt }
   
-     # Tasks update state and 
-     state SpaceView
+     # When tasks run they update some state that users can query
+     state State
+  }
+  
+  type struct State {
+     uploads
   }
   ```
