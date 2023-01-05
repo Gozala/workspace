@@ -77,6 +77,9 @@
   }
   
   type struct State {
-     uploads { String  }
+     uploads { String: Upload }
+     storage { String: StoreState }
   }
+  
+  type struct StoreSt
   ```
