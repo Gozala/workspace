@@ -66,40 +66,8 @@
   }
   
   type struct Space {
-     # User writable (grow only set) part of the space. Space owner or a delegate can add
-     # tasks to schedule them
-     command: Command
-  
-     # Every task will have receipt keyed to a task CID allowing a user to query task status
-     status: { &Task: Receipt }
-  
-     # When tasks run they update some state that users can query
-     state State
-  }
-  
-  type Command struct {
-    upload UploadCommand
-    store StoreCommand
-  }
-  
-  type UploadCommand struct {
-    add UploadAdd
-    remove UploadRemove
-  }
-  
-  type struct UploadAdd {
-    link &CAR
-    size Int
-    origin optional &CAR
-  }
-  
-  type struct UploadRemove {
-  
-  }
-  
-  type struct State {
-     uploads { &Task: UploadStatus }
-     storage { &CAR: StoreStatus }
+     upload { &Task: UploadStatus }
+     store { &CAR: StoreStatus }
   }
   
   type union StoreStatus {
@@ -108,9 +76,12 @@
      # System updates with presigned URL so that user
      # can complete the upload
      | Pending StorePending
+     # System updates state when request is complete
      | Done StoreDone
-  
-     | Timeout StoreTimeout
+     # System updates state when request expires
+     | Expried StoreExpired
+     # System update state when request fails
+     | Failed StoreFailed
   }
   
   type struct StoreRequest {
@@ -130,6 +101,7 @@
   type struct Receipt {
     request &Any
     sig Varsig
+    rec &Receipt
     meta { String: Any }
   }
   
@@ -138,12 +110,16 @@
      link &CAR
      size Int
      origin optional &CAR
+     
+     receipt &Receipt
   }
   
   
-  type struct StoreTimeout {
+  type struct StoreExpired {
     link &CAR
     reason String
+    
+    receipt &Receipt
   }
   
   type enum Task {
