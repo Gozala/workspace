@@ -60,8 +60,12 @@
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - ```ipldsch
   # Our whole system is simply a map of spaces with DID as they're keys
-  # DID owner and delegates are only ones able to 
+  # DID owner and delegates are only ones able to interact with it
   type struct W3 {
     DID: Space
+  }
+  
+  type struct Space {
+     in: 
   }
   ```
