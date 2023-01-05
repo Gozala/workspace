@@ -67,7 +67,8 @@
   }
   
   type List struct {
-    cursor: T
+    cursor optional T
+    size optional Int
   }
   
   # Our whole system is simply a map of spaces with DID as they're keys
