@@ -66,7 +66,7 @@
     Get<T> "get"
   }
   
-  type Remove unit
+  type Remove unit representation null
   
   type List struct {
     cursor optional T
