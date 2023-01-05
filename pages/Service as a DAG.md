@@ -1,0 +1,1 @@
+- [Lack of functions](https://github.com/ipld/ipld/issues/263) in [[IPLD Schema]] got me thing
