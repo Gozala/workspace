@@ -28,5 +28,14 @@
     origin optional &CAR
   }
   
+  type StoreRemove struct {
+    link &CAR
+  }
+  
+  type StoreList struct {
+    cursor String
+    size Int
+  }
+  
   
   ```
