@@ -29,13 +29,22 @@
   }
   
   type StoreAddOut enum {
-    | Done StoreAddDoneResponse 
+    | Done StoreAddOutDone 
     | UploadRequired StoreAddUploadRequiredResponse
   }
   
-  type StoreAddDoneResponse struct {
+  type StoreAddOutDone struct {
     with DID
-    
+    link &CAR
+  }
+  
+  type StoreAddOutUpload struct {
+  
+  }
+  
+  # This is actually a function
+  type StoreAdd struct {
+  
   }
   
   type StoreRemove struct {
