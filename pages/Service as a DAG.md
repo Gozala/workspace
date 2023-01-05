@@ -61,6 +61,8 @@
 - ```ipldsch
   
   type varint Patch {
+    Add "add"
+    Remove "remove"
     
   }
   
