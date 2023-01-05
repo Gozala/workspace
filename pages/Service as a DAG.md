@@ -30,7 +30,7 @@
   
   type StoreAddOut enum {
     | Done StoreAddOutDone 
-    | UploadRequired StoreAddUploadRequiredResponse
+    | Upload StoreAddOutUpload
   }
   
   type StoreAddOutDone struct {
@@ -39,7 +39,10 @@
   }
   
   type StoreAddOutUpload struct {
-  
+    headers {String: String}
+    url String
+    with DID
+    
   }
   
   # This is actually a function
