@@ -66,6 +66,7 @@
   }
   
   type struct Space {
-     in: 
+     # User writable part of the space 
+     requests: { &Task: Task }
   }
   ```
