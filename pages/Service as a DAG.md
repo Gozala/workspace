@@ -66,6 +66,10 @@
   }
   
   type struct Space {
+     command {
+     	  store StoreControl
+        upload UploadControl
+     }
      upload { &Task: UploadStatus }
      store { &CAR: StoreStatus }
   }
@@ -82,6 +86,23 @@
      | Expried StoreExpired
      # System update state when request fails
      | Failed StoreFailed
+  }
+  
+  {
+    "did:key:zAlice": {
+    	command: {
+      	store: {
+          	request: {
+              	link: 
+              }
+          }
+      }
+    	store: {
+      	request: {
+          	
+          }
+      }
+    }
   }
   
   type struct StoreRequest {
