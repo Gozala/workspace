@@ -28,9 +28,12 @@
     origin optional &CAR
   }
   
-  type StoreAddOut struct {
-    
+  type StoreAddOut enum {
+    | StoreAddDoneResponse
+    | StoreAddUploadRequiredResponse
   }
+  
+  type 
   
   type StoreRemove struct {
     link &CAR
