@@ -61,10 +61,12 @@
 - ```ipldsch
   type union Patch {
     Any "add"
-    Null "remove"
+    Remove "remove"
     List "list"
     Get<T> "get"
   }
+  
+  type Remove unit
   
   type List struct {
     cursor optional T
