@@ -59,10 +59,14 @@
 - Now representing whole system as an actual IPLD DAG is going to be prohibitively impractical, however we could still model a system as a DAG without materializing one.
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - ```ipldsch
-  
-  type varint Patch {
+  type union Patch {
     Add "add"
     Remove "remove"
+    List "list"
+    Get "get"
+  }
+  
+  type Add struct {
     
   }
   
