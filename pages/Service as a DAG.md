@@ -67,6 +67,6 @@
   
   type struct Space {
      # User writable part of the space owner and delegates can patch it 
-     requests: { &Task: Task }
+     invoke: { &Task: Task }
   }
   ```
