@@ -34,11 +34,20 @@
   
   type StoreList struct {
     cursor String
-    size Int
+    size optional Int
   }
   
   type UploadAdd struct {
     root &Any
     shards optional [&CAR]
+  }
+  
+  type UploadRemove struct {
+    root &Any
+  }
+  
+  type UploadList struct {
+    cursor String
+    size optional Int
   }
   ```
