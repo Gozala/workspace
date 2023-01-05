@@ -77,12 +77,13 @@
   }
   
   type struct State {
-     uploads { String: Upload }
-     storage { String: StoreState }
+     uploads { &Task: Upload }
+     storage { &CAR: StoreState }
   }
   
   type union StoreState {
      | Stored Stored
      | AwatingUpload Stored
+  
   }
   ```
