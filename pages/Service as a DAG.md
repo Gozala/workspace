@@ -24,6 +24,9 @@
   
   type StoreAdd struct {
     link &CAR
-    
+    size Int
+    origin optional &CAR
   }
+  
+  
   ```
