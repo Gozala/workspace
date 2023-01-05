@@ -66,7 +66,8 @@
   }
   
   type struct Space {
-     # User writable (append only) part of the space. owner and delegates can patch it 
+     # User writable (grow only set) part of the space. Space owner or a delegate can submit
+     # 
      invoke: { &Task: Task }
   }
   ```
