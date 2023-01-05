@@ -37,5 +37,8 @@
     size Int
   }
   
-  
+  type UploadAdd struct {
+    root &Any
+    shards optional [&CAR]
+  }
   ```
