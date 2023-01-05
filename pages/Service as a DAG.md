@@ -60,14 +60,15 @@
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - ```ipldsch
   type union Patch {
+    # Whatever the value is
     Any "add"
     Remove "remove"
-    List "list"
     Get<T> "get"
-  }
+      List "list"
+  } representation keyed
   
-  type Remove unit representation null
-  
+  type Remove unit representation emptymap
+  type Get unit representation emptymap
   type List struct {
     cursor optional T
     size optional Int
