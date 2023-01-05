@@ -63,8 +63,8 @@
     # Whatever the value is
     Any "add"
     Remove "remove"
-    Get<T> "get"
-      List "list"
+    Get "get"
+    List "list"
   } representation keyed
   
   type Remove unit representation emptymap
