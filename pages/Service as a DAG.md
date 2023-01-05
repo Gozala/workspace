@@ -22,21 +22,21 @@
    list UploadList
   }
   
-  type StoreAdd struct {
+  type StoreAddIn struct {
     link &CAR
     size Int
     origin optional &CAR
+  }
+  
+  type StoreAddOut struct {
+    
   }
   
   type StoreRemove struct {
     link &CAR
   }
   
-  type StoreList struct {
-    cursor String
-    size optional Int
-  }
-  
+  type StoreList = Cursor
   type UploadAdd struct {
     root &Any
     shards optional [&CAR]
@@ -46,8 +46,10 @@
     root &Any
   }
   
-  type UploadList struct {
-    cursor String
+  type UploadList = Cursor
+  
+  type Cursor struct {
+    cursor optional String
     size optional Int
   }
   ```
