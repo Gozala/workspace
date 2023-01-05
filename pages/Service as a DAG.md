@@ -53,4 +53,4 @@
   
   # You get the idea
   ```
--
+- Raising various issues for IPLD schemas and thinking about [UCAN invocation receipts](https://github.com/web3-storage/ucanto/issues/151) and the fact that
