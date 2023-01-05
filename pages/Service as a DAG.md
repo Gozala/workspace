@@ -7,6 +7,6 @@
   }
   
   type Store {
-    add
+    add: { in: UCAN<> }
   }
   ```
