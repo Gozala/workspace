@@ -42,32 +42,15 @@
     headers {String: String}
     url String
     with DID
-    
+    link &CAR
   }
   
   # This is actually a function
   type StoreAdd struct {
-  
+  	in StoreAddIn
+      out StoreAddOut
   }
   
-  type StoreRemove struct {
-    link &CAR
-  }
-  
-  type StoreList = Cursor
-  type UploadAdd struct {
-    root &Any
-    shards optional [&CAR]
-  }
-  
-  type UploadRemove struct {
-    root &Any
-  }
-  
-  type UploadList = Cursor
-  
-  type Cursor struct {
-    cursor optional String
-    size optional Int
-  }
+  # You get the idea
   ```
+-
