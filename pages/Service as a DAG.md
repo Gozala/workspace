@@ -67,7 +67,9 @@
   
   type struct Space {
      # User writable (grow only set) part of the space. Space owner or a delegate can add
-     # tasks 
+     # tasks to a system scheduler
      invoke: { &Task: Task }
+     # Every task will have receipt 
+     receipts: { &Task: Receipt }
   }
   ```
