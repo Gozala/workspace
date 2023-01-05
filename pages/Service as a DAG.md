@@ -129,8 +129,8 @@
   
   type struct Receipt {
     request &Any
-    signature Bytes
-    
+    sig Varsig
+    meta { String: Any }
   }
   
   
