@@ -87,5 +87,11 @@
      | Timeout StoreTimeout
   }
   
-  type S
+  type struct Stored {
+     root &CAR
+     size Int
+     shards 
+  }
+  
+  type struct 
   ```
