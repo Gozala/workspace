@@ -67,32 +67,91 @@
   
   type struct Space {
      # User writable (grow only set) part of the space. Space owner or a delegate can add
-     # tasks to a system scheduler
-     requests: { &Task: Task }
+     # tasks to schedule them
+     command: Command
+  
      # Every task will have receipt keyed to a task CID allowing a user to query task status
-     receipts: { &Task: Receipt }
+     status: { &Task: Receipt }
   
      # When tasks run they update some state that users can query
      state State
   }
   
-  type struct State {
-     uploads { &Task: Upload }
-     storage { &CAR: StoreState }
+  type Command struct {
+    upload UploadCommand
+    store StoreCommand
   }
   
-  type union StoreState {
-     | Stored Stored
-     | Pending AwatingPut
+  type UploadCommand struct {
+    add UploadAdd
+    remove UploadRemove
+  }
+  
+  type struct UploadAdd {
+    link &CAR
+    size Int
+    origin optional &CAR
+  }
+  
+  type struct UploadRemove {
+  
+  }
+  
+  type struct State {
+     uploads { &Task: UploadStatus }
+     storage { &CAR: StoreStatus }
+  }
+  
+  type union StoreStatus {
+     # User can write a request
+     | Request StoreRequest
+     # System updates with presigned URL so that user
+     # can complete the upload
+     | Pending StorePending
+     | Done StoreDone
+  
      | Timeout StoreTimeout
   }
   
-  type struct Stored {
-     root &CAR
+  type struct StoreRequest {
+    link &CAR
+    size Int
+    origin optional &CAR
+  }
+  
+  type struct StorePending {
+    link &CAR
+    url String
+    headers {String: String}
+    
+    receipt &Receipt
+  }
+  
+  type struct Receipt {
+    request &Any
+    signature Bytes
+    
+  }
+  
+  
+  type struct StoreDone {
+     link &CAR
      size Int
      origin optional &CAR
   }
   
-  type struct AwaitingPut {
+  
+  type struct StoreTimeout {
+    link &CAR
+    reason String
+  }
+  
+  type enum Task {
+    | Store StoreTask
+    | Upload UploadTask
+  }
+  
+  type struct StoreTask {
+  
   }
   ```
