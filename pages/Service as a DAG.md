@@ -90,8 +90,9 @@
   type struct Stored {
      root &CAR
      size Int
-     shards 
+     origin optional &CAR
   }
   
-  type struct 
+  type struct AwaitingPut {
+  }
   ```
