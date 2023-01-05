@@ -77,6 +77,6 @@
   }
   
   type struct State {
-     uploads
+     uploads { String  }
   }
   ```
