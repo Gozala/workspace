@@ -81,5 +81,8 @@
      storage { String: StoreState }
   }
   
-  type struct StoreSt
+  type union StoreState {
+     | Stored Stored
+     | AwatingUpload Stored
+  }
   ```
