@@ -59,6 +59,11 @@
 - Now representing whole system as an actual IPLD DAG is going to be prohibitively impractical, however we could still model a system as a DAG without materializing one.
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - ```ipldsch
+  
+  type varint Patch {
+    
+  }
+  
   # Our whole system is simply a map of spaces with DID as they're keys
   # DID owner and delegates are only ones able to interact with it
   type struct W3 {
