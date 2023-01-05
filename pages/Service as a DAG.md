@@ -7,6 +7,12 @@
   }
   
   type Store {
-    add: { in: UCAN<> }
+    add: StoreAdd
+    remove: StoreRemove
+    list: StoreList
+  }
+  
+  type StoreAdd {
+    
   }
   ```
