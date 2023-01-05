@@ -66,8 +66,8 @@
   }
   
   type struct Space {
-     # User writable (grow only set) part of the space. Space owner or a delegate can submit
-     # 
+     # User writable (grow only set) part of the space. Space owner or a delegate can add
+     # tasks 
      invoke: { &Task: Task }
   }
   ```
