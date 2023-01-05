@@ -68,8 +68,11 @@
   type struct Space {
      # User writable (grow only set) part of the space. Space owner or a delegate can add
      # tasks to a system scheduler
-     invoke: { &Task: Task }
+     requests: { &Task: Task }
      # Every task will have receipt keyed to a task CID allowing a user to query task status
      receipts: { &Task: Receipt }
+  
+     # Submitted tasks cause 
+     state SpaceState
   }
   ```
