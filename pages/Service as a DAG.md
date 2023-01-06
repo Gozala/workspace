@@ -63,7 +63,8 @@
 	- Another analogy could be made with SQL which also has small set of operations `insert`, `select`, `update`, `delete`
 - All our UCANs can be modeled as follows
 	- `with` - Encodes mutable space identifier `did:key` or `did:mailto`
-	- `can` - Encodes `IPLD` path within the
+	- `can` - Encodes IPLD path within the space
+	- `nb` - Encodes
 - ```ipldsch
   # All UCANS can be structed as
   # with: DID
