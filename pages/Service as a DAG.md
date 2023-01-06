@@ -68,7 +68,9 @@
 - ```ipldsch
   type struct Task {
     with DID
-    
+    do Operation
+    meta {String : Any} (implicit {})
+    nnc optional String
   }
   
   
