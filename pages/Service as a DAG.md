@@ -107,7 +107,7 @@
   
   type struct Space {
     # Store is a CAR storage. Actors can send operations to query / mutate it.
-    store { &CAR: Store }
+    store { &CAR: C }
     # Upload is basically a list of user uploads that user can add / remove items to.
     # It is keyed by upload roots
     upload { &Any: Upload }
@@ -116,20 +116,20 @@
   # Every store entry is a state machine and it can be in one of the following states
   type union Store {
      # User can write a request
-     | StoreRequest "request"
+     | UCAN<Task<StoreRequest>> "request"
      
      # System can update state from Request to Pending providing
      # presigned URL allowing user to complete store request.
-     | Receipt "pending" #<StoreRequest, StorePending, Null>
+     | Receipt<StoreRequest, StorePending, Null> "pending"
      
      # System can update state from Request or Pending to Done
-     | Done StoreDone
+     | Receipt<StoreRequest, StoreDone, StorePending> "done"
      
      # System can update state from Pending to Expired
-     | Expried StoreExpired
+     | Receipt<StoreRequest, StoreExpired, StorePending> "expried"
      
      # System can update state from Request or Pending to Failed
-     | Failed StoreFailed
+     | Receipt<StoreRequest, StoreFailed, StorePending> "failed"
   } representation keyed
   
   # Initial state
