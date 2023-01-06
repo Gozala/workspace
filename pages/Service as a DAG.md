@@ -97,16 +97,19 @@
   ```
 - With the above operation set in place we can represent web3.storage as a DAG with a following schema on which users could execute above defined set of operations
 - ```ipldsch
-  
+  # Entire system is modeled as map of user spaces keyed
+  # by space DIDs
   type struct W3 {
     DID: Space
   }
   
+  # Spaces MAY have varios providers e.g storage provider, upload provider etc...
   type struct Space {
-    # Store is a CAR storage. Actors can send operations to query / mutate it.
-    store { &CAR: C }
-    # Upload is basically a list of user uploads that user can add / remove items to.
-    # It is keyed by upload roots
+    # Storege provider is map keyed by CARs stored. Users can send commands to
+    # update or query it.
+    store { &CAR: Store }
+    # Upload provider is a map keyed by upload roots. Users can send commands to
+    # add / remove and list items it stores
     upload { &Any: Upload }
   }
   
