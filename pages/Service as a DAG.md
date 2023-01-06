@@ -66,15 +66,16 @@
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
-  type Operation union {
+  type Operation #<Entry>
+  union {
     # Writes entry at the target IPLD path. If entry already exists
     # at that path it overwrites.
-    Put "put"
+    Entry "put"
     # Writes data at the target IPLD path. If entry already exists
     # write fails. If IPLD path targets list element item is
     # item is inserted after the target entry. If IPLD path targets
     # list entry is added to the list.
-    Post "post"
+    Entry "post"
     # Reads data at the target IPLD path
     Get "get"
     # Deletes entry from the target IPLD path. 
@@ -85,10 +86,9 @@
     Select "select"
   } representation keyed
   
-  # Put and Post have any type, they are entries to be written under the
-  # target path
-  type Put any
-  type Post any
+  # Operation is actually a generic over the `Entry` but since IPLD schema
+  # does not support generics we type it as any
+  type Entry any
   
   # Delete and Get do not have any input, so they are just empty maps
   # allowing us to extend those in the future.
