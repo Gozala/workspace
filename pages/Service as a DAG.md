@@ -76,15 +76,18 @@
   }
   
   type Command union {
+    # Writes entry at the target IPLD path. If entry already exists
+    # at that path it overwrites.
+    Add "command/post"
     # Writes data at the target IPLD path. If entry already exists
     # write fails. If IPLD path targets list element item is
     # item is inserted after the target entry. If IPLD path targets
     # list entry is added to the list.
-    Post "dag/post"
+    Post "command/post"
     # Reads data at the target IPLD path
-    Get "dag/get"
+    Get "get"
     # Deletes entry from the target IPLD path. 
-    Delete "command/delete"
+    Delete "dag/delete"
     # Selects entries from the target IPLD path. IPLD path MUST target
     # map, list or an entry with in them. If targets an entry selects
     # next set of entries.
