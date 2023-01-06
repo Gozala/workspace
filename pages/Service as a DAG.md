@@ -120,11 +120,11 @@
   # Every store entry is a state machine and it can be in one of the following states
   type union Store {
      # User can write a request
-     | Request StoreRequest
+     | StoreRequest "request"
      
      # System can update state from Request to Pending providing
      # presigned URL allowing user to complete store request.
-     | Pending StorePending
+     | Receipt "pending" #<StoreRequest, StorePending, Null>
      
      # System can update state from Request or Pending to Done
      | Done StoreDone
@@ -136,49 +136,72 @@
      | Failed StoreFailed
   } representation keyed
   
+  # Initial state
   type struct StoreRequest {
     link &CAR
     size Int
     origin optional &CAR
   }
   
+  
   type struct StorePending {
     link &CAR
     url String
     headers {String: String}
     
-    receipt &Receipt #<>
+    receipt &Receipt#<StoreRequest, Null>
   }
   
-  type UCAN = any # See 
-  type struct Receipt #<Request Origin>
+  type UCAN = any # UCAN See https://github.com/ucan-wg/ucan-ipld/#21-principal
+  type Task#<Entry>
+  struct {
+    with DID
+    can IPLDPath
+    nb Operation#<Entry>
+  }
+  
+  type struct Receipt #<Request Out Origin>
   {
-    # Link to the UCAN with an operation corresponding
-    request &UCAN#<Operation<Request>>
+    # Link to the request this is receipt of
+    request &UCAN#<Task<Request>>
+    # Current state
+    out Out
+    
     # When system updates state it will link to a prior receipt
     # providing complete trace of changes
     origin optional &Receipt#<Origin>
+  
     # Signature from the actor that perform the update
     sig Varsig
+  
     # All the other metadata
     meta { String: Any }
   }
   
   
-  type struct StoreDone {
+  type struct StoreDone#<Request>
+  {
      link &CAR
      size Int
      origin optional &CAR
      
-     receipt &Receipt # Links to StoreRequest
+     receipt &Receipt#<Request, Null|StorePending>
   }
   
   
-  type struct StoreExpired {
+  type struct StoreExpired#<Request>
+  {
     link &CAR
     reason String
     
-    receipt &Receipt
+    receipt &Receipt#<Request, StorePending>
+  }
+  
+  type struct StoreFailed {
+    link &Car
+    reason String
+    
+    receipt
   }
   
   type enum Task {
