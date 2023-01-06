@@ -67,14 +67,14 @@
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   type Operation Command {
-    # Whatever the value is
     Any "put"
     Get "get"
     Delete "delete"
     List "list"
   } representation keyed
   
-  type Put 
+  #  Data to be written under the given path
+  type Put any
   
   type Delete unit representation emptymap
   type Get unit representation emptymap
