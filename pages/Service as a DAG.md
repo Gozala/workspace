@@ -109,16 +109,16 @@
   type struct Space {
     # Storege provider is map keyed by CARs stored. Users can send commands to
     # update or query it.
-    store { &CAR: Store }
+    store { &CAR: StoreStatus }
     # Upload provider is a map keyed by upload roots. Users can send commands to
     # add / remove and list items it stores
     upload { &Any: Upload }
   }
   
   # Every store entry is a state machine and it can be in one of the following states
-  type union Store {
+  type union StoreStatus {
      # User can write a request
-     | Task<StoreRequest>
+     | Request<StoreRequest> "queued"
      
      # System can update state from Request to Pending providing
      # presigned URL allowing user to complete store request.
