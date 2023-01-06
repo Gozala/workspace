@@ -62,8 +62,6 @@
 	- It is worth calling out similarity with HTTP small and fairly universal set of HTTP methods
 	- Another analogy could be made with SQL which also has small set of operations `insert`, `select`, `update`, `delete`
 - We could model this as follows
-	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
-	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   # Command is one of the standard operation tasks
   type Command union {
@@ -97,7 +95,7 @@
     prf [&UCAN]
   }
   ```
-- With above operation set in place we can represent web3.storage as a DAG matching following schema. Users could send above defined operations encoded as UCANs with qualified proof chains
+- With the above operation set in place we can represent web3.storage as a DAG with a following schema on which users could perform above defined commands
 - ```ipldsch
   type struct W3 {
     # Entire system is map of user spaces keyed by DID
