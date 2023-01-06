@@ -63,7 +63,7 @@
 	- Another analogy could be made with SQL which also has small set of operations `insert`, `select`, `update`, `delete`
 - All our UCANs can be modeled as follows
 	- `with` - Encodes mutable space identifier `did:key` or `did:mailto`
-	- `can` - Encodes IPLD path within the space (MUST only target entry in map or a list)
+	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   type Operation Command {
