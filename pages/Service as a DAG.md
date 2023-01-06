@@ -68,10 +68,13 @@
 - ```ipldsch
   type struct Task {
     with DID
-    do Operation
+    do Command
     meta {String : Any} (implicit {})
     nnc optional String
+    sig Varsig
   }
+  
+  type Command 
   
   
   # Task is a UCAN that invokes single operation encoded
