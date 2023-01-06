@@ -66,10 +66,25 @@
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
-  # Task is a UCAN that contains a single  single capability 
-  type Task<Entry> = UCAN<Capability<Operation<Entry>>>
+  # Task is a UCAN that invokes single operation encoded
+  # as capability
+  type Task = UCAN<[Command<Any>]>
   
-  # Operation
+  # Command is just a UCAN capability
+  type Command<Insruction> struct {
+    # Encodes (mutable) user space identifier
+    with DID
+    # Encodes IPLD Path within the current space DAG
+    can IPLDPath
+    # Encodes operation targeting specified DAG path
+    nb Operation<Instruction>
+  }
+  
+  
+  type Request
+  
+  # We support univeras set of operations across the whole
+  # DAG. Any request to a service is simply a put 
   type Operation<Entry> union {
     # Writes entry at the target IPLD path. If entry already exists
     # at that path it overwrites.
