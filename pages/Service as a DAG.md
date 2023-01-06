@@ -71,15 +71,15 @@
     # Writes an entry at the target IPLD path. If identical entry at
     # given path already exists command is noop. If different entry
     # exists under given path operation MAY be denied.
-    Task<{ at IPLDPath data Any }> "dag/put"
+    Task<{ path IPLDPath value Any }> "dag/put"
     # Reads state at the given IPLD path.
-    Task<{ at IPLDPath }> "dag/get"
+    Task<{ path IPLDPath }> "dag/add"
     # Deletes entry from the target IPLD path. 
-    Task<{ at IPLDPath }> "dag/delete"
+    Task<{ path IPLDPath }> "dag/remove"
     # Selects entries from the target IPLD path. IPLD path MUST target
     # map, list or an entry with in them. If targets an entry selects
     # next set of entries.
-    Task<{ at IPLDPath limit optional Int }> "dag/select"
+    Task<{ path IPLDPath limit optional Int }> "dag/select"
   } representation inline {
     discriminantKey "do"
   }
