@@ -156,6 +156,7 @@
     receipt &Receipt#<StoreRequest, Null>
   }
   
+  # Roughly equivalent of the 
   type struct Receipt<Input, State> {
     # Link to the request this is receipt of
     ran Request<Input>
