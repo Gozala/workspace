@@ -112,7 +112,7 @@
     store { &CAR: Receipt<Store, StoreStatus> }
     # Upload provider is a map keyed by upload roots. Users can send commands to
     # add / remove and list items it stores
-    upload { &Any: Upload }
+    upload { &Any: Receipt<Upload, unit> }
   }
   
   # Every store entry is a state machine and it can be in one of the following states
@@ -138,9 +138,6 @@
     discriminantKey "status"
   }
   
-  type Request<Value> union {
-    Task<{ path IPLDPath value Value }> | "dag/put"
-  } representation inline
   
   # Initial state
   type struct Store {
@@ -150,23 +147,24 @@
   }
   
   type struct StoreFailed {
-    link &Car
     reason String
-    
-    receipt
   }
   
   type struct StorePending {
-    link &CAR
     url String
     headers {String: String}
+  }
+  
+  type Upload {
+    root &Any
+    shards optional [&CAR]
   }
   
   # Roughly equivalent of the receipts from UCAN invocation spec
   # https://github.com/ucan-wg/invocation/blob/rough/README.md#9-receipt
   type struct Receipt<Input, State> {
-    # Link to the request this is receipt is for
-    task Request<Input>
+    # Link to the "dag/put" task this is the receipt is for
+    task Task<Input>
     # Current state
     out State
     
@@ -179,23 +177,6 @@
   
     # All the other metadata
     meta { String: Any }
-  }
-  
-  
-  type struct StoreFailed {
-    link &Car
-    reason String
-    
-    receipt
-  }
-  
-  type enum Task {
-    | Store StoreTask
-    | Upload UploadTask
-  }
-  
-  type struct StoreTask {
-  
   }
   ```
 -
