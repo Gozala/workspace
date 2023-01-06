@@ -104,52 +104,37 @@
   ```
 - With above operation set in place we can represent web3.storage as a DAG matching following schema. Users could send above defined operations encoded as UCANs with qualified proof chains
 - ```ipldsch
-  
-  # Our whole system is simply a map of spaces with DID as they're keys
-  # DID owner and delegates are only ones able to interact with it
   type struct W3 {
+    # Entire system is map of user spaces keyed by DID
     DID: Space
   }
   
   type struct Space {
-     command {
-     	  store StoreControl
-        upload UploadControl
-     }
-     upload { &Task: UploadStatus }
-     store { &CAR: StoreStatus }
+    # Store is a CAR storage. Actors can send operations to query / mutate it.
+    store { &CAR: Store }
+    # Upload is basically a list of user uploads that user can add / remove items to.
+    # It is keyed by upload roots
+    upload { &Any: Upload }
   }
   
-  type union StoreStatus {
+  # Every store entry is a state machine and it can be in one of the following states
+  type union Store {
      # User can write a request
      | Request StoreRequest
-     # System updates with presigned URL so that user
-     # can complete the upload
+     
+     # System can update state from Request to Pending providing
+     # presigned URL allowing user to complete store request.
      | Pending StorePending
-     # System updates state when request is complete
+     
+     # System can update state from Request or Pending to Done
      | Done StoreDone
-     # System updates state when request expires
+     
+     # System can update state from Pending to Expired
      | Expried StoreExpired
-     # System update state when request fails
+     
+     # System can update state from Request or Pending to Failed
      | Failed StoreFailed
-  }
-  
-  {
-    "did:key:zAlice": {
-    	command: {
-      	store: {
-          	request: {
-              	link: 
-              }
-          }
-      }
-    	store: {
-      	request: {
-          	
-          }
-      }
-    }
-  }
+  } representation keyed
   
   type struct StoreRequest {
     link &CAR
@@ -162,11 +147,11 @@
     url String
     headers {String: String}
     
-    receipt &Receipt
+    receipt &Receipt # Links to StoreRequest
   }
   
   type struct Receipt {
-    request &Any
+    request &Any 
     sig Varsig
     rec &Receipt
     meta { String: Any }
@@ -178,7 +163,7 @@
      size Int
      origin optional &CAR
      
-     receipt &Receipt
+     receipt &Receipt # Links to StoreRequest
   }
   
   
