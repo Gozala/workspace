@@ -95,10 +95,15 @@
   type Delete unit representation emptymap
   type Get unit representation emptymap
   
-  # List can be used to list set of entries 
+  # Selects number of entries from the target IPLD path. If target is a
+  # list or map reads first `limit` entries. If target is entry within
+  # list or map reads next `limit` entries.
   type Select struct {
     limit optional Int
   }
+  ```
+-
+- ```ipldsch
   
   # Our whole system is simply a map of spaces with DID as they're keys
   # DID owner and delegates are only ones able to interact with it
@@ -193,3 +198,4 @@
   
   }
   ```
+-
