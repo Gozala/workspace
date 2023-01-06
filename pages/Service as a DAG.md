@@ -56,7 +56,7 @@
 - Raising various issues for IPLD schemas, working on [UCAN invocation receipts](https://github.com/web3-storage/ucanto/issues/151) and the fact that invocations start tasks with observable [event streams](https://github.com/web3-storage/w3infra/issues/117) got me thinking that perhaps instead of designing service as a UCAN RPC we should instead be designing it as an IPLD DAG 💡.
 - This might also better capture the fact that our invocations either
 	- Schedule a task that goes through a system pipeline which updates state as it makes the progress. In fact we already want a way to observe these state changes.
-	- Query state over overall  DAG.
+	- Query state over overall state DAG.
 - Now representing whole system as an actual IPLD DAG is going to be prohibitively impractical, however we could still model a system as a DAG without materializing one.
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - Instead of defining capabilities in terms of actions one could perform, we could take page from [IPLD Patch](https://ipld.io/specs/patch/fixtures/fixtures-1/) book and define universal set of operations
