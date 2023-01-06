@@ -79,20 +79,25 @@
     Get "get"
     # Deletes entry from the target IPLD path. 
     Delete "delete"
-    # Lists entries from the target IPLD path. IPLD patnh MUST target
-    # either map or a list.
-    List "list"
+    # Selects entries from the target IPLD path. IPLD path MUST target
+    # map, list or an entry with in them. If targets an entry selects
+    # next set of entries.
+    Select "select"
   } representation keyed
   
-  #  Data to be written under the target path
+  # Put and Post have any type, they are entries to be written under the
+  # target path
   type Put any
   type Post any
   
+  # Delete and Get do not have any input, so they are just empty maps
+  # allowing us to extend those in the future.
   type Delete unit representation emptymap
   type Get unit representation emptymap
-  type List struct {
-    cursor optional T
-    size optional Int
+  
+  # List can be used to list set of entries 
+  type Select struct {
+    limit optional Int
   }
   
   # Our whole system is simply a map of spaces with DID as they're keys
