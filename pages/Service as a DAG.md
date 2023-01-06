@@ -64,7 +64,8 @@
 - All our UCANs can be modeled as follows
 	- `with` - Encodes mutable space identifier `did:key` or `did:mailto`
 	- `can` - Encodes IPLD path within the space
-	- `nb` - Encodes
+	- `nb` - Encodes one of the universal `Operation` to be executed
+	-
 - ```ipldsch
   # All UCANS can be structed as
   # with: DID
