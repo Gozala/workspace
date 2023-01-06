@@ -160,8 +160,8 @@
   # https://github.com/ucan-wg/invocation/blob/rough/README.md#9-receipt
   # 
   type struct Receipt<Input, State> {
-    # Link to the request this is receipt of
-    ran Request<Input>
+    # Link to the request this is receipt is for
+    task Request<Input>
     # Current state
     out State
     
