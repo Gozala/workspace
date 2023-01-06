@@ -129,13 +129,13 @@
      
      # System MAY update state from "pending" to "expired" if upload
      # is not complete. User may submit another store request to retry.
-     | Receipt<Store, StoreExpired, StorePending> "expried"
+     | unit "expried"
      
      # System MAY update state from "queued" or "pending" to "failed"
      # e.g if space is out of storage ran out of storage capacity.
-     | Receipt<Store, StoreFailed, StorePending> "failed"
+     | StoreFailed "failed"
   } representation inline {
-  
+    discriminantKey "status"
   }
   
   type Request<Value> union {
@@ -149,6 +149,12 @@
     origin optional &CAR
   }
   
+  type struct StoreFailed {
+    link &Car
+    reason String
+    
+    receipt
+  }
   
   type struct StorePending {
     link &CAR
@@ -158,7 +164,6 @@
   
   # Roughly equivalent of the receipts from UCAN invocation spec
   # https://github.com/ucan-wg/invocation/blob/rough/README.md#9-receipt
-  # 
   type struct Receipt<Input, State> {
     # Link to the request this is receipt is for
     task Request<Input>
@@ -176,15 +181,6 @@
     meta { String: Any }
   }
   
-  
-  
-  type struct StoreExpired#<Request>
-  {
-    link &CAR
-    reason String
-    
-    receipt &Receipt#<Request, StorePending>
-  }
   
   type struct StoreFailed {
     link &Car
