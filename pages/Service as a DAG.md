@@ -61,20 +61,20 @@
 - Instead of defining capabilities in terms of actions one could perform, we could take page from [IPLD Patch](https://ipld.io/specs/patch/fixtures/fixtures-1/) book and define universal set of operations
 	- It is worth calling out similarity with HTTP small and fairly universal set of HTTP methods
 	- Another analogy could be made with SQL which also has small set of operations `insert`, `select`, `update`, `delete`
-- All our UCANs can be modeled as follows
-	- `with` - Encodes mutable space identifier `did:key` or `did:mailto`
+- We could model this as follows
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   # Command is one of the standard operation tasks
   type Command union {
-    # Writes an entry at the target IPLD path. If identical entry at
-    # given path already exists command is noop. If different entry
-    # exists under given path operation MAY be denied.
+    # Writes this task at the specified IPLD path. If identical task
+    # at specified path already exists command is noop. If different
+    # entry exists under specified path operation is denied unless
+    # entry has failed or deleted status.
     Task<{ path IPLDPath value Any }> "dag/put"
-    # Reads state at the given IPLD path.
-    Task<{ path IPLDPath }> "dag/add"
-    # Deletes entry from the target IPLD path. 
+    # Reads entry at the specified IPLD path.
+    Task<{ path IPLDPath }> "dag/get"
+    # Deletes entry from the specified IPLD path. 
     Task<{ path IPLDPath }> "dag/remove"
     # Selects entries from the target IPLD path. IPLD path MUST target
     # map, list or an entry with in them. If targets an entry selects
@@ -85,7 +85,8 @@
   }
   
   # Task is similar to one in UCAN invocation draft spec, except it
-  # is self contained and has additional 
+  # has extra fields from invocation to make it self-contained as per
+  # https://github.com/ucan-wg/invocation/issues/6
   type struct Task<Input> {
     with DID
     do String
