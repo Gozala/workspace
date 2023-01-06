@@ -117,29 +117,31 @@
   
   # Every store entry is a state machine and it can be in one of the following states
   type union StoreStatus {
-     # User can write a request
-     | Request<StoreRequest> "queued"
+     # When user submits 'dag/put' command it will appears as queued
+     | Receipt<Store, StoreQueued, unit> "queued"
      
-     # System can update state from Request to Pending providing
-     # presigned URL allowing user to complete store request.
-     | Receipt<StoreRequest, StorePending, unit> "pending"
+     # System MAY update state from "queued" to "pending" in order to
+     # provide presigned upload URL for user to complete the task.
+     | Receipt<Store, StorePending, unit> "pending"
      
-     # System can update state from Request or Pending to Done
-     | Receipt<StoreRequest, StoreDone, StorePending> "done"
+     # System MAY update state from "queued" or "pending" to "done".
+     | Receipt<Store, StoreDone, StorePending> "done"
      
-     # System can update state from Pending to Expired
-     | Receipt<StoreRequest, StoreExpired, StorePending> "expried"
+     # System MAY update state from "pending" to "expired" if upload
+     # is not complete. User may submit another store request to retry.
+     | Receipt<Store, StoreExpired, StorePending> "expried"
      
-     # System can update state from Request or Pending to Failed
-     | Receipt<StoreRequest, StoreFailed, StorePending> "failed"
+     # System MAY update state from "queued" or "pending" to "failed"
+     # e.g if space is out of storage ran out of storage capacity.
+     | Receipt<Store, StoreFailed, StorePending> "failed"
   } representation keyed
   
-  type Request union {
-    | "dag/put"
+  type Request<Value> union {
+    Task<{ path IPLDPath value Value }> | "dag/put"
   } representation inline
   
   # Initial state
-  type struct StoreRequest {
+  type struct Store {
     link &CAR
     size Int
     origin optional &CAR
@@ -154,24 +156,15 @@
     receipt &Receipt#<StoreRequest, Null>
   }
   
-  type UCAN = any # UCAN See https://github.com/ucan-wg/ucan-ipld/#21-principal
-  type Task#<Entry>
-  struct {
-    with DID
-    can IPLDPath
-    nb Operation#<Entry>
-  }
-  
-  type struct Receipt #<Request Out Origin>
-  {
+  type struct Receipt<Input, State> {
     # Link to the request this is receipt of
-    request &UCAN#<Task<Request>>
+    ran Request<Input>
     # Current state
-    out Out
+    out State
     
-    # When system updates state it will link to a prior receipt
-    # providing complete trace of changes
-    origin optional &Receipt#<Origin>
+    # When system updates state it will link to a prior signed
+    # state providing verifiable trace of updates.
+    origin optional &Receipt<Input, Any>
   
     # Signature from the actor that perform the update
     sig Varsig
