@@ -58,7 +58,7 @@
 - I think this might more natural model the fact that our invocations either schedule some async task that our system processes and consequently updates it's state, which can be read or observed. Tasks that simply read state aren't really a tasks they are in fact queries over the DAG.
 - Now representing whole system as an actual IPLD DAG is going to be prohibitively impractical, however we could still model a system as a DAG without materializing one.
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
-- Instead of defining capabilities in terms of actions one could perform, we could take page from [IPLD Patch](https://ipld.io/specs/patch/fixtures/fixtures-1/) book and define universal set of capabilities
+- Instead of defining capabilities in terms of actions one could perform, we could take page from [IPLD Patch](https://ipld.io/specs/patch/fixtures/fixtures-1/) book and define universal set of operations
 	- It is worth calling out similarity with HTTP small and fairly universal set of HTTP methods
 	- Another analogy could be made with SQL which also has small set of operations `insert`, `select`, `update`, `delete`
 - All our UCANs can be modeled as follows
@@ -66,6 +66,10 @@
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
+  # Task is a UCAN that contains a single  single capability 
+  type Task<Entry> = UCAN<Capability<Operation<Entry>>>
+  
+  # Operation
   type Operation<Entry> union {
     # Writes entry at the target IPLD path. If entry already exists
     # at that path it overwrites.
@@ -84,6 +88,13 @@
     # next set of entries.
     Select "select"
   } representation keyed
+  
+  type struct OperationCapability<Entry> {
+    with DID
+    can IPLDPath
+    nb Patch<Entry>
+  } 
+  
   
   
   # Delete and Get do not have any input, so they are just empty maps
