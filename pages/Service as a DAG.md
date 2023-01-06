@@ -76,15 +76,11 @@
   }
   
   type Command union {
-    # Writes entry at the target IPLD path. If entry already exists
-    # at that path it overwrites.
+    # Writes an entry at the target IPLD path. If identical entry at
+    # given path already exists command is noop. If different entry
+    # exists under given path operation MAY be denied.
     Put "dag/put"
-    # Writes data at the target IPLD path. If entry already exists
-    # write fails. If IPLD path targets list element item is
-    # item is inserted after the target entry. If IPLD path targets
-    # list entry is added to the list.
-    Post "dag/post"
-    # Reads data at the target IPLD path
+    # Reads state at the given IPLD path.
     Get "dag/get"
     # Deletes entry from the target IPLD path. 
     Delete "dag/delete"
@@ -92,7 +88,9 @@
     # map, list or an entry with in them. If targets an entry selects
     # next set of entries.
     Select "dag/select"
-  } representation keyed
+  } representation inline {
+    discriminantKey "tag"
+  }
   
   type struct Put {
     at IPLDPath
