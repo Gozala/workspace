@@ -59,7 +59,7 @@
 - Now representing whole system as an actual IPLD DAG is going to be prohibitively impractical, however we could still model a system as a DAG without materializing one.
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - Instead of defining capabilities in terms of actions one could perform, we could take page from [IPLD Patch](https://ipld.io/specs/patch/fixtures/fixtures-1/) book and define universal set of capabilities
-	- It is worth calling out  HTTP
+	- It is worth calling out similarity with HTTP methods, as those also consist of
 - ```ipldsch
   # All UCANS will be structed as
   # with: DID
