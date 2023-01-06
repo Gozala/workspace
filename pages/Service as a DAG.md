@@ -78,14 +78,14 @@
   type Command union {
     # Writes entry at the target IPLD path. If entry already exists
     # at that path it overwrites.
-    Add "command/post"
+    Put "dag/put"
     # Writes data at the target IPLD path. If entry already exists
     # write fails. If IPLD path targets list element item is
     # item is inserted after the target entry. If IPLD path targets
     # list entry is added to the list.
-    Post "command/post"
+    Post "dag/post"
     # Reads data at the target IPLD path
-    Get "get"
+    Get "dag/get"
     # Deletes entry from the target IPLD path. 
     Delete "dag/delete"
     # Selects entries from the target IPLD path. IPLD path MUST target
@@ -95,9 +95,27 @@
   } representation keyed
   
   type struct Put {
-    
+    at IPLDPath
+    data Any 
   }
   
+  type struct Post {
+    at IPLDPath
+    data Any
+  }
+  
+  type struct Delete {
+    at IPLDPath
+  }
+  
+  type struct Get {
+    at IPLDPath
+  }
+  
+  type Select {
+    at IPLDPath
+    limit optional Int
+  }
   
   # Task is a UCAN that invokes single operation encoded
   # as capability
