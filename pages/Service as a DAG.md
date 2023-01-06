@@ -109,7 +109,7 @@
   type struct Space {
     # Storege provider is map keyed by CARs stored. Users can send commands to
     # update or query it.
-    store { &CAR: StoreStatus }
+    store { &CAR: Receipt<Store, StoreStatus> }
     # Upload provider is a map keyed by upload roots. Users can send commands to
     # add / remove and list items it stores
     upload { &Any: Upload }
@@ -118,14 +118,14 @@
   # Every store entry is a state machine and it can be in one of the following states
   type union StoreStatus {
      # When user submits 'dag/put' command it will appears as queued
-     | Receipt<Store, StoreQueued, unit> "queued"
+     | unit "queued"
      
      # System MAY update state from "queued" to "pending" in order to
      # provide presigned upload URL for user to complete the task.
-     | Receipt<Store, StorePending, unit> "pending"
+     | StorePending "pending"
      
      # System MAY update state from "queued" or "pending" to "done".
-     | Receipt<Store, StoreDone, StorePending> "done"
+     | unit "done"
      
      # System MAY update state from "pending" to "expired" if upload
      # is not complete. User may submit another store request to retry.
@@ -134,7 +134,9 @@
      # System MAY update state from "queued" or "pending" to "failed"
      # e.g if space is out of storage ran out of storage capacity.
      | Receipt<Store, StoreFailed, StorePending> "failed"
-  } representation keyed
+  } representation inline {
+  
+  }
   
   type Request<Value> union {
     Task<{ path IPLDPath value Value }> | "dag/put"
@@ -152,8 +154,6 @@
     link &CAR
     url String
     headers {String: String}
-    
-    receipt &Receipt#<StoreRequest, Null>
   }
   
   # Roughly equivalent of the receipts from UCAN invocation spec
@@ -169,22 +169,13 @@
     # state providing verifiable trace of updates.
     origin optional &Receipt<Input, Any>
   
-    # Signature from the actor that perform the update
+    # Signature from the actor that performed the state update
     sig Varsig
   
     # All the other metadata
     meta { String: Any }
   }
   
-  
-  type struct StoreDone#<Request>
-  {
-     link &CAR
-     size Int
-     origin optional &CAR
-     
-     receipt &Receipt#<Request, Null|StorePending>
-  }
   
   
   type struct StoreExpired#<Request>
