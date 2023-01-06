@@ -89,7 +89,7 @@
     # next set of entries.
     Select "dag/select"
   } representation inline {
-    discriminantKey "tag"
+    discriminantKey "do"
   }
   
   type struct Put {
