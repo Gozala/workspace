@@ -67,18 +67,20 @@
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   type Operation union {
-    # Writes entry at the given. If data exists it
-    # overwrites data as long as `Put` matches the schema.
+    # Writes entry at the target IPLD path. If entry already exists
+    # at that path it overwrites.
     Put "put"
-    # Writes data under given path. If data already exists
-    # write fails. Write succeeds as long as `Post` matches
-    # the schema. If IPLD path targets an item within the list
-    # item is inserted after the target item
+    # Writes data at the target IPLD path. If entry already exists
+    # write fails. If IPLD path targets list element item is
+    # item is inserted after the target entry. If IPLD path targets
+    # list entry is added to the list.
     Post "post"
-    # Reads out state under the target IPLD path
+    # Reads data at the target IPLD path
     Get "get"
-    # Deletes out the entry from the IPLD path. 
+    # Deletes entry from the target IPLD path. 
     Delete "delete"
+    # Lists entries from the target IPLD path. IPLD patnh MUST target
+    # either map or a list.
     List "list"
   } representation keyed
   
