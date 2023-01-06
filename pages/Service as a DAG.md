@@ -66,111 +66,34 @@
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
-  type struct Task {
-    with DID
-    do Command
-    meta {String : Any} (implicit {})
-    nnc optional String
-    sig Varsig
-    prf [&UCAN]
-  }
-  
+  # Command is one of the standard operation tasks
   type Command union {
     # Writes an entry at the target IPLD path. If identical entry at
     # given path already exists command is noop. If different entry
     # exists under given path operation MAY be denied.
-    Put "dag/put"
+    Task<Any> "dag/put"
     # Reads state at the given IPLD path.
-    Get "dag/get"
+    Task<{}> "dag/get"
     # Deletes entry from the target IPLD path. 
-    Delete "dag/delete"
+    Task<{}> "dag/delete"
     # Selects entries from the target IPLD path. IPLD path MUST target
     # map, list or an entry with in them. If targets an entry selects
     # next set of entries.
-    Select "dag/select"
+    Task<{limit optional Int}> "dag/select"
   } representation inline {
     discriminantKey "do"
   }
   
-  type struct Put {
-    at IPLDPath
-    data Any 
-  }
-  
-  type struct Post {
-    at IPLDPath
-    data Any
-  }
-  
-  type struct Delete {
-    at IPLDPath
-  }
-  
-  type struct Get {
-    at IPLDPath
-  }
-  
-  type Select {
-    at IPLDPath
-    limit optional Int
-  }
-  
-  # Task is a UCAN that invokes single operation encoded
-  # as capability
-  type Task = UCAN<[Command<Any>]>
-  
-  # Command is just a UCAN capability
-  type Command<Insruction> struct {
-    # Encodes (mutable) user space identifier
+  # Task is 
+  type struct Task<Input> {
     with DID
-    # Encodes IPLD Path within the current space DAG
-    can IPLDPath
-    # Encodes operation targeting specified DAG path
-    nb Operation<Instruction>
-  }
-  
-  
-  type Request
-  
-  # We support univeras set of operations across the whole
-  # DAG. Any request to a service is simply a put 
-  type Operation<Entry> union {
-    # Writes entry at the target IPLD path. If entry already exists
-    # at that path it overwrites.
-    Entry "put"
-    # Writes data at the target IPLD path. If entry already exists
-    # write fails. If IPLD path targets list element item is
-    # item is inserted after the target entry. If IPLD path targets
-    # list entry is added to the list.
-    Entry "post"
-    # Reads data at the target IPLD path
-    Get "get"
-    # Deletes entry from the target IPLD path. 
-    Delete "delete"
-    # Selects entries from the target IPLD path. IPLD path MUST target
-    # map, list or an entry with in them. If targets an entry selects
-    # next set of entries.
-    Select "select"
-  } representation keyed
-  
-  type struct OperationCapability<Entry> {
-    with DID
-    can IPLDPath
-    nb Patch<Entry>
-  } 
-  
-  
-  
-  # Delete and Get do not have any input, so they are just empty maps
-  # allowing us to extend those in the future.
-  type Delete unit representation emptymap
-  type Get unit representation emptymap
-  
-  # Selects number of entries from the target IPLD path. If target is a
-  # list or map reads first `limit` entries. If target is entry within
-  # list or map reads next `limit` entries.
-  type Select struct {
-    limit optional Int
+    do String
+    at IPLDPath
+    input Input
+    meta {String : Any} (implicit {})
+    nnc optional String
+    sig Varsig
+    prf [&UCAN]
   }
   ```
 - With above operation set in place we can represent web3.storage as a DAG matching following schema. Users could send above defined operations encoded as UCANs with qualified proof chains
