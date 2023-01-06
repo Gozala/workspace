@@ -66,6 +66,9 @@
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
+  
+  
+  
   # Task is a UCAN that invokes single operation encoded
   # as capability
   type Task = UCAN<[Command<Any>]>
