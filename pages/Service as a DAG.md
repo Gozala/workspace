@@ -60,7 +60,7 @@
 - Here is how we could re-envision our service as a DAG and avoid need for functions in [[IPLD schema]]
 - Instead of defining capabilities in terms of actions one could perform, we could take page from [IPLD Patch](https://ipld.io/specs/patch/fixtures/fixtures-1/) book and define universal set of capabilities
 	- It is worth calling out similarity with HTTP small and fairly universal set of HTTP methods
-	- Another analogy could be relational data bases,
+	- Another analogy could be made with SQL which also has small set of insert select update delete
 - ```ipldsch
   # All UCANS will be structed as
   # with: DID
