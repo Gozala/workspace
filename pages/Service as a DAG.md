@@ -66,8 +66,8 @@
 	- `can` - Encodes IPLD path within the space (MUST target entry in either map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
-  type Operation Command {
-    # Writes entry under given path. If data exists it
+  type Operation union {
+    # Writes entry at the given. If data exists it
     # overwrites data as long as `Put` matches the schema.
     Put "put"
     # Writes data under given path. If data already exists
