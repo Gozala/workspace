@@ -100,12 +100,12 @@
 - ```ipldsch
   # Entire system is modeled as map of user spaces keyed
   # by space DIDs
-  type struct W3 {
+  type W3 struct {
     DID: Space
   }
   
   # Spaces MAY have varios providers e.g storage provider, upload provider etc...
-  type struct Space {
+  type Space struct {
     # Storege provider is map keyed by CARs stored. Users can send commands to
     # update or query it.
     store { &CAR: Receipt<Store, StoreStatus> }
@@ -115,7 +115,7 @@
   }
   
   # Every store entry is a state machine and it can be in one of the following states
-  type union StoreStatus {
+  type StoreStatus union {
      # When user submits 'dag/put' command it will appears as queued
      | unit "queued"
      
