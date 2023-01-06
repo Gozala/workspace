@@ -63,18 +63,21 @@
 	- Another analogy could be made with SQL which also has small set of operations `insert`, `select`, `update`, `delete`
 - All our UCANs can be modeled as follows
 	- `with` - Encodes mutable space identifier `did:key` or `did:mailto`
-	- `can` - Encodes IPLD path within the space
+	- `can` - Encodes IPLD path within the space (MUST only target entry in map or a list)
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   type Operation Command {
-    # Writes data under given path. If data exists it
+    # Writes entry under given path. If data exists it
     # overwrites data as long as `Put` matches the schema.
     Put "put"
     # Writes data under given path. If data already exists
     # write fails. Write succeeds as long as `Post` matches
-    # the schema. If IPLD path targets 
+    # the schema. If IPLD path targets an item within the list
+    # item is inserted after the target item
     Post "post"
+    # Reads out state under the target IPLD path
     Get "get"
+    # Deletes out the entry from the IPLD path. 
     Delete "delete"
     List "list"
   } representation keyed
