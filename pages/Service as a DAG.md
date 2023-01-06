@@ -95,8 +95,6 @@
     sig Varsig
     prf [&UCAN]
   }
-  
-  type sturct 
   ```
 - With the above operation set in place we can represent web3.storage as a DAG with a following schema on which users could execute above defined set of operations
 - ```ipldsch
