@@ -156,7 +156,9 @@
     receipt &Receipt#<StoreRequest, Null>
   }
   
-  # Roughly equivalent of the 
+  # Roughly equivalent of the receipts from UCAN invocation spec
+  # https://github.com/ucan-wg/invocation/blob/rough/README.md#9-receipt
+  # 
   type struct Receipt<Input, State> {
     # Link to the request this is receipt of
     ran Request<Input>
