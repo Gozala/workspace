@@ -72,9 +72,28 @@
     meta {String : Any} (implicit {})
     nnc optional String
     sig Varsig
+    prf [&]
   }
   
-  type Command 
+  type Command union {
+    # Writes entry at the target IPLD path. If entry already exists
+    # at that path it overwrites.
+    Entry "dag/put"
+    # Writes data at the target IPLD path. If entry already exists
+    # write fails. If IPLD path targets list element item is
+    # item is inserted after the target entry. If IPLD path targets
+    # list entry is added to the list.
+    Entry "dag/post"
+    # Reads data at the target IPLD path
+    Get "get"
+    # Deletes entry from the target IPLD path. 
+    Delete "dag/delete"
+    # Selects entries from the target IPLD path. IPLD path MUST target
+    # map, list or an entry with in them. If targets an entry selects
+    # next set of entries.
+    Select "dag/select"
+  } representation keyed
+  }
   
   
   # Task is a UCAN that invokes single operation encoded
