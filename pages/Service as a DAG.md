@@ -71,25 +71,24 @@
     # Writes an entry at the target IPLD path. If identical entry at
     # given path already exists command is noop. If different entry
     # exists under given path operation MAY be denied.
-    Task<Any> "dag/put"
+    Task<{ at IPLDPath data Any }> "dag/put"
     # Reads state at the given IPLD path.
-    Task<{}> "dag/get"
+    Task<{ at IPLDPath }> "dag/get"
     # Deletes entry from the target IPLD path. 
-    Task<{}> "dag/delete"
+    Task<{ at IPLDPath }> "dag/delete"
     # Selects entries from the target IPLD path. IPLD path MUST target
     # map, list or an entry with in them. If targets an entry selects
     # next set of entries.
-    Task<{limit optional Int}> "dag/select"
+    Task<{ at IPLDPath limit optional Int }> "dag/select"
   } representation inline {
     discriminantKey "do"
   }
   
   # Task is similar to one in UCAN invocation draft spec, except it
-  # 
+  # is self contained and has additional 
   type struct Task<Input> {
     with DID
     do String
-    at IPLDPath
     input Input
     meta {String : Any} (implicit {})
     nnc optional String
