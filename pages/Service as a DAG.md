@@ -102,7 +102,7 @@
     limit optional Int
   }
   ```
-- With above operation set in place we can represent web3.storage as a DAG matching following schema. Users could send
+- With above operation set in place we can represent web3.storage as a DAG matching following schema. Users could send above defined operations encoded as UCANs with qualified proof chains
 - ```ipldsch
   
   # Our whole system is simply a map of spaces with DID as they're keys
