@@ -142,11 +142,11 @@
   # Every store entry is a state machine and it can be in one of the following states
   type union Store {
      # User can write a request
-     | UCAN<Task<StoreRequest>> "request"
+     | Task<StoreRequest>
      
      # System can update state from Request to Pending providing
      # presigned URL allowing user to complete store request.
-     | Receipt<StoreRequest, StorePending, Null> "pending"
+     | Receipt<StoreRequest, StorePending, unit> "pending"
      
      # System can update state from Request or Pending to Done
      | Receipt<StoreRequest, StoreDone, StorePending> "done"
