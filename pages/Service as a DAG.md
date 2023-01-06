@@ -67,7 +67,13 @@
 	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
   type Operation Command {
-    Any "put"
+    # Writes data under given path. If data exists it
+    # overwrites data as long as `Put` matches the schema.
+    Put "put"
+    # Writes data under given path. If data already exists
+    # write fails. Write succeeds as long as `Post` matches
+    # the schema. If IPLD path targets 
+    Post "post"
     Get "get"
     Delete "delete"
     List "list"
