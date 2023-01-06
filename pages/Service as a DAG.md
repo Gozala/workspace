@@ -134,6 +134,10 @@
      | Receipt<StoreRequest, StoreFailed, StorePending> "failed"
   } representation keyed
   
+  type Request union {
+    | "dag/put"
+  } representation inline
+  
   # Initial state
   type struct StoreRequest {
     link &CAR
