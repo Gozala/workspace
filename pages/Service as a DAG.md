@@ -150,11 +150,11 @@
     receipt &Receipt #<>
   }
   
+  type UCAN = any # See 
   type struct Receipt #<Request Origin>
   {
-    # Link to the Operation UCAN which corresponds to this
-    # requests
-    request &Operation#<Request>
+    # Link to the UCAN with an operation corresponding
+    request &UCAN#<Operation<Request>>
     # When system updates state it will link to a prior receipt
     # providing complete trace of changes
     origin optional &Receipt#<Origin>
