@@ -73,7 +73,7 @@
     List "list"
   } representation keyed
   
-  #  Data to be written under the given path
+  #  Data to be written under the target path
   type Put any
   
   type Delete unit representation emptymap
