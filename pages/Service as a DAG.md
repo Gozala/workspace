@@ -64,21 +64,17 @@
 - All our UCANs can be modeled as follows
 	- `with` - Encodes mutable space identifier `did:key` or `did:mailto`
 	- `can` - Encodes IPLD path within the space
-	- `nb` - Encodes one of the universal `Operation` to be executed
-	-
+	- `nb` - Encodes one of the universal `Operation` to be executed (as per schema below)
 - ```ipldsch
-  # All UCANS can be structed as
-  # with: DID
-  # can: IPLD Path
-  # nb: Command
-  
-  type union Command {
+  type Operation Command {
     # Whatever the value is
     Any "put"
     Get "get"
     Delete "delete"
     List "list"
   } representation keyed
+  
+  type Put 
   
   type Delete unit representation emptymap
   type Get unit representation emptymap
