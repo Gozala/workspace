@@ -86,6 +86,7 @@
   
   #  Data to be written under the target path
   type Put any
+  type Post any
   
   type Delete unit representation emptymap
   type Get unit representation emptymap
