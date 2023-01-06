@@ -84,7 +84,8 @@
     discriminantKey "do"
   }
   
-  # Task is 
+  # Task is similar to one in UCAN invocation draft spec, except it
+  # 
   type struct Task<Input> {
     with DID
     do String
