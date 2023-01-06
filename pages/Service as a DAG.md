@@ -147,13 +147,20 @@
     url String
     headers {String: String}
     
-    receipt &Receipt # Links to StoreRequest
+    receipt &Receipt #<>
   }
   
-  type struct Receipt {
-    request &Any 
+  type struct Receipt #<Request Origin>
+  {
+    # Link to the Operation UCAN which corresponds to this
+    # requests
+    request &Operation#<Request>
+    # When system updates state it will link to a prior receipt
+    # providing complete trace of changes
+    origin optional &Receipt#<Origin>
+    # Signature from the actor that perform the update
     sig Varsig
-    rec &Receipt
+    # All the other metadata
     meta { String: Any }
   }
   
