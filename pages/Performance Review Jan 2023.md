@@ -20,4 +20,6 @@
 	- Introduced a [varsig](https://github.com/ucan-wg/ucan-ipld/#25-signature) multiformat for ipld-ucan in order to support principals beyond `did:key`
 	- Which is getting adopted beyond ucans https://github.com/ChainAgnostic/varsig/pull/6
 	-
--
+- Key rotations
+	- Designed solution allowing us to rotate keys https://github.com/web3-storage/w3protocol/issues/265
+	-
