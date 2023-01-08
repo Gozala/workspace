@@ -13,6 +13,8 @@
 		- It also incorporates paid tears
 	- Designed [account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol that addresses some of the UX challenges we previously had around key management and syncing
 	- Drafted did:mailto specification https://github.com/ucan-wg/did-mailto/pull/2 to support did's beyond `did:key`
+	- Drafted ucan:mailto specification https://github.com/ucan-wg/ucan-mailto/pull/1
+	-
 	-
 - Varsig
 	- Introduced a [varsig](https://github.com/ucan-wg/ucan-ipld/#25-signature) multiformat for ipld-ucan in order to support principals beyond `did:key`
