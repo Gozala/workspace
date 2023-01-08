@@ -8,15 +8,10 @@
 		- To enable interop with ceramic CACAO
 		- Implemented support in @ipld/dag-ucan
 		- Implemented support in ucanto
-		-
-	-
-	-
 - Specs
 	- Designed [space providers](https://github.com/web3-storage/specs/blob/main/w3-space.md) protocol allowing us to meet desired funding models described in [user stories](https://www.notion.so/2022-11-14-User-stories-and-how-to-meet-them-3170c5c8ef82420ea97a9fec2f8ed9d3)
 		- It also incorporates paid tears
 	- Designed [account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol that addresses some of the UX challenges we previously had around key management and syncing
-	-
-	-
-	-
 - Varsig
+	- Introduced a varsig multiformat for ipld-ucan in order to support pr than `did:key`
 -
