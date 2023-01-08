@@ -1,5 +1,5 @@
 - UCANs
-	-
+	- Shipped UCAN 0.9 support in @ipld/dag-ucan & ucanto and helped migrate our services to 0.9
 	- Implemented RSA key algorithm support needed in browsers to make keys non extractable.
 		- https://github.com/web3-storage/ucanto/pull/102
 	- Implemented support for optionals in ucanto validator and schema capabilities
