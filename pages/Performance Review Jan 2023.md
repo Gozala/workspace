@@ -13,5 +13,6 @@
 		- It also incorporates paid tears
 	- Designed [account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol that addresses some of the UX challenges we previously had around key management and syncing
 - Varsig
-	- Introduced a varsig multiformat for ipld-ucan in order to support pr than `did:key`
+	- Introduced a [varsig](https://github.com/ucan-wg/ucan-ipld/#25-signature) multiformat for ipld-ucan in order to support principals beyond `did:key`
+	-
 -
