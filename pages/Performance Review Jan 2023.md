@@ -1,5 +1,5 @@
 - UCANs
 - Specs
-	- Designed [space providers](https://github.com/web3-storage/specs/blob/main/w3-space.md)
+	- Designed [space providers](https://github.com/web3-storage/specs/blob/main/w3-space.md) protocol allowing use to support
 - Varsig
 -
