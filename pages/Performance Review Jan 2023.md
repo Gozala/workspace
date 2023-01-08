@@ -3,6 +3,9 @@
 		- https://github.com/web3-storage/ucanto/pull/102
 	- Implemented support for optionals in ucanto validator and schema capabilities
 		- https://github.com/web3-storage/ucanto/pull/124
+	- Expanded support for principals other than `did:key`
+		- To enable interop with ceramic CACAO
+		-
 	-
 - Specs
 	- Designed [space providers](https://github.com/web3-storage/specs/blob/main/w3-space.md) protocol allowing us to meet desired funding models described in [user stories](https://www.notion.so/2022-11-14-User-stories-and-how-to-meet-them-3170c5c8ef82420ea97a9fec2f8ed9d3)
