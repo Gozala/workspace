@@ -22,4 +22,5 @@
 	-
 - Key rotations
 	- Designed solution allowing us to rotate keys https://github.com/web3-storage/w3protocol/issues/265
+	- https://github.com/web3-storage/specs/pull/7/files
 	-
