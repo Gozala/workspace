@@ -34,7 +34,7 @@
         - Which are already been incorporated into [Name Name System](https://talk.fission.codes/t/nns-the-name-name-system/3684) from Fission.
     1. Designed [w3 account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol which leverages [did:mailto](https://github.com/ucan-wg/did-mailto/blob/draft/README.md) identifiers to
        1. Free our common customer from key management concerns & consequently allow us to divert our efforts to other important work
-       2. Drastically simplify delegation flows so our customers get to enjoy familiar "sharing" flows (just type peers email address)
+       2. Drastically simplify delegation flows so our customers get to enjoy familiar "sharing" flows (just type peers email address) and free our team from having to implement capabilities synchronization protocol across various user devices
 	-
 	-
 -
