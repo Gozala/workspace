@@ -24,4 +24,6 @@
 	- Implemented support for this into ucanto
 	-
 -
-- Identified need to introduce non cryptographic identifiers (DIDs beyond [did:key]())
+- Identified need for non-cryptographic identifiers (DIDs beyond [did:key](https://w3c-ccg.github.io/did-method-key/) used in UCANs) in order to
+	- to address multiple
+-
