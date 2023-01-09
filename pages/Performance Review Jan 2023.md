@@ -25,6 +25,7 @@
 	-
 -
 - Identified need for non-cryptographic identifiers (DIDs beyond [did:key](https://w3c-ccg.github.io/did-method-key/) used in UCANs) in order to
-	- To address user experience limitations in our products
-	- Create non-disruptive key rotation flow
+	- cUX challenges
+	- Create non-disruptive key rotation flow into our services
+	-
 -
