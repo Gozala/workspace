@@ -28,7 +28,7 @@
     1. Address UX challenges in w3up product
     2. Create non-disruptive key rotation flow into our services
   
-  Organized this effort into multiple subprojects
+  Organized effort into concurrent subprojects to reduce complexity and enable peers
 	-
 	-
 -
