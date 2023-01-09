@@ -14,8 +14,6 @@
 	- Designed [account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol that addresses some of the UX challenges we previously had around key management and syncing
 	- Drafted did:mailto specification https://github.com/ucan-wg/did-mailto/pull/2 to support did's beyond `did:key`
 	- Drafted ucan:mailto specification https://github.com/ucan-wg/ucan-mailto/pull/1
-	-
-	-
 - Varsig
 	- Introduced a [varsig](https://github.com/ucan-wg/ucan-ipld/#25-signature) multiformat for ipld-ucan in order to support principals beyond `did:key`
 	- Which is getting adopted beyond ucans https://github.com/ChainAgnostic/varsig/pull/6
@@ -23,4 +21,5 @@
 - Key rotations
 	- Designed solution allowing us to rotate our service keys https://github.com/web3-storage/w3protocol/issues/265
 	- https://github.com/web3-storage/specs/pull/7/files
+	- Implemented support for this into ucanto
 	-
