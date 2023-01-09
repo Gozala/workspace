@@ -23,3 +23,5 @@
 	- https://github.com/web3-storage/specs/pull/7/files
 	- Implemented support for this into ucanto
 	-
+-
+- Identified need to introduce non cryptographic identifiers (DIDs beyond [did:key]())
