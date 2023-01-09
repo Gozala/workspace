@@ -33,7 +33,8 @@
     1. Defined [did:mailto](https://github.com/ucan-wg/did-mailto/blob/draft/README.md) DID method to lay groundwork for cross organization adoption
         - Which are already been incorporated into [Name Name System](https://talk.fission.codes/t/nns-the-name-name-system/3684) from Fission.
     1. Designed [w3 account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol which leverages [did:mailto](https://github.com/ucan-wg/did-mailto/blob/draft/README.md) identifiers to
-       1. Free our common customer from key management concerns & consequently enable us to focus
+       1. Free our common customer from key management concerns & consequently allow us to divert our efforts to other important work
+       2.
 	-
 	-
 -
