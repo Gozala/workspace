@@ -31,7 +31,7 @@
   Organized effort into subprojects to reduce complexity and enable multiple engineers contribute concurrently
   
     1. Defined [did:mailto](https://github.com/ucan-wg/did-mailto/blob/draft/README.md) DID method to lay groundwork for cross organization adoption
-        - 
+        - Which are already been incorporated into 
     1. Designed [account](https://github.com/web3-storage/specs/blob/main/w3-account.md) protocol which that uses [did:mailto]() that addresses some of the UX challenges we previously had around key management and syncing
 	-
 	-
