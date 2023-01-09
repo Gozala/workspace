@@ -25,7 +25,8 @@
 	-
 -
 - Identified need for non-cryptographic identifiers (DIDs beyond [did:key](https://w3c-ccg.github.io/did-method-key/) used in UCANs) in order to
-	- cUX challenges
-	- Create non-disruptive key rotation flow into our services
+   1. Address UX challenges in w3up product
+   2. Create non-disruptive key rotation flow into our services
+	-
 	-
 -
