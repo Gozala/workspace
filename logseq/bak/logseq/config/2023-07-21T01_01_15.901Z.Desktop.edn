@@ -83,6 +83,6 @@
  :property-pages/enabled? true
  :ui/show-full-blocks? false
  :file/name-format :triple-lowbar
- :ui/show-brackets? false
+ :ui/show-brackets? true
 
  }
