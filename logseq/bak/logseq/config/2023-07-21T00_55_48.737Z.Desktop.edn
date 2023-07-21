@@ -81,7 +81,6 @@
  :favorites []
  ;; Enable all your properties to have corresponding pages
  :property-pages/enabled? true
- :ui/show-full-blocks? false
- :file/name-format :triple-lowbar
+ :ui/show-full-blocks? true
 
  }
