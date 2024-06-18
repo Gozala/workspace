@@ -1,1 +1,2 @@
+- Interesting article that does comparison of how [various FRP libraries handle this problem](https://dev.to/milomg/super-charging-fine-grained-reactive-performance-47ph)
 -
