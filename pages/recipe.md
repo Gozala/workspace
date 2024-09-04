@@ -1,1 +1,1 @@
-- Computation graph with predefined input and output requirements, but without them being bound
+- Computation graph with predefined input and output requirements, but without them being bound yet.
